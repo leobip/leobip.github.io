@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+}
+.posts {
+    padding: 20px 0;
+}
+
+.posts h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.posts li {
+    margin-bottom: 10px;
+}
+
+.posts li a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.posts li a:hover {
+    text-decoration: underline;
+}
+
+.posts .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 10px;
+}

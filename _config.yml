@@ -18,8 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Leoncio López Pelayo
+email: leobip27@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -27,12 +27,35 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  leobip27
+
+author:
+  name: "Leoncio Lopez Pelayo"
+  sub_title: DevOps Engineer
+  description: "Desarrollador Full Stack con experiencia en tecnologías web."
+  about: "Soy un apasionado de la tecnología y el desarrollo de software, con varios años de experiencia trabajando en proyectos innovadores. Me especializo en la creación de aplicaciones web utilizando las últimas tecnologías."
+  email: "leobip27@gmail.com"
+  linkedin: "www.linkedin.com/in/leoncio-lópez-00527474"
+  github: "https://github.com/leobip"
+  twitter: "https://twitter.com/tu-usuario"
+  location: "Ciudad, País"
+  #photo: "/images/your-photo.jpg"
+
+
 
 # Build settings
 theme: minima
-plugins:
-  - jekyll-feed
+markdown: kramdown
+
+
+# Incluir carpetas adicionales
+collections:
+  projects:
+    output: true
+
+# Build settings
+permalink: pretty
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,13 +65,14 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
