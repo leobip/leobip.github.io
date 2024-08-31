@@ -54,3 +54,39 @@ h1, h2 {
     color: #777;
     margin-left: 10px;
 }
+.centered-header {
+    text-align: center;
+  }
+
+  .projects {
+    padding: 20px 0;
+}
+
+.projects h2 {
+    font-size: 2em; /* Igual al tamaño de fuente en .posts h2 */
+    margin-bottom: 10px;
+}
+
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 10px;
+}
+
+.projects li a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.projects li a:hover {
+    text-decoration: underline;
+}
+
+.projects .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-left: 10px;
+}

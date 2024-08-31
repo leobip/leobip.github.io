@@ -18,12 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Leoncio López Pelayo
+title: Leo DevJourneyHub
+subtitle: >
+  Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding
 email: leobip27@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: |
+  Tu puerta de entrada digital a mi trayectoria personal y profesional en el mundo de la tecnología. 
+  Explora mi portafolio de proyectos de software, descubre publicaciones interesantes que me llaman la atención sobre las últimas tendencias tecnológicas y conoce la historia detrás del código. Aquí es donde la pasión se encuentra con el propósito, un proyecto a la vez.
+
+  Your digital gateway to my personal and professional journey in the world of technology. 
+  Explore my portfolio of software projects, discover interesting posts that catch my attention on the latest tech trends, and learn the story behind the code. This is where passion meets purpose, one project at a time.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

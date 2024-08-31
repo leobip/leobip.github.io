@@ -11,9 +11,10 @@ layout: default
 </head>
 <body>
   <main>
-    <header>
+    <header class="centered-header">
       <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
+      <h2>{{site.subtitle}}</h2>
+      <p>{{ site.description | markdownify }}</p>
     </header>
 
     <section class="intro">
@@ -37,7 +38,7 @@ layout: default
         {% endfor %}
       </ul>
     </section>
-
+    
     <section class="posts">
       <h2>Últimas Noticias</h2>
       <ul>
@@ -49,7 +50,7 @@ layout: default
         {% endfor %}
       </ul>
     </section>
+  
   </main>
-  {% include footer.html %}
 </body>
 </html>
