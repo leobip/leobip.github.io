@@ -23,7 +23,20 @@ layout: default
         <h2>{{ site.author.sub_title }}</h2>
         <p>{{ site.author.description }}</p>
         <img src="/images/your-photo.jpg" alt="Tu foto">
-        <p>{{ site.author.about }}</p>
+      </div>
+    </section>
+
+    <!-- Sección About en dos columnas -->
+    <section class="about">
+      <div class="about-container">
+        <div class="about-column">
+          <h3>About Me (English)</h3>
+          <p>{{ site.author.about_en | markdownify }}</p>
+        </div>
+        <div class="about-column">
+          <h3>Sobre Mí (Español)</h3>
+          <p>{{ site.author.about_es | markdownify }}</p>
+        </div>
       </div>
     </section>
 

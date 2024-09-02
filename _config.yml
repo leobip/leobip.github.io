@@ -36,13 +36,29 @@ github_username:  leobip27
 author:
   name: "Leoncio Lopez Pelayo"
   sub_title: DevOps Engineer
-  description: "Desarrollador Full Stack con experiencia en tecnologías web."
-  about: "Soy un apasionado de la tecnología y el desarrollo de software, con varios años de experiencia trabajando en proyectos innovadores. Me especializo en la creación de aplicaciones web utilizando las últimas tecnologías."
+  description:
+  about_es: |
+    Siempre he sido un apasionado de la tecnología, con un interés especial en la computación.
+    Mis aficiones van desde los cómics, el cine y la música (disfruto de todo, desde rock hasta jazz y blues) hasta viajar,
+    explorar nuevas culturas y sumergirme en la historia.
+
+    Profesionalmente, comencé mi carrera en el área de bases de datos, atraído por su simplicidad y el poder de extraer y analizar información para mejorar procesos.
+    Esta pasión me llevó a profundizar en la programación, donde descubrí nuevas formas de optimizar y automatizar tareas. 
+    Eventualmente, mi camino me llevó al mundo del DevOps, donde he podido combinar el desarrollo y las operaciones para crear sistemas más eficientes y fiables.
+
+    En DevOps, he trabajado en la creación de pipelines de CI/CD, implementado infraestructuras como código (IaC) y mejorado la monitorización y rendimiento de aplicaciones.
+    Python, en particular, se ha convertido en mi herramienta favorita por su versatilidad, permitiéndome automatizar tareas y simplificar procesos complejos.
+  about_en: |
+    I've always been passionate about technology, with a special interest in computing. My hobbies range from comics, movies, and music (I enjoy everything from rock to jazz and blues) to traveling, exploring new cultures, and immersing myself in history.
+
+    Professionally, I began my career in the field of databases, drawn by their simplicity and the power to extract and analyze information to improve processes. This passion led me to dive deeper into programming, where I discovered new ways to optimize and automate tasks. Eventually, my journey led me to the world of DevOps, where I've been able to combine development and operations to create more efficient and reliable systems.
+
+    In DevOps, I've worked on creating CI/CD pipelines, implementing infrastructure as code (IaC), and improving application monitoring and performance. Python, in particular, has become my favorite tool for its versatility, allowing me to automate tasks and simplify complex processes.
   email: "leobip27@gmail.com"
   linkedin: "www.linkedin.com/in/leoncio-lópez-00527474"
   github: "https://github.com/leobip"
   twitter: "https://twitter.com/tu-usuario"
-  location: "Ciudad, País"
+  location: "Madrid, España"
   #photo: "/images/your-photo.jpg"
 
 
