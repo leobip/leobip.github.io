@@ -18,82 +18,111 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Información básica del sitio
 title: Leo DevJourneyHub
 subtitle: >
-  Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding
+  "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding
 email: leobip27@gmail.com
 description: |
   Tu puerta de entrada digital a mi trayectoria personal y profesional en el mundo de la tecnología. 
-  Explora mi portafolio de proyectos de software, descubre publicaciones interesantes que me llaman la atención sobre las últimas tendencias tecnológicas y conoce la historia detrás del código. Aquí es donde la pasión se encuentra con el propósito, un proyecto a la vez.
-
-  Your digital gateway to my personal and professional journey in the world of technology. 
-  Explore my portfolio of software projects, discover interesting posts that catch my attention on the latest tech trends, and learn the story behind the code. This is where passion meets purpose, one project at a time.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  Explora mi portafolio de proyectos de software, descubre publicaciones interesantes sobre tendencias tecnológicas y conoce la historia detrás del código.
+  Este es el lugar donde la pasión se encuentra con el propósito, un proyecto a la vez.
+baseurl: "" # Subpath del sitio, e.g. /blog
+url: "" # Base URL del sitio, e.g. http://example.com
 twitter_username: jekyllrb
-github_username:  leobip27
+github_username: leobip27
 
+# Información del autor
 author:
-  name: "Leoncio Lopez Pelayo"
+  name: "Leoncio López"
   sub_title: DevOps Engineer
-  description:
+  description: |
+    Soy un ingeniero DevOps apasionado por la tecnología y la programación, con experiencia en bases de datos, automatización, y optimización de procesos. Mi carrera me ha permitido trabajar en múltiples proyectos que combinan desarrollo y operaciones, optimizando tanto sistemas como flujos de trabajo.
   about_es: |
     Siempre he sido un apasionado de la tecnología, con un interés especial en la computación.
-    Mis aficiones van desde los cómics, el cine y la música (disfruto de todo, desde rock hasta jazz y blues) hasta viajar,
-    explorar nuevas culturas y sumergirme en la historia.
-
-    Profesionalmente, comencé mi carrera en el área de bases de datos, atraído por su simplicidad y el poder de extraer y analizar información para mejorar procesos.
-    Esta pasión me llevó a profundizar en la programación, donde descubrí nuevas formas de optimizar y automatizar tareas. 
+    Profesionalmente, comencé mi carrera en bases de datos, atraído por su simplicidad y el poder de extraer y analizar información para mejorar procesos.
     Eventualmente, mi camino me llevó al mundo del DevOps, donde he podido combinar el desarrollo y las operaciones para crear sistemas más eficientes y fiables.
-
-    En DevOps, he trabajado en la creación de pipelines de CI/CD, implementado infraestructuras como código (IaC) y mejorado la monitorización y rendimiento de aplicaciones.
-    Python, en particular, se ha convertido en mi herramienta favorita por su versatilidad, permitiéndome automatizar tareas y simplificar procesos complejos.
   about_en: |
-    I've always been passionate about technology, with a special interest in computing. My hobbies range from comics, movies, and music (I enjoy everything from rock to jazz and blues) to traveling, exploring new cultures, and immersing myself in history.
-
-    Professionally, I began my career in the field of databases, drawn by their simplicity and the power to extract and analyze information to improve processes. This passion led me to dive deeper into programming, where I discovered new ways to optimize and automate tasks. Eventually, my journey led me to the world of DevOps, where I've been able to combine development and operations to create more efficient and reliable systems.
-
-    In DevOps, I've worked on creating CI/CD pipelines, implementing infrastructure as code (IaC), and improving application monitoring and performance. Python, in particular, has become my favorite tool for its versatility, allowing me to automate tasks and simplify complex processes.
+    I've always been passionate about technology, with a special interest in computing. Professionally, I started in databases, drawn by their simplicity and the power to extract and analyze information to improve processes. Eventually, my journey led me to the world of DevOps, where I've been able to combine development and operations to create more efficient and reliable systems.
   email: "leobip27@gmail.com"
   linkedin: "www.linkedin.com/in/leoncio-lópez-00527474"
   github: "https://github.com/leobip"
   twitter: "https://twitter.com/tu-usuario"
   location: "Madrid, España"
-  #photo: "/images/your-photo.jpg"
 
-
-
-# Build settings
+# Ajustes de construcción
 theme: minima
 markdown: kramdown
 
-
-# Incluir carpetas adicionales
+# Inclusión de carpetas adicionales
 collections:
   projects:
     output: true
 
-# Build settings
+# Configuración de URLs
 permalink: pretty
 
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
+# Exclusión de archivos de la compilación
 exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
   - Gemfile
   - Gemfile.lock
   - node_modules/
   - vendor
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+# Información personal
+personal_info:
+  name: "Leoncio López"
+  title: "DevOps Automation Engineer"
+  education:
+    - title: "Engineer (8th Sem.)"
+      institution: "University of Los Andes, Merida, Venezuela"
+      year: 1996
+  certifications:
+    - title: "Jira Admin. Part 1 & 2"
+      year: 2019
+    - title: "SonarQube, Install & Analysis"
+      year: 2020
+    - title: "Polyspace for C/C++ Code Verification"
+      institution: "MathWorks"
+      year: 2020
+    - title: "Google IT Automation with Python (Specialization)"
+      institution: "Coursera - Google"
+      year: 2021
+    - title: "DevOps Culture and Mindset"
+      institution: "Coursera - Univ. of California"
+      year: 2021
+  experience:
+    - job_title: "DevOps Automation Engineer"
+      company: "T-Systems Itc Iberia S.A.U."
+      period: "03/2023 – present"
+      responsibilities:
+        - "Design, develop, and deploy Python scripts, API-REST Functions"
+        - "Deployment services using Docker, Kubernetes, Helm"
+        - "Install & Develop automation scripts for Hashicorp Vault"
+        - "Linux, Jfrog Artifactory, GitLab Version Control"
+    - job_title: "IT Delivery & Automation Engineer"
+      company: "HotelBeds Technology, S.L.U."
+      period: "06/2022 – 02/2023"
+      responsibilities:
+        - "Git-Ops, ArgoCD Administration & Deployments"
+        - "Design, develop, and implement Jenkins/CloudBees Pipelines using Yaml, Groovy"
+        - "Docker, Ansible, Kubernetes, Terraform, AWS, Bitbucket, Prometheus"
+  skills:
+    hard_skills:
+      - name: "Python"
+        level: "90%"
+      - name: "C#"
+        level: "70%"
+      - name: "Docker"
+        level: "85%"
+      - name: "Kubernetes"
+        level: "85%"
+      - name: "Jenkins"
+        level: "90%"
+      - name: "SonarQube"
+        level: "90%"
+    soft_skills:
+      - name: "Communication"
+        level: "85%"
+      - name: "Leadership"
+        level: "75%"
