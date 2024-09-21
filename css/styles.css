@@ -149,12 +149,21 @@ p {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: conic-gradient(#3498db var(--progress), #e0e0e0 0);
+    background: conic-gradient(#3498db var(--progress, 0%), #e0e0e0 0);
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    position: relative;
 }
+
+.circular-progress::before {
+    content: attr(data-progress) '%';
+    position: absolute;
+    font-size: 18px;
+    color: #080809;
+}
+
 
 
 /* PROJECTS section */

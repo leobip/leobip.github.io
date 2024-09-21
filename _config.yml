@@ -123,6 +123,6 @@ personal_info:
         level: "90%"
     soft_skills:
       - name: "Communication"
-        level: "85%"
+        level: "85"
       - name: "Leadership"
-        level: "75%"
+        level: "75"
