@@ -21,6 +21,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Space Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leo DevJourneyHub</title>
   <link rel="stylesheet" href="/css/styles.css">
@@ -29,8 +30,7 @@
   <main>
     <header class="centered-header">
       <h1>Leo DevJourneyHub</h1>
-      <h2>"Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding
-</h2>
+      <h2 id="typing-effect" class="cursor" aria-label="Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding"></h2>
       <p><p>Tu puerta de entrada digital a mi trayectoria personal y profesional en el mundo de la tecnología. 
 Explora mi portafolio de proyectos de software, descubre publicaciones interesantes sobre tendencias tecnológicas y conoce la historia detrás del código.
 Este es el lugar donde la pasión se encuentra con el propósito, un proyecto a la vez.</p>
@@ -44,37 +44,47 @@ Este es el lugar donde la pasión se encuentra con el propósito, un proyecto a 
         <h2>DevOps Engineer</h2>
         <p>Soy un ingeniero DevOps apasionado por la tecnología y la programación, con experiencia en bases de datos, automatización, y optimización de procesos. Mi carrera me ha permitido trabajar en múltiples proyectos que combinan desarrollo y operaciones, optimizando tanto sistemas como flujos de trabajo.
 </p>
-        <img src="/images/your-photo.jpg" alt="Tu foto">
+        <img src="/images/devops-loop.jpg" alt="Tu foto">
       </div>
     </section>
 
-    <!-- Sección Projects -->
-    <section class="projects">
-      <h2>Mis Proyectos</h2>
-      <ul>
-        
-          <li>
-            <a href="/projects/2024-08-29-sample-project/">Nombre del Proyecto</a>
-            <span class="date">August 29, 2024</span>
-          </li>
-        
-      </ul>
-    </section>
+    <!-- Content Columns for Projects and Posts -->
+    <div class="content-columns">
+      <!-- Projects Section -->
+      <section class="projects column">
+        <h2>Mis Proyectos</h2>
+        <ul>
+          
+            <li>
+              <a href="/projects/2024-08-29-sample-project/">Nombre del Proyecto</a>
+              <span class="date">August 29, 2024</span>
+            </li>
+          
+        </ul>
+      </section>
 
-    <!-- Sección Posts -->
-    <section class="posts">
-      <h2>Últimas Noticias</h2>
-      <ul>
-        
-          <li>
-            <a href="/jekyll/update/2024/08/29/welcome-to-jekyll/">Welcome to Jekyll!</a>
-            <span class="date">August 29, 2024</span>
-          </li>
-        
-      </ul>
-    </section>
-  
+      <!-- Posts Section -->
+      <section class="posts column">
+        <h2>Últimas Noticias</h2>
+        <ul>
+          
+            <li>
+              <a href="/jekyll/updateeskljrflk/2024/08/29/post-2nd-to-jekyll/">Jekyll 2!</a>
+              <span class="date">August 29, 2024</span>
+            </li>
+          
+            <li>
+              <a href="/jekyll/update/2024/08/29/welcome-to-jekyll/">Welcome to Jekyll!</a>
+              <span class="date">August 29, 2024</span>
+            </li>
+          
+        </ul>
+      </section>
+    </div>
   </main>
+
+  <!-- JavaScript for typing effect -->
+  <script src="/js/typing-effect.js"></script>
 
 </body>
 </html>
