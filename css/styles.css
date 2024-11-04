@@ -1,5 +1,103 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'JetBrains Mono';
+    src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+      url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+/* Estilos del banner del título */
+.title-banner {
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+    padding: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .title-container h1 {
+    font-family: 'JetBrains Mono', sans-serif; /* Fuente moderna */
+    font-size: 2em;
+    font-weight: lighter;
+    font-style: italic;
+    color: #230505; /* Color blanco para contraste */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+  
+  /* Optimización para dispositivos móviles */
+  @media (max-width: 768px) {
+    .title-container h1 {
+      font-size: 2em;
+    }
+  } 
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     line-height: 1.6;
     background: url('/images/background.jpg'); /* Ruta a tu archivo JPG */
     background-size: cover; /* Asegura que cubra toda la pantalla */
@@ -48,17 +146,8 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Ajuste de espaciado entre h1 y h2 en la sección intro */
-.intro h1 {
-    margin-bottom: 10px; /* Reduce el espacio debajo de h1 */
-}
-
-.intro h2 {
-    margin-top: 5px; /* Reduce el espacio superior de h2 */
-}
-
 h1 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-weight: 700;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.5px;
@@ -66,7 +155,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'JetBrains Mono', sans-serif;
     font-weight: 700;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
     letter-spacing: 0.5px;
@@ -82,7 +171,6 @@ h2 {
 
 /* Ajuste de estilos para h1 y h2 en la sección intro */
 .intro h1 {
-    font-family: 'Exo 2', sans-serif; /* Aplica Exo 2 a h1 */
     font-size: 3.5em;
     font-weight: bold;
     color: #f0f0f0;
@@ -90,7 +178,7 @@ h2 {
 }
 
 .intro h2 {
-    font-family: 'Space Grotesk', sans-serif; /* Aplica Roboto a h2 */
+    margin-top: 5px; /* Reduce el espacio superior de h2 */
     font-size: 3em;
     font-weight: normal;
     color: #b3b3b3;
@@ -118,6 +206,19 @@ h2 {
     font-size: 1.8em;
     margin-bottom: 20px;
 }
+
+/* Eliminar viñetas de las listas en Projects y Posts */
+.projects ul,
+.posts ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding-left: 0; /* Elimina el padding izquierdo para alinear correctamente */
+}
+
+.projects ul li,
+.posts ul li {
+    margin-bottom: 10px; /* Ajuste opcional para espacio entre los elementos */
+}
+
 /* Skill Section */
 .skill-container {
     background-color: #252525; /* Fondo oscuro pero distinto del fondo principal para crear contraste */
@@ -179,3 +280,25 @@ h2 {
     font-size: 18px;
     color: #ffffff; /* Texto claro en el centro */
 }
+
+/* Estilos de la sección About */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espacio entre columnas */
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .about-column {
+    flex: 1;
+    min-width: 250px; /* Para asegurar que se mantenga en dos columnas en pantallas más pequeñas */
+    max-width: 45%; /* Ancho máximo de cada columna */
+  }
+  
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  }
+  

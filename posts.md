@@ -6,7 +6,6 @@ permalink: /posts/
 
 <section class="posts-list">
   <div class="container">
-    <h1>Noticias</h1>
     <ul>
       {% for post in site.posts %}
         <li>

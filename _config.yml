@@ -18,6 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+plugins:
+  - jekyll-admin
+
+
 # Información básica del sitio
 title: Leo DevJourneyHub
 subtitle: >

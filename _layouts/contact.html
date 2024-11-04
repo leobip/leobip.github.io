@@ -1,18 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-    {% include nav.html %}
-    <main>
+---
+layout: default
+---
 
-        <!-- ABOUT SECTION -->
-        <section class="about">
-            <div class="about-container">
+<main>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="about-container">
             <div class="about-column">
                 <h3>About Me (English)</h3>
                 <p>{{ site.author.about_en | markdownify }}</p>
@@ -21,87 +15,85 @@
                 <h3>Sobre Mí (Español)</h3>
                 <p>{{ site.author.about_es | markdownify }}</p>
             </div>
-            </div>
-        </section>
+        </div>
+    </section>
+    
+    <!-- PERSONAL INFO -->
+    <section id="personal-info">
+        <div class="personal-container">
         
-        <!-- PERSONAL INFO -->
-        <section id="personal-info">
-            <div class="personal-container">
-            
-            <div class="personal-column">
-                <!-- EDUCATION -->
-                <div class="education">
-                <h3>Education</h3>
-                <ul>
-                    {% for edu in site.personal_info.education %}
-                    <li>{{ edu.title }}, {{ edu.institution }}, {{ edu.year }}</li>
-                    {% endfor %}
+        <div class="personal-column">
+            <!-- EDUCATION -->
+            <div class="education">
+            <h3>Education</h3>
+            <ul>
+                {% for edu in site.personal_info.education %}
+                <li>{{ edu.title }}, {{ edu.institution }}, {{ edu.year }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+    
+            <!-- CERTIFICATIONS -->
+            <div class="certifications">
+            <h3>Certifications</h3>
+            <ul>
+                {% for cert in site.personal_info.certifications %}
+                <li>{{ cert.title }}{% if cert.institution %}, {{ cert.institution }}{% endif %}, {{ cert.year }}</li>
+                {% endfor %}
+            </ul>
+            </div>
+        </div>
+    
+        <div class="personal-column">
+            <!-- EXPERIENCE -->
+            <div class="experience">
+            <h3>Experience</h3>
+            {% for exp in site.personal_info.experience %}
+            <div class="job">
+                <h4>{{ exp.job_title }}</h4>
+                <p>{{ exp.company }} ({{ exp.period }})</p>
+                <ul class="responsibilities">
+                {% for responsibility in exp.responsibilities %}
+                    <li>{{ responsibility }}</li>
+                {% endfor %}
                 </ul>
-                </div>
+            </div>
+            {% endfor %}
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <div class="container skills-container">
         
-                <!-- CERTIFICATIONS -->
-                <div class="certifications">
-                <h3>Certifications</h3>
-                <ul>
-                    {% for cert in site.personal_info.certifications %}
-                    <li>{{ cert.title }}{% if cert.institution %}, {{ cert.institution }}{% endif %}, {{ cert.year }}</li>
-                    {% endfor %}
-                </ul>
-                </div>
-            </div>
-        
-            <div class="personal-column">
-                <!-- EXPERIENCE -->
-                <div class="experience">
-                <h3>Experience</h3>
-                {% for exp in site.personal_info.experience %}
-                <div class="job">
-                    <h4>{{ exp.job_title }}</h4>
-                    <p>{{ exp.company }} ({{ exp.period }})</p>
-                    <ul class="responsibilities">
-                    {% for responsibility in exp.responsibilities %}
-                        <li>{{ responsibility }}</li>
-                    {% endfor %}
-                    </ul>
-                </div>
-                {% endfor %}
+        <!-- Hard Skills -->
+        <div class="skills-category hard-skills">
+            <h3>Hard Skills</h3>
+            {% for skill in site.personal_info.skills.hard_skills %}
+            <div class="skill">
+            <h4>{{ skill.name }}</h4>
+            <div class="progress-bar">
+                <div class="progress" style="width: {{ skill.level }};">
+                <span class="progress-percentage">{{ skill.level }}</span>
                 </div>
             </div>
             </div>
-        </section>
-        
-        <!-- SKILLS SECTION -->
-        <section class="skills">
-            <div class="container skills-container">
-            
-            <!-- Hard Skills -->
-            <div class="skills-category hard-skills">
-                <h3>Hard Skills</h3>
-                {% for skill in site.personal_info.skills.hard_skills %}
-                <div class="skill">
-                <h4>{{ skill.name }}</h4>
-                <div class="progress-bar">
-                    <div class="progress" style="width: {{ skill.level }};">
-                    <span class="progress-percentage">{{ skill.level }}</span>
-                    </div>
-                </div>
-                </div>
-                {% endfor %}
+            {% endfor %}
+        </div>
+    
+        <!-- Soft Skills -->
+        <div class="skills-category soft-skills">
+            <h3>Soft Skills</h3>
+            {% for skill in site.personal_info.skills.soft_skills %}
+            <div class="skill">
+            <h4>{{ skill.name }}</h4>
+            <div class="circular-progress" data-progress="{{ skill.level }}"></div>
             </div>
-        
-            <!-- Soft Skills -->
-            <div class="skills-category soft-skills">
-                <h3>Soft Skills</h3>
-                {% for skill in site.personal_info.skills.soft_skills %}
-                <div class="skill">
-                <h4>{{ skill.name }}</h4>
-                <div class="circular-progress" data-progress="{{ skill.level }}"></div>
-                </div>
-                {% endfor %}
-            </div>
-            </div>
-        </section>
-    </main>
-    {% include footer.html %}
-</body>
-</html>
+            {% endfor %}
+        </div>
+        </div>
+    </section>
+</main>
+{% include footer.html %}

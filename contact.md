@@ -6,9 +6,6 @@ permalink: /contact/
 
 <section class="contact-section">
   <div class="container">
-    <h1>Contacto</h1>
-    <!-- Aquí vamos a incluir la sección About y Personal Info -->
-
     <!-- ABOUT SECTION -->
     <section class="about">
       <div class="about-container">
@@ -99,9 +96,9 @@ permalink: /contact/
       </div>
     </section>
 
+    <!-- CONTACT SECTION -->
     <section class="contact">
       <div class="container">
-        <h1>Contacto</h1>
         <p>Puedes contactarme a través de las siguientes plataformas:</p>
         <ul>
           <li>Email: <a href="mailto:tu-email@example.com">tu-email@example.com</a></li>
@@ -110,7 +107,6 @@ permalink: /contact/
         </ul>
       </div>
     </section>
-
   </div>
 </section>
 

@@ -6,7 +6,6 @@ permalink: /projects/
 
 <section class="projects">
   <div class="container">
-    <h1>Proyectos</h1>
     <ul>
       {% for project in site.projects %}
         <li>
