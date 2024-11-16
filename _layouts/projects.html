@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<body class="{{ page.class }}">
+
+  <main>
+    <section class="intro">
+      <div class="container">
+        <img src="/images/motive-is-building-a-pla-1-min.gif" alt="Tu foto">
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <ul>
+          {% for project in site.projects %}
+            <li>
+              <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+              <p>{{ project.description }}</p>
+              <span class="date">{{ project.date | date: "%B %d, %Y" }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </section>
+  </main>
+</body>

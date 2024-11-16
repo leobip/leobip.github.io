@@ -1,19 +1,8 @@
 ---
-layout: default
-title: "Noticias"
+layout: posts
+class: page-default
+title: "Blog Posts"
 permalink: /posts/
 ---
 
-<section class="posts-list">
-  <div class="container">
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-          <p class="date">{{ post.date | date: "%B %d, %Y" }}</p>
-          <p>{{ post.excerpt }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+Bienvenidos a la página de posts. Aquí encontrarás nuestras publicaciones más recientes.

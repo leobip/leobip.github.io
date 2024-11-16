@@ -23,7 +23,7 @@ plugins:
 
 
 # Información básica del sitio
-title: Leo DevJourneyHub
+title: DevJourneyHub
 subtitle: >
   "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding
 email: leobip27@gmail.com
@@ -31,6 +31,11 @@ description: |
   Tu puerta de entrada digital a mi trayectoria personal y profesional en el mundo de la tecnología. 
   Explora mi portafolio de proyectos de software, descubre publicaciones interesantes sobre tendencias tecnológicas y conoce la historia detrás del código.
   Este es el lugar donde la pasión se encuentra con el propósito, un proyecto a la vez.
+
+
+  Your digital gateway to my personal and professional career in the world of technology. 
+  Explore my portfolio of software projects, discover interesting posts on technology trends, and learn the history behind the code.
+  This is the place where passion meets purpose, one project at a time.
 baseurl: "" # Subpath del sitio, e.g. /blog
 url: "" # Base URL del sitio, e.g. http://example.com
 twitter_username: jekyllrb
