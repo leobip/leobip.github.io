@@ -82,10 +82,6 @@ exclude:
 personal_info:
   name: "Leoncio López"
   title: "DevOps Automation Engineer"
-  education:
-    - title: "Engineer (8th Sem.)"
-      institution: "University of Los Andes, Merida, Venezuela"
-      year: 1996
   certifications:
     - title: "Jira Admin. Part 1 & 2"
       year: 2019
