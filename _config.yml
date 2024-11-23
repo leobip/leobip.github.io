@@ -45,8 +45,10 @@ github_username: leobip27
 author:
   name: "Leoncio López"
   sub_title: DevOps Engineer
-  description: |
-    Soy un ingeniero DevOps apasionado por la tecnología y la programación, con experiencia en bases de datos, automatización, y optimización de procesos. Mi carrera me ha permitido trabajar en múltiples proyectos que combinan desarrollo y operaciones, optimizando tanto sistemas como flujos de trabajo.
+  description_es: |
+    Soy un Ingeniero DevOps apasionado por la tecnología y la programación, con experiencia en bases de datos, automatización, y optimización de procesos. Mi carrera me ha permitido trabajar en múltiples proyectos que combinan desarrollo y operaciones, optimizando tanto sistemas como flujos de trabajo.
+  description_en: |
+    I am a DevOps Engineer passionate about technology and programming, with experience in databases, automation, and process optimization. My career has allowed me to work on multiple projects that combine development and operations, optimizing both systems and workflows.
   about_es: |
     Siempre he sido un apasionado de la tecnología, con un interés especial en la computación.
     Profesionalmente, comencé mi carrera en bases de datos, atraído por su simplicidad y el poder de extraer y analizar información para mejorar procesos.

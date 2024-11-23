@@ -82,6 +82,10 @@
 /* ----------------------------------------- */
 
 body {
+  margin: 0; 
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
   font-family: 'JetBrains Mono', sans-serif;
   line-height: 1.6;
   color: #e7ebed;
@@ -150,7 +154,6 @@ body.page-contact nav ul li a:hover {
   color: #2ecc71; /* Verde brillante en hover */
 }
 
-
 .title-banner {
   background: linear-gradient(90deg, #3498db, #2ecc71);
   padding: 10px 0;
@@ -215,13 +218,102 @@ body.home-page {
   background-size: cover;
 }
 
+
+.container-column {
+  width: 100%;
+  max-width: 2000px; /* Puedes ajustar este valor a lo que prefieras */
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* Contenedor principal de las columnas */
+.description-columns {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+  justify-content: center; 
+  gap: 20px; /* Espacio entre columnas */
+  margin: 0 auto;
+}
+
+/* Cada columna de descripción */
+.description-column {
+  flex: 1 1 45%; /* Ocupa el 45% del ancho disponible como mínimo, pero se ajusta */
+  max-width: 800px; /* Ancho máximo para columnas más grandes */
+  background: rgba(255, 255, 255, 0.0); /* Fondo transparente */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar el texto */
+}
+
+/* Títulos de las columnas */
+.description-column h3 {
+  margin-top: 0;
+  color: #3498db; /* Color distintivo para los títulos */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra para mejorar visibilidad */
+}
+
+/* Texto dentro de las columnas */
+.description-column p {
+  color: #e7ebed; /* Texto en tono oscuro para buena legibilidad */
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6); /* Contraste suave con el fondo */
+  line-height: 1.6; /* Espaciado para mejorar la lectura */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .description-columns {
+    flex-direction: column; /* Apilar columnas verticalmente */
+    justify-content: flex-start; /* Alineación en la parte superior */
+  }
+
+  .description-column {
+    flex: 1 1 100%; /* Ocupa el 100% en pantallas pequeñas */
+    max-width: none; /* Deshabilitar el límite máximo de ancho */
+    margin-bottom: 20px; /* Espacio entre columnas apiladas */
+  }
+}
+
+/* Contenedor para la imagen */
+.image-container-1 {
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.image-container-1 img {
+  width: 50%; /* La imagen ocupa el 100% del contenedor */
+  max-width: 150px; /* El ancho máximo de la imagen se limita a 800px */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Bordes redondeados (opcional) */
+}
+
+
+.image-container {
+  width: 100%; /* El contenedor ocupa todo el ancho disponible */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  margin: 20px 0; /* Espacio arriba y abajo */
+}
+
+.image-container img {
+  width: 100%; /* La imagen ocupa el 100% del contenedor */
+  max-width: 900px; /* El ancho máximo de la imagen se limita a 800px */
+  height: auto; /* Mantiene la relación de aspecto */
+  border-radius: 8px; /* Bordes redondeados (opcional) */
+}
+
+
+
 /* General Pages */
 /* Estilos para páginas distintas al home */
 /* Estilos para páginas distintas al home */
 body.page-default {
-  background-color: #f8f4f4; /* Fondo claro y suave */
+  background: linear-gradient(to bottom, #ffffff, #3498db); /* Degradado de blanco a azul medio */
   color: #333333; /* Texto gris oscuro para buena legibilidad */
 }
+
 
 body.page-default h1, body.page-default h2 {
   color: #2c3e50; /* Azul grisáceo para los títulos */

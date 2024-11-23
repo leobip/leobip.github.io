@@ -7,19 +7,37 @@ layout: default
   <!-- Cabecera con título del sitio y lema -->
   <header class="centered-header">
     <h1>{{ site.title }}</h1>
+    <div class="image-container-1">
+      <img src="/images/inf_loop-ezgif.com-crop.gif" alt="Tu foto">
+    </div>
     <h2 id="typing-effect" class="cursor" aria-label="Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live. - Martin Golding"></h2>
     <p>{{ site.description | markdownify }}</p>
   </header>
 
   <!-- Sección de presentación -->
   <section class="intro">
-    <div class="container">
-      <h1>{{ site.author.name }}</h1>
-      <h2>{{ site.author.sub_title }}</h2>
-      <p>{{ site.author.description }}</p>
-      <img src="/images/devops-loop.jpg" alt="Tu foto">
-    </div>
+    <h1>{{ site.author.name }}</h1>
+    <h2>{{ site.author.sub_title }}</h2>
+    <div class="container-column">
+      <!-- Contenedores en dos columnas para la descripción -->
+      <div class="description-columns">
+        <!-- Descripción en inglés -->
+        <div class="description-column">
+          <h3>About Me (English)</h3>
+          <p>{{ site.author.description_en }}</p>
+        </div>
+    
+        <!-- Descripción en español -->
+        <div class="description-column">
+          <h3>Sobre Mí (Español)</h3>
+          <p>{{ site.author.description_es }}</p>
+        </div>
+      </div>
+    </div>    
   </section>
+  <div class="image-container">
+    <img src="/images/your-photo-old.jpg" alt="Tu foto">
+  </div>
 
   <!-- Columnas de contenido para Proyectos y Publicaciones -->
   <div class="content-columns">
