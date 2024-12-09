@@ -3,21 +3,32 @@ layout: default
 ---
 
 <body class="{{ page.class }}">
-
   <main>
+    <!-- Sección de introducción con imagen -->
     <section class="intro">
       <div class="container">
-        <img src="/images/motive-is-building-a-pla-1-min.gif" alt="Tu foto">
+        <img class="intro-gif" src="/images/word-cloud-software.avif" alt="Tu foto">
       </div>
     </section>
+
+    <!-- Sección de proyectos -->
     <section class="projects">
       <div class="container">
         <ul>
           {% for project in site.projects %}
-            <li>
-              <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-              <p>{{ project.description }}</p>
-              <span class="date">{{ project.date | date: "%B %d, %Y" }}</span>
+            <li class="project-item">
+              <div class="project-content">
+                <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+                <p>{{ project.description }}</p>
+                <span class="date">{{ project.date | date: "%B %d, %Y" }}</span>
+              </div>
+              <div class="project-image-container">
+                {% if project.image %}
+                  <img src="{{ project.image | relative_url }}" alt="Imagen de {{ project.title }}">
+                {% else %}
+                  <img src="/images/proj-default.gif" alt="Imagen por defecto">
+                {% endif %}
+              </div>
             </li>
           {% endfor %}
         </ul>

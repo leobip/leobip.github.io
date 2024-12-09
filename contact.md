@@ -1,7 +1,7 @@
 ---
 layout: contact
 class: page-default
-title: "Contacto"
+title: "About & Contact"
 permalink: /contact/
 ---
 

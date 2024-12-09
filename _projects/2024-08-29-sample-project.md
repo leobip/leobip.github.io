@@ -1,8 +1,18 @@
 ---
 layout: project
-title: "Nombre del Proyecto"
+title: "Python - Json Full Search"
+theme: python
+description: "Function to parse & get dicts, values from json file"
 date: 2024-08-29
-github_url: "https://github.com/tu-usuario/nombre-del-proyecto"
+github_url: "https://github.com/leobip/json-full-search.git"
+image: "/images/devops-loop.jpg"
 ---
 
-Descripción breve de tu proyecto. Puedes incluir detalles sobre tecnologías usadas, desafíos superados, y cualquier otra información relevante.
+Hola ...
+Tal como el nombre lo indica es una función para parsear un archivo json y extraer la clave suministrada, ya sea un valor o un diccionario en el caso de diccionarios anidados, aqui explicare el modo de uso y las mejoras que le vaya realizando.
+
+Es una funcion recursiva.
+
+
+Github: https://github.com/leobip/json-full-search.git
+
