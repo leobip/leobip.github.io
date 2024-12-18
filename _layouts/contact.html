@@ -5,7 +5,7 @@ layout: default
     <!-- Sección de introducción con imagen -->
   <section class="intro">
     <div class="container">
-      <img class="intro-gif" src="/images/about-me.svg" alt="Tu foto">
+      <img class="intro-gif" src="/images/career-development.jpg" alt="Tu foto">
     </div>
   </section>
   
@@ -77,26 +77,26 @@ layout: default
           <div class="skills-category hard-skills">
             <h3>Hard Skills</h3>
             {% for skill in site.personal_info.skills.hard_skills %}
-            <div class="skill">
               <h4>{{ skill.name }}</h4>
               <div class="progress-bar">
                 <div class="progress" style="width: {{ skill.level }};">
                   <span class="progress-percentage">{{ skill.level }}</span>
                 </div>
               </div>
-            </div>
             {% endfor %}
           </div>
 
           <!-- Soft Skills -->
           <div class="skills-category soft-skills">
             <h3>Soft Skills</h3>
-            {% for skill in site.personal_info.skills.soft_skills %}
-            <div class="skill">
-              <h4>{{ skill.name }}</h4>
-              <div class="circular-progress" data-progress="{{ skill.level }}"></div>
+            <div class="soft-skills-container">
+              {% for skill in site.personal_info.skills.soft_skills %}
+              <div class="skill">
+                <h4>{{ skill.name }}</h4>
+                <div class="circular-progress" data-progress="{{ skill.level }}"></div>
+              </div>
+              {% endfor %}
             </div>
-            {% endfor %}
           </div>
         </div>
       </section>
@@ -106,9 +106,9 @@ layout: default
         <div class="container">
           <p>Puedes contactarme a través de las siguientes plataformas:</p>
           <ul>
-            <li>Email: <a href="mailto:tu-email@example.com">tu-email@example.com</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/tu-perfil" target="_blank">Mi Perfil en LinkedIn</a></li>
-            <li>GitHub: <a href="https://github.com/tu-usuario" target="_blank">Mi Perfil en GitHub</a></li>
+            <li>Email: <a href="mailto: ">{{ site.author.email }}</a></li>
+            <li>LinkedIn: <a href="{{ site.author.linkedin }}" target="_blank">{{ site.author.linkedin }}</a></li>
+            <li>GitHub: <a href="{{ site.author.github }}" target="_blank">{{ site.author.github }}</a></li>
           </ul>
         </div>
       </section>
@@ -117,9 +117,9 @@ layout: default
 
   <!-- JavaScript para animar los indicadores circulares -->
   <script>
-    document.querySelectorAll('.circular-progress').forEach(function(elem) {
-      let progress = elem.getAttribute('data-progress');
-      elem.style.setProperty('--progress', progress + '%');
-    });
+    document.querySelectorAll('.circular-progress').forEach((element) => {
+      const progress = element.getAttribute('data-progress');
+      element.style.setProperty('--progress', progress);
+    });    
   </script>
 <body>

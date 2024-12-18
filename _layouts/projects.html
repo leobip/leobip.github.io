@@ -3,36 +3,42 @@ layout: default
 ---
 
 <body class="{{ page.class }}">
-  <main>
-    <!-- Sección de introducción con imagen -->
-    <section class="intro">
-      <div class="container">
-        <img class="intro-gif" src="/images/word-cloud-software.avif" alt="Tu foto">
-      </div>
-    </section>
+  <!-- <div class="page-container">
+    <div class="side-column">
+      <img src="/images/banner-vert-code.jpg" alt="Código Python">
+    </div> -->
 
-    <!-- Sección de proyectos -->
-    <section class="projects">
-      <div class="container">
-        <ul>
-          {% for project in site.projects %}
-            <li class="project-item">
-              <div class="project-content">
-                <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
-                <p>{{ project.description }}</p>
-                <span class="date">{{ project.date | date: "%B %d, %Y" }}</span>
-              </div>
-              <div class="project-image-container">
-                {% if project.image %}
-                  <img src="{{ project.image | relative_url }}" alt="Imagen de {{ project.title }}">
-                {% else %}
-                  <img src="/images/proj-default.gif" alt="Imagen por defecto">
-                {% endif %}
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </section>
-  </main>
+    <main>
+      <!-- Sección de introducción con imagen -->
+      <section class="intro">
+        <div class="container">
+          <img class="intro-gif" src="/images/word-cloud-software.avif" alt="Tu foto">
+        </div>
+      </section>
+
+      <!-- Sección de proyectos -->
+      <section class="projects">
+        <div class="container">
+          <ul>
+            {% for project in site.projects %}
+              <li class="projects-item">
+                <div class="projects-content">
+                  <h2><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h2>
+                  <p>{{ project.description }}</p>
+                  <span class="date">{{ project.date | date: "%B %d, %Y" }}</span>
+                </div>
+                <div class="projects-image-container">
+                  {% if project.thumbnail %}
+                    <img src="{{ project.thumbnail | relative_url }}" alt="Imagen de {{ project.title }}">
+                  {% else %}
+                    <img src="/images/proj-default.gif" alt="Imagen por defecto">
+                  {% endif %}
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </section>
+    </main>
+  <!-- </div> -->
 </body>

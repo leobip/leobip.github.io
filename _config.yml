@@ -44,19 +44,19 @@ github_username: leobip27
 # Información del autor
 author:
   name: "Leoncio López"
-  sub_title: DevOps Engineer
+  sub_title: DevOps Automation Engineer
   description_es: |
-    Soy un Ingeniero DevOps apasionado por la tecnología y la programación, con experiencia en bases de datos, automatización, y optimización de procesos. Mi carrera me ha permitido trabajar en múltiples proyectos que combinan desarrollo y operaciones, optimizando tanto sistemas como flujos de trabajo.
+    Ingeniero DevOps con amplia experiencia en automatización, gestión de bases de datos y optimización de procesos. Especializado en programación Python y desarrollo de arquitecturas de software eficientes y escalables. Apasionado por integrar desarrollo y operaciones, utilizando herramientas como Docker, Kubernetes y Jenkins para optimizar flujos de trabajo mediante la automatización.
   description_en: |
-    I am a DevOps Engineer passionate about technology and programming, with experience in databases, automation, and process optimization. My career has allowed me to work on multiple projects that combine development and operations, optimizing both systems and workflows.
+    DevOps Engineer with extensive experience in automation, database management, and process optimization. Specialized in Python programming and developing efficient, scalable software architectures. Passionate about integrating development and operations, using tools like Docker, Kubernetes, and Jenkins to improve workflows through automation.
   about_es: |
-    Siempre he sido un apasionado de la tecnología, con un interés especial en la computación.
-    Profesionalmente, comencé mi carrera en bases de datos, atraído por su simplicidad y el poder de extraer y analizar información para mejorar procesos.
-    Eventualmente, mi camino me llevó al mundo del DevOps, donde he podido combinar el desarrollo y las operaciones para crear sistemas más eficientes y fiables.
+    Desde que descubrí mi pasión por la tecnología, he explorado distintas áreas que me han llevado a especializarme en DevOps.
+    Empecé mi carrera en bases de datos y programación en VBA y C#, donde aprendí el poder del análisis de datos y la automatización para optimizar procesos.
+    Hoy, combino esa experiencia con el desarrollo de arquitecturas de software robustas y escalables, asegurando que los sistemas sean fiables y eficientes.
   about_en: |
-    I've always been passionate about technology, with a special interest in computing. Professionally, I started in databases, drawn by their simplicity and the power to extract and analyze information to improve processes. Eventually, my journey led me to the world of DevOps, where I've been able to combine development and operations to create more efficient and reliable systems.
+    Since discovering my passion for technology, I've explored various fields that led me to specialize in DevOps. I started with databases and VBA/C# programming, learning the power of data analysis and automation to optimize processes. Today, I combine that experience with developing robust, scalable software architectures, ensuring systems are reliable and efficient.
   email: "leobip27@gmail.com"
-  linkedin: "www.linkedin.com/in/leoncio-lópez-00527474"
+  linkedin: "https://www.linkedin.com/in/leoncio-lópez-00527474"
   github: "https://github.com/leobip"
   twitter: "https://twitter.com/tu-usuario"
   location: "Madrid, España"
@@ -69,6 +69,7 @@ markdown: kramdown
 collections:
   projects:
     output: true
+    permalink: /projects/:name/
 
 # Configuración de URLs
 permalink: pretty
@@ -98,38 +99,115 @@ personal_info:
     - title: "DevOps Culture and Mindset"
       institution: "Coursera - Univ. of California"
       year: 2021
+    - title: "Advanced Docker Principles: Docker for Microservices Strategies"
+      institution: "Skillsoft"
+      Year: 2023
+    - title: "Advanced Docker: Exploring Advanced Docker Principles & Practices"
+      institution: "Skillsoft"
+      Year: 2023
+    - title: "AWS Partner: Accreditation (Technical)"
+      institution: "AWS Training & Certification"
+      Year: 2023
+    - title: "Well-Architected Proficient"
+      institution: "AWS Training & Certification"
+      Year: 2023
+    - title: "PRINCE2® Foundation training + exam (7th Edition)"
+      institution: "Training360 Kft"
+      Year: 2024
+    - title: "Advanced PYTHON with CLOUD Computing"
+      institution: "Training360 Kft"
+      Year: 2024
   experience:
     - job_title: "DevOps Automation Engineer"
       company: "T-Systems Itc Iberia S.A.U."
-      period: "03/2023 – present"
+      period: "03/2023 – Present"
       responsibilities:
-        - "Design, develop, and deploy Python scripts, API-REST Functions"
-        - "Deployment services using Docker, Kubernetes, Helm"
-        - "Install & Develop automation scripts for Hashicorp Vault"
-        - "Linux, Jfrog Artifactory, GitLab Version Control"
+        - "Design, develop, and deploy Python scripts and RESTful API functions to automate workflows."
+        - "Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability."
+        - "Create automation scripts for HashiCorp Vault to streamline secrets management."
+        - "Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control."
+
     - job_title: "IT Delivery & Automation Engineer"
       company: "HotelBeds Technology, S.L.U."
-      period: "06/2022 – 02/2023"
+      period: "07/2022 – 02/2023"
       responsibilities:
-        - "Git-Ops, ArgoCD Administration & Deployments"
-        - "Design, develop, and implement Jenkins/CloudBees Pipelines using Yaml, Groovy"
-        - "Docker, Ansible, Kubernetes, Terraform, AWS, Bitbucket, Prometheus"
+        - "Implement GitOps practices and manage deployments with ArgoCD."
+        - "Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery."
+        - "Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services."
+        - "Monitor and optimize performance using Prometheus and Bitbucket."
+
+    - job_title: "DevOps Consultant"
+      company: "Vermont Solutions"
+      period: "12/2021 – 06/2022"
+      responsibilities:
+        - "Administer and deploy applications in OpenShift environments."
+        - "Develop and maintain Jenkins/CloudBees pipelines using YAML and Groovy for continuous integration."
+        - "Write automation scripts in Python, Shell, and Bash to enhance operational efficiency."
+        - "Utilize Docker, Ansible, and Kubernetes for container orchestration and deployment."
+        - "Conduct static code analysis using SonarQube to ensure code quality."
+
+    - job_title: "GitLab CI/CD Admin & Developer"
+      company: "Capitole Consulting, S.L."
+      period: "08/2021 – 12/2021"
+      responsibilities:
+        - "Design and implement CI/CD pipelines and GitLab Runners using YAML and Groovy."
+        - "Develop Python and Shell scripts to automate deployment tasks."
+        - "Monitor GitLab statistics and system health using Grafana."
+        - "Manage remote connections and automate tasks with SSH scripts."
+
+    - job_title: "Technologies and Support Engineer"
+      company: "GMV, Innovating Solutions"
+      period: "03/2019 – 07/2021"
+      responsibilities:
+        - "Provide specialized user support and develop applications in Python, Ruby, and VBA."
+        - "Perform static code analysis using tools like SonarQube, MathWorks Polyspace, and Sci-Tools Understand."
+        - "Develop Python scripts to interact with SonarQube's REST API for data extraction and reporting."
+        - "Automate CI/CD processes with Jenkins, Docker, and Git/SVN."
+        - "Develop SQL queries and ETL processes using Talend Open Studio."
+        - "Configure and run code analysis in MathWorks Polyspace for C/C++ projects."
+
+    - job_title: "Systems Manager"
+      company: "Alfa Sistemas, C.A."
+      period: "2003 – 2018"
+      responsibilities:
+        - "Develop and support database applications (Access, VBA, C#) for time management and project control for up to 10,000 users."
+        - "Design, install, and configure computer networks, including CISCO routers and switches."
+        - "Develop custom Python and VBA applications to meet client-specific needs."
+        - "Administer SQL Server databases, including stored procedures, query design, and automation tasks."
+        - "Provide remote network support using tools like TeamViewer, Virtual PC, Hyper-V, and VMware."
   skills:
     hard_skills:
-      - name: "Python"
+      - name: "Python Programming"
         level: "90%"
-      - name: "C#"
-        level: "70%"
-      - name: "Docker"
+      - name: "Version Control (Git, SVN, Bitbucket, GitLab)"
         level: "85%"
-      - name: "Kubernetes"
+      - name: "Docker & Containerization"
+        level: "90%"
+      - name: "Kubernetes, OpenShift, ArgoCD"
         level: "85%"
-      - name: "Jenkins"
+      - name: "CI/CD Pipelines (Jenkins/CloudBees)"
         level: "90%"
-      - name: "SonarQube"
+      - name: "Cloud Platforms (AWS)"
+        level: "80%"
+      - name: "Automation Tools (Ansible, Terraform)"
+        level: "85%"
+      - name: "Code Quality (SonarQube, Polyspace, Static Analysis, Code Matrics)"
         level: "90%"
+      - name: "Shell Scripting (Bash, Linux)"
+        level: "85%"
+
     soft_skills:
-      - name: "Communication"
-        level: "85"
+      - name: "Effective Communication"
+        level: "90%"
+      - name: "Problem Solving"
+        level: "90%"
+      - name: "Team Collaboration"
+        level: "90%"
       - name: "Leadership"
-        level: "75"
+        level: "90%"
+      - name: "Time Management"
+        level: "95%"
+      - name: "Adaptability"
+        level: "100%"
+      - name: "Critical Thinking"
+        level: "85%"

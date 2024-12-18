@@ -88,17 +88,17 @@ body {
   max-width: 100%;
   font-family: 'JetBrains Mono', sans-serif;
   line-height: 1.6;
-  color: #e7ebed;
-  background: url('/images/background.jpg') no-repeat center center fixed;
-  background-size: cover;
+  /* color: #e7ebed;
+  background: url('/images/background-home.jpg') no-repeat center center fixed;
+  background-size: cover; */
 }
 
-h1, h2 {
+h1, h2 , p{
   font-family: 'JetBrains Mono', sans-serif;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.5px;
-  color: #e7ebed;
+  color: f0f0f0;
 }
 
 .container {
@@ -274,8 +274,6 @@ body.page-contact nav ul li a:hover {
   }
 }
 
-
-
 /* Optimización para dispositivos móviles */
 @media (max-width: 768px) {
   .title-container h1 {
@@ -329,12 +327,25 @@ body.page-contact nav ul li a:hover {
   margin-bottom: 20px;
 }
 
+/* Efecto al pasar el cursor sobre el texto del footer */
+.site-footer p:hover {
+  color: #f39c12;           /* Color diferente al pasar el cursor */
+  transition: color 0.3s ease;
+}
 
 /* Home */
 body.home-page {
-  background: url('/images/background.jpg') no-repeat center center fixed;
+  background: url('/images/background-home.jpg') no-repeat center center fixed;
   background-size: cover;
+  color: #f6f6f6;
 }
+
+/* Fondo específico para las páginas individuales de proyectos */
+/* body.project-page {
+  background: url('/images/project_back02.jpg') no-repeat center center fixed;
+  background-size: cover;
+} */
+
 
 .container-column {
   width: 100%;
@@ -456,10 +467,9 @@ body.home-page {
 
 /* General Pages */
 /* Estilos para páginas distintas al home */
-/* Estilos para páginas distintas al home */
 body.page-default {
-  background: linear-gradient(to bottom, #ffffff, #3498db); /* Degradado de blanco a azul medio */
-  color: #333333; /* Texto gris oscuro para buena legibilidad */
+  background: linear-gradient(to bottom, #3498db, #333333); /* Degradado de blanco a azul medio */
+  color: #f6f6f6; /* Texto gris oscuro para buena legibilidad */
 }
 
 
@@ -484,7 +494,49 @@ body.page-default p {
   line-height: 1.8; /* Mejora el espaciado entre líneas */
   font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
   margin-bottom: 20px; /* Espaciado entre párrafos */
+  color: #e7ebed;
 }
+
+/* Contenedor principal */
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;       /* Hace que las columnas se estiren verticalmente */
+  gap: 400px;                  /* Espacio entre columnas y contenido */
+  max-width: 100%;            /* Ocupa todo el ancho de la página */
+  height: 100vh;              /* Ocupa el 100% de la altura de la ventana */
+  margin: 0 auto;
+}
+
+/* Columnas laterales */
+.side-column {
+  width: 60px;                /* Ancho más estrecho para las columnas */
+  /* background: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad del 80% */           /* Fondo negro */
+  padding: 0;                 /* Elimina padding para que la imagen ocupe toda la columna */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0;           /* Elimina el borde redondeado */
+}
+
+/* Imágenes dentro de las columnas */
+.side-column img {
+  width: 100%;                /* Ancho completo del contenedor */
+  height: 100%;               /* Ocupa toda la altura de la columna */
+  object-fit: cover;          /* Escala la imagen para cubrir el contenedor sin distorsionarse */
+  opacity: 0,1;
+}
+
+/* Contenido principal */
+.main-content {
+  flex: 1;                    /* El contenido principal ocupa el espacio restante */
+  background: #fff;           /* Fondo blanco */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;           /* Permite desplazamiento si el contenido es muy largo */
+}
+
 
 /* Botones para páginas */
 body.page-default .button {
@@ -505,7 +557,7 @@ body.page-default .button:hover {
 /* Bordes y decoraciones para cajas */
 body.page-default .box {
   background-color: #ffffff; /* Fondo blanco puro */
-  color: #333333; /* Texto gris oscuro */
+  color: #f6f6f6; /* Texto gris oscuro */
   border: 1px solid #ddd; /* Borde claro */
   border-radius: 8px;
   padding: 20px;
@@ -531,8 +583,7 @@ body.page-default .box {
   gap: 30px;
 }
 
-/* Elemento individual del proyecto */
-.project-item {
+.projects-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -543,70 +594,109 @@ body.page-default .box {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-item:hover {
+.projects-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Contenido del proyecto */
-.project-content {
+/* Contenido del proyectos */
+.projects-content {
   flex: 1;
   color: #fff;
   padding-right: 20px;
 }
 
-.project-content h2 a {
+.projects-content h2 a {
   color: #f1c40f;
   text-decoration: none;
   font-size: 1em;
 }
 
-.project-content p {
+.projects-content p {
   margin: 10px 0;
   line-height: 1.5;
 }
 
-.project-content .date {
+.projects-content .date {
   font-size: 0.9em;
   opacity: 0.8;
 }
 
-/* Contenedor de la imagen del proyecto */
-.project-image-container {
+/* Contenedor de la imagen del proyecto en la lista de la pagina proyectos */
+.projects-image-container {
   flex-shrink: 0;
 }
 
-.project-image-container img {
+.projects-image-container img {
   width: 150px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Contenedor de la imagen en la página individual */
+.project-banner img {
+  display: block;
+  margin: 20px auto;
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenido del proyecto */
+.project-content {
+  color: #000000;  /* Color gris oscuro */
+  /* text-align: center; */
+  padding: 20px;
+}
+
+.project-title {
+  font-size: 2em;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.project-date {
+  font-size: 1em;
+  color: #f6f6f6;  /* Un tono ligeramente más claro de gris */
+  margin-bottom: 20px;
+}
+
+.project-content p {
+  font-size: 1.1em;
+  /* font-weight: bold; */
+  line-height: 1.6;
+  color: #000000;
+}
+
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
-  .project-item {
+  .project-banner img {
+    max-width: 100%;
+  }
+
+  .projects-item {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .project-content {
+  .projects-content {
     padding-right: 0;
     margin-bottom: 15px;
   }
 
-  .project-image-container img {
+  .projects-image-container img {
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
   }
 }
-.project-image {
+.projects-image {
   display: block;
   margin: 20px auto; /* Centrada y margen */
   max-width: 100%;
   height: auto;
 }
-
 
 /* Estilos de la sección About */
 .about-container {
@@ -646,6 +736,11 @@ body.page-default .box {
   color: #ffffff;
 }
 
+/* Separación entre categorías de habilidades */
+.skills-category {
+  margin-bottom: 50px; /* Espacio adicional entre hard skills y soft skills */
+}
+
 /* Progress Bars */
 .progress-bar {
   background-color: #3a3a3a; /* Fondo oscuro para la barra */
@@ -672,11 +767,27 @@ body.page-default .box {
 }
 
 /* Circular Progress */
+/* Contenedor para las habilidades blandas */
+.soft-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilo para cada habilidad */
+.skill {
+  width: 45%; /* Ajusta el ancho según sea necesario */
+  text-align: center;
+}
+
+/* Circular Progress */
 .circular-progress {
+  --progress: 0;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background: conic-gradient(#2ecc71 var(--progress, 0%), #3a3a3a 0); /* Combina verde y gris oscuro */
+  background: conic-gradient(#2ecc71 var(--progress), #3a3a3a 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -689,5 +800,42 @@ body.page-default .box {
   content: attr(data-progress) '%';
   position: absolute;
   font-size: 18px;
-  color: #ffffff; /* Texto claro en el centro */
+  color: #ffffff;
+}
+
+/* Actualizar el progreso basado en el atributo data-progress */
+.circular-progress[data-progress] {
+  --progress: calc(var(--data-progress) * 1%);
+}
+
+
+.back-to-projects {
+  text-align: center;      /* Centra el botón horizontalmente */
+  margin-top: 40px;        /* Espacio superior para separar el botón del contenido */
+}
+
+.back-to-projects .btn {
+  display: inline-block;   /* Hace que el enlace se comporte como un botón */
+  padding: 12px 24px;      /* Espaciado interno para un botón más grande */
+  background-color: #2ecc71; /* Color de fondo verde */
+  color: #fff;             /* Texto blanco */
+  font-size: 1.1em;        /* Tamaño de fuente ligeramente más grande */
+  font-weight: bold;       /* Texto en negrita */
+  text-decoration: none;   /* Elimina el subrayado del enlace */
+  border-radius: 5px;      /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  transition: background-color 0.3s, transform 0.2s; /* Efectos de transición */
+}
+
+/* Efecto hover para el botón */
+.back-to-projects .btn:hover {
+  background-color: #27ae60; /* Cambia a un tono de verde más oscuro al pasar el puntero */
+  transform: translateY(-3px); /* Eleva el botón ligeramente */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Efecto de clic */
+.back-to-projects .btn:active {
+  transform: translateY(0); /* Devuelve el botón a su posición original */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra original */
 }
