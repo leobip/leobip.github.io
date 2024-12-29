@@ -41,7 +41,7 @@ layout: default
 
             <!-- CERTIFICATIONS -->
             <div class="certifications">
-              <h3>Certifications</h3>
+              <h4><u>Certifications</u><h4>
               <ul>
                 {% for cert in site.personal_info.certifications %}
                   <li>{{ cert.title }}{% if cert.institution %}, {{ cert.institution }}{% endif %}, {{ cert.year }}</li>
@@ -56,7 +56,7 @@ layout: default
               <h3>Experience</h3>
               {% for exp in site.personal_info.experience %}
               <div class="job">
-                <h4>{{ exp.job_title }}</h4>
+                <h4><u>{{ exp.job_title }}</u></h4>
                 <p>{{ exp.company }} ({{ exp.period }})</p>
                 <ul class="responsibilities">
                   {% for responsibility in exp.responsibilities %}
@@ -77,7 +77,7 @@ layout: default
           <div class="skills-category hard-skills">
             <h3>Hard Skills</h3>
             {% for skill in site.personal_info.skills.hard_skills %}
-              <h4>{{ skill.name }}</h4>
+              <p>{{ skill.name }}</p>
               <div class="progress-bar">
                 <div class="progress" style="width: {{ skill.level }};">
                   <span class="progress-percentage">{{ skill.level }}</span>
@@ -92,7 +92,7 @@ layout: default
             <div class="soft-skills-container">
               {% for skill in site.personal_info.skills.soft_skills %}
               <div class="skill">
-                <h4>{{ skill.name }}</h4>
+                <p>{{ skill.name }}</p>
                 <div class="circular-progress" data-progress="{{ skill.level }}"></div>
               </div>
               {% endfor %}

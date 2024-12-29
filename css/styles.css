@@ -75,11 +75,55 @@
   font-display: swap;
 }
 
+/* ----------------------------------------- */
+/* Lenguajes                 */
+/* ----------------------------------------- */
+
+/* Estilo para párrafos en español con icono de bandera */
+p[lang="es"] {
+  border-left: 5px solid #1e90ff;
+  padding: 10px 10px 10px 40px; /* Espacio para el icono */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+p[lang="es"]::before {
+  content: url('ruta/a/bandera-es.png'); /* Ruta a la imagen de la bandera de España */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Estilo para párrafos en inglés con icono de bandera */
+p[lang="en"] {
+  border-left: 5px solid #ff8c00;
+  padding: 10px 10px 10px 40px; /* Espacio para el icono */
+  margin-bottom: 10px;
+  position: relative;
+}
+
+p[lang="en"]::before {
+  content: url('ruta/a/bandera-en.png'); /* Ruta a la imagen de la bandera del Reino Unido o EE. UU. */
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
 
 
 /* ----------------------------------------- */
 /* Estilos globales                  */
 /* ----------------------------------------- */
+
+.gradient-separator {
+  border: none;
+  height: 6px; /* Altura de la línea */
+  width: 30%; /* Ancho de la línea */
+  margin: 20px auto; /* Espaciado vertical y centrado horizontal */
+  background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado de colores */
+  border-radius: 5px; /* Bordes redondeados para un acabado más suave */
+}
 
 body {
   margin: 0;
@@ -474,7 +518,7 @@ body.page-default {
 
 
 body.page-default h1, body.page-default h2 {
-  color: #2c3e50; /* Azul grisáceo para los títulos */
+  color: #cad7e1; /* Azul grisáceo para los títulos */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra ligera para destacar */
 }
 
@@ -706,6 +750,19 @@ body.page-default .box {
   justify-content: space-between;
   margin-top: 20px;
 }
+.contact-section h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.contact-section h4 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  color: #bebecc;
+  /* text-decoration: underline; */
+}
+
 
 .about-column {
   flex: 1;
