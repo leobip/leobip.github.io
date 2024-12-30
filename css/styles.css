@@ -88,7 +88,7 @@ p[lang="es"] {
 }
 
 p[lang="es"]::before {
-  content: url('ruta/a/bandera-es.png'); /* Ruta a la imagen de la bandera de España */
+  /* content: url('/images/esp-ico.png'); */
   position: absolute;
   left: 10px;
   top: 50%;
@@ -104,7 +104,7 @@ p[lang="en"] {
 }
 
 p[lang="en"]::before {
-  content: url('ruta/a/bandera-en.png'); /* Ruta a la imagen de la bandera del Reino Unido o EE. UU. */
+  /* content: url('/images/eng-ico.webp');  */
   position: absolute;
   left: 10px;
   top: 50%;
@@ -763,7 +763,6 @@ body.page-default .box {
   /* text-decoration: underline; */
 }
 
-
 .about-column {
   flex: 1;
   min-width: 250px; /* Para asegurar que se mantenga en dos columnas en pantallas más pequeñas */
@@ -774,6 +773,30 @@ body.page-default .box {
   .about-container {
     flex-direction: column;
   }
+}
+
+.download-cv {
+  background: linear-gradient(145deg, #007BFF, #0056b3); /* Gradiente con efecto de luz */
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4), -4px -4px 10px rgba(255, 255, 255, 0.2); /* Sombra 3D */
+  transition: all 0.3s ease-in-out;
+}
+
+.download-cv:hover {
+  background: linear-gradient(145deg, #0056b3, #007BFF); /* Cambia el gradiente al pasar el mouse */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5), -2px -2px 8px rgba(255, 255, 255, 0.2); /* Ajusta la sombra */
+  transform: translateY(-2px); /* Levanta el botón ligeramente */
+}
+
+.download-cv:active {
+  transform: translateY(2px); /* Presiona el botón hacia abajo */
+  box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.5), inset -4px -4px 8px rgba(255, 255, 255, 0.2); /* Sombra interna */
 }
 
 

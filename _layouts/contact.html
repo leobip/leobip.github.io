@@ -9,6 +9,17 @@ layout: default
     </div>
   </section>
   
+  <section class="about-section", style="text-align: center">
+    <div class="container">
+      <h2 lang="es">Bienvenido a mi Portafolio</h2>
+      <p lang="es">Esta página destaca información clave sobre mi trayectoria profesional, similar a lo que puedes encontrar en mi LinkedIn. Si estás interesado en información más detallada, incluyendo proyectos adicionales, referencias y certificaciones, siéntete libre de descargar mi CV completo haciendo clic en el botón de abajo. (Protegido con contraseña).</p>
+    <div class="container">
+      <h2 lang="en">Welcome to My Portfolio</h2>
+      <p lang="en">This page highlights key information about my professional background, similar to what you can find on my LinkedIn. If you’re interested in more detailed information, including additional projects, references, and certifications, feel free to download my full CV by clicking the button below. (Password Protected.).</p>
+    </div>
+    <button class="download-cv" onclick="promptForPassword()">🔒 Download Full CV (PDF)</button>
+  </section>  
+
   <section class="contact-section">
     <div class="container">
       <!-- ABOUT SECTION -->
@@ -120,6 +131,14 @@ layout: default
     document.querySelectorAll('.circular-progress').forEach((element) => {
       const progress = element.getAttribute('data-progress');
       element.style.setProperty('--progress', progress);
-    });    
+    });
+    function promptForPassword() {
+      const password = prompt("Please enter the password to download the CV, If you don't have it, please write me an email:");
+      if (password === "cv-lllp-122023") {
+        window.location.href = "/CV-lllp-122023.pdf";
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    };     
   </script>
 <body>
