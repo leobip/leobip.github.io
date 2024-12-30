@@ -152,6 +152,12 @@ h1, h2 , p{
   padding: 20px;
 }
 
+.container-intro {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
 
 /* ----------------------------------------- */
 /* Cabecera y Títulos                        */
