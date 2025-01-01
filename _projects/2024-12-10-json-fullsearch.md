@@ -10,7 +10,8 @@ github_url: https://github.com/leobip/json-full-search.git
 image: "/images/projects/2024-12-10-python-library.png"
 ---
 
-## JSon Full Search
+## JSon Full Search 
+![json-python](/images/projects/2024-12-10-python-json-small.jpg)
 ### Descripción:
 Tal como el nombre lo indica es una función para parsear un archivo json y extraer la clave suministrada, ya sea un valor o un diccionario en el caso de diccionarios anidados, aqui explicare el modo de uso y las mejoras que le vaya realizando.
 Es una funcion recursiva que puede recorrer archivos json, diccionarios anidados y extraer un valor o incluso diccionario/s anidados segun una clave suministrada.
