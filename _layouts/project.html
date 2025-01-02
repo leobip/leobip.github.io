@@ -4,13 +4,13 @@ layout: default
 <body class="{{ page.class }}">
     <article class="project-page">
         <header class="project-header">
-            <h1 class="project-title">{{ page.title }}</h1>
-            <p class="project-date">{{ page.date | date: "%B %d, %Y" }}</p>
             {% if page.image %}
             <div class="project-banner">
                 <img src="{{ page.image }}" alt="{{ page.title }}">
             </div>
             {% endif %}
+            <h1 class="project-title">{{ page.title }}</h1>
+            <p style="text-align: center", class="project-content">{{ page.date | date: "%B %d, %Y" }}</p>
         </header>
 
         <section class="project-content">
