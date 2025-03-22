@@ -29,11 +29,9 @@ For this guide, we will use the **Community Edition**.
 
 ---
 
-## Database Support in SonarQube
-
+### Database Support in SonarQube
 ### Embedded Database (H2)
 By default, SonarQube **Community Edition** comes with an embedded **H2 database**. However, this database is only intended for **evaluation and personal/local usage**, as it is **not recommended for production** due to size & data scalability limitations.
-
 ### Supported External Databases
 For a **stable and production-ready** deployment, SonarQube supports the following databases:
 
@@ -44,13 +42,24 @@ For a **stable and production-ready** deployment, SonarQube supports the followi
 #### SonarQube Database Configuration Guides:
 - https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/
 ## Installing SonarQube Locally  
+* Prerequisite:
+Before setting up SonarQube, ensure that Docker & docker-compose is installed on your machine. You can find the complete installation guide on the official Docker website, Docker Installation Guide:  https://docs.docker.com/engine/install/
 
-To set up SonarQube locally, we will use Docker Compose, considering future additions of tools and services to the local environment. This setup allows us to configure and manage multiple services efficiently from a `docker-compose.yaml` file in the root directory.  
-For demonstration purposes, I will also add a `Dockerfile` inside the `sonarqube/` folder so you can explore the installation process using this approach.  
-Docker makes it easy to run SonarQube without complex configurations.  **
+* SonarQube Installation
+
+To deploy SonarQube locally, we will use Docker Compose. This approach allows for future integration of additional tools and services within the local development environment. Using Docker Compose simplifies service configuration and management through a docker-compose.yaml file located in the project’s root directory.
+
+Docker significantly simplifies the process of running SonarQube without requiring complex manual configurations.
+For reference, the SonarQube page on Docker Hub (https://hub.docker.com/_/sonarqube)  provides links to repositories with example Dockerfile and docker-compose.yaml configurations, and instructions to install and run SonarQube with simplest command like:
+
+```
+docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+```
+You can then browse to http://localhost:9000 or http://host-ip:9000 in your web browser to access the web interface.
+
 
 ### Bonus: **HELM** - Installation with PostgreSQL Included  
-For Kubernetes users, SonarQube can be installed using Helm with a **PostgreSQL database included**. Check out the official Helm package:  
+For Kubernetes users, SonarQube can be installed using Helm with a **PostgreSQL database included**. Check out the official Helm package:  (here you can find different versions at Artifact Hub)
 🔗 [SonarQube Helm Chart](https://artifacthub.io/packages/helm/sonarqube/sonarqube)  
 
 
@@ -64,54 +73,116 @@ local-dev-environment/
 │   ├── data/                   # Data storage
 │   ├── logs/                   # Log files
 │   ├── extensions/             # Plugins and extensions
-│   ├── Dockerfile              # SonarQube Dockerfile
 │
 ├── docker-compose.yaml         # Docker Compose for multiple services
 ...
 ```
 
 
-
-* Dockerfile 
-
-```
-FROM sonarqube:community
-LABEL maintainer="Your Name <your.email@example.com>"
-
-# Set working directory
-WORKDIR /opt/sonarqube
-
-# Expose necessary ports
-EXPOSE 9000
-
-# Copy configuration files if needed
-COPY conf/ sonar.properties /opt/sonarqube/conf/
-
-# Run SonarQube
-CMD ["bin/run.sh"]
-
-```
-
-
 * docker-compose.yaml (at project root)
 
 ```
-
 services:
   sonarqube:
-    build: ./sonarqube
-    container_name: sonarqube
-    ports:
-      - "9000:9000"
+    image: sonarqube:community # We are using the latest community version, it could also be the lts-community -(Long Term Support)
+    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
+    depends_on:
+      - sonar_db
     environment:
-      - SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true
+      SONAR_JDBC_URL: jdbc:postgresql://sonar_db:5432/sonar
+      SONAR_JDBC_USERNAME: sonar
+      SONAR_JDBC_PASSWORD: sonar
+    ports:
+      - "9001:9000"
     volumes:
-      - ./sonarqube/data:/opt/sonarqube/data
-      - ./sonarqube/logs:/opt/sonarqube/logs
-      - ./sonarqube/extensions:/opt/sonarqube/extensions
-    restart: unless-stopped
+      - sonarqube_conf:/opt/sonarqube/conf
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_temp:/opt/sonarqube/temp
+
+  sonar_db:
+    image: postgres:13
+    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonar
+      POSTGRES_DB: sonar
+    volumes:
+      - sonar_db:/var/lib/postgresql
+      - sonar_db_data:/var/lib/postgresql/data
+
+volumes:
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+  sonarqube_temp:
+  sonar_db:
+  sonar_db_data:
 
 ```
+
+### Automatic Backup of the SonarQube Database
+Even though we configured restart: unless-stopped, ensuring that data persists after a reboot, in our local environment, it's good practice to have a backup strategy. Below is a solution using a backup service.
+
+#### Adding a Backup Service
+* Add this code to the docker-compose.yaml 
+
+```
+  sonar_backup:
+    image: postgres:13
+    depends_on:
+      - sonar_db
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+    entrypoint: ["/bin/sh", "-c", "while true; do /opt/sonarqube/data/backup_db.sh; sleep 86400; done"]
+```
+
+
+* Backup Script
+
+	Create the following script inside sonarqube/data/backup_db.sh:
+
+
+```
+#!/bin/bash
+
+# Configuration
+BACKUP_DIR="/opt/sonarqube/data/backups"
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+BACKUP_FILE="$BACKUP_DIR/sonarqube_db_$TIMESTAMP.sql"
+
+# Create backup directory if it does not exist
+mkdir -p $BACKUP_DIR
+
+# Perform PostgreSQL backup
+PGPASSWORD="sonar" pg_dump -h sonar_db -U sonar -d sonar > $BACKUP_FILE
+
+# Clean up old backups (optional, keep only the last 5 backups)
+ls -tp $BACKUP_DIR | grep -v '/$' | tail -n +6 | xargs -I {} rm -- "$BACKUP_DIR/{}"
+
+echo "Backup completed: $BACKUP_FILE"
+```
+
+
+* Grant Execution Permission
+
+	Run the following command to make the script executable:
+
+```
+chmod +x sonarqube/data/backup_db.sh
+```
+
+### Conclusion
+
+* SonarQube and PostgreSQL are configured with persistent storage.
+
+* Containers automatically restart unless manually stopped.
+ 
+* A backup service is set up to create database backups automatically.
+
+This setup ensures a robust SonarQube environment for local development. 🚀
 
 
 ### Running SonarQube
@@ -131,11 +202,16 @@ docker-compose build
 docker-compose up -d
 
 ```
+![compose-creation](/images/projects/2025-03-20-docker-compose-creation.jpg)
 
 
 * Access SonarQube UI
 
-		Open http://localhost:9000 in your browser.
+		Open http://localhost:9001 in your browser.
+
+
+![sonar-login](/images/projects/2025-03-20-sonar-login.jpg)
+
 
 * Login Credentials
 
