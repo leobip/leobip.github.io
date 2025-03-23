@@ -9,7 +9,7 @@ image: "/images/projects/2025-03-20-sonarqube.png"
 # SonarQube & SonarLint
 
 ## Introduction
-
+In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.
 ### What is SonarQube?
 
 [SonarQube](https://www.sonarqube.org/) is a powerful static code analysis tool that helps developers identify bugs, security vulnerabilities, and code smells in their projects. It provides detailed insights to improve code quality and maintainability.
@@ -25,7 +25,21 @@ For this guide, we will use the **Community Edition**.
 
 ### What is SonarLint?
 
-[SonarLint](https://www.sonarlint.org/) is an IDE plugin that provides real-time linting and code analysis. It helps developers catch issues early in the development process, ensuring consistent and high-quality code. It can be confiugured to work alone or with connection to SonarQube profiles ), I will explain it later.
+[SonarLint](https://www.sonarlint.org/) is an IDE plugin that provides real-time linting and code analysis. It helps developers catch issues early in the development process, ensuring consistent and high-quality code. It can be confiugured to work alone or with connection to SonarQube profiles, It functions as an extension of SonarQube when connected to the server.
+
+#### Connection between SonarLint and SonarQube
+
+* SonarLint can operate in two modes:
+
+	* Standalone mode: Works independently in the IDE.
+	* Connected mode: Synchronizes with a SonarQube server to share rules and configurations.
+
+* To connect SonarLint with SonarQube:
+
+	* Ensure that SonarQube is running.
+	* Install the SonarLint plugin in your IDE.
+	* Add the SonarQube URL in the SonarLint configuration.
+	* Authenticate with a SonarQube token.
 
 ---
 
@@ -123,9 +137,19 @@ volumes:
 
 ```
 
-### Automatic Backup of the SonarQube Database
+### Automatic Backup of the SonarQube Database (Optional)
 Even though we configured restart: unless-stopped, ensuring that data persists after a reboot, in our local environment, it's good practice to have a backup strategy. Below is a solution using a backup service.
 
+#### Manual DB Backup
+* To back up the PostgreSQL database:
+```
+docker exec -t postgres pg_dumpall -c -U sonar > backup.sql
+```
+
+* To restore:
+```
+docker exec -i postgres psql -U sonar -d sonarqube < backup.sql
+```
 #### Adding a Backup Service
 * Add this code to the docker-compose.yaml 
 
@@ -217,3 +241,76 @@ docker-compose up -d
 
 		Username: admin
 		Password: admin
+
+
+## Installing and Configuring SonarQube for IDE (fromerly SonarLint)
+
+### Installation
+
+##### To install SonarLint in your IDE:
+
+* VS Code: Install the "SonarLint" extension from the Extensions Marketplace.
+
+* IntelliJ IDEA: Install the "SonarLint" plugin from the Plugins Marketplace.
+ 
+* Eclipse: Install the "SonarLint" plugin from the Eclipse Marketplace.
+
+Vs-Code Example: 
+
+![sonar-lint-vscode](/images/projects/2025-03-20-sonarlint-install1.jpg)
+
+
+##### Using SonarLint in Standalone Mode
+SonarLint can work independently without connecting to a SonarQube server. In this mode, it provides static analysis using its built-in rule set.
+
+For example, after installing SonarLint in VS Code:
+
+	Open a project.
+
+		SonarLint will automatically scan the files for issues.
+
+		Hover over a warning to view explanations and possible fixes.
+
+This is useful when you want quick feedback without setting up a full SonarQube instance.
+ 
+
+![sonar-lint-find](/images/projects/2025-03-20-sonarlint-find.png)
+ 
+##### Configuration in Connected Mode
+
+To connect SonarLint to SonarQube:
+
+Open the SonarLint settings in your IDE.
+
+Select "Connect to SonarQube or SonarCloud."
+
+![sonarqube-config-1](/images/projects/2025-03-20-sonarqube-ide-config1.jpg)
+
+Enter the SonarQube server URL (e.g., http://localhost:9000).
+
+![sonarqube-config2](/images/projects/2025-03-20-sonarqube-ide-config2.jpg)
+
+Authenticate using a SonarQube token. (Or allow access from your Sonarqube instance)
+
+![sonarqube-config3](/images/projects/2025-03-20-sonarqube-ide-config3.jpg)
+_______________________
+
+![sonarqube-config4](/images/projects/2025-03-20-sonarqube-ide-config4.jpg)
+
+
+Select the project to synchronize the analysis rules. 
+
+Example of SonarLint in Action
+
+Open a code file in your IDE.
+
+If there are issues, SonarLint will highlight them with warnings and suggestions.
+
+Hover over an issue to see details and possible fixes.
+
+If connected to SonarQube, the rules from the server will be applied in real-time.
+
+
+#### Conclusion
+
+With this setup, you have a functional SonarQube environment with persistence and an external database. Additionally, SonarLint enhances your development experience by providing real-time feedback. Now it's time to analyze your code!
