@@ -3,7 +3,7 @@ title: Local Monitoring Stack for Kubernetes
 layout: projects
 image: "/images/projects/2025-07-26-monitoring.png"
 theme: monitoring
-date: '2025-07-26 18:14:06'
+date: '2025-07-26 18:32:04'
 ---
 
 # 📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)
