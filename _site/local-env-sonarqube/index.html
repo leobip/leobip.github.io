@@ -1,0 +1,982 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>SonarQube &amp; SonarLint for Code Analysis - My Personal Page</title>
+<meta name="description" content="SonarQube &amp; SonarLint">
+
+
+  <meta name="author" content="Leoncio López">
+  
+  <meta property="article:author" content="Leoncio López">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My Personal Page">
+<meta property="og:title" content="SonarQube &amp; SonarLint for Code Analysis">
+<meta property="og:url" content="http://localhost:4000/local-env-sonarqube/">
+
+
+  <meta property="og:description" content="SonarQube &amp; SonarLint">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-03-20T21:55:15+01:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/local-env-sonarqube/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My Personal Page Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/alpha-omega-logo.jpg" alt="Leoncio López"></a>
+        
+        <a class="site-title" href="/">
+          Leoncio López
+          <span class="site-subtitle">Portfolio &amp; Proyects</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/sitemap/"
+                
+                
+              >Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/llp-avatar.jpg" alt="Leoncio López" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Leoncio López</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Cloud &amp; DevOps Engineer · Kubernetes · Kafka · Golang</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Madrid - Spain</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:leobip27@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/leoncio-lopez-00527474/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/leobip" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:leobip27@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="leobip27@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="SonarQube &amp; SonarLint for Code Analysis">
+    <meta itemprop="description" content="SonarQube &amp; SonarLint">
+    <meta itemprop="datePublished" content="2025-03-20T21:55:15+01:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/local-env-sonarqube/" itemprop="url">SonarQube &amp; SonarLint for Code Analysis
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="sonarqube--sonarlint">SonarQube &amp; SonarLint</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.</p>
+<h3 id="what-is-sonarqube">What is SonarQube?</h3>
+
+<p><a href="https://www.sonarqube.org/">SonarQube</a> is a powerful static code analysis tool that helps developers identify bugs, security vulnerabilities, and code smells in their projects. It provides detailed insights to improve code quality and maintainability.</p>
+
+<p>SonarQube is available in different editions:</p>
+
+<ul>
+  <li><strong>Community Edition</strong> (Free) – Open-source version with essential static analysis features.</li>
+  <li><strong>Developer Edition</strong> – Adds advanced language support and branch analysis.</li>
+  <li><strong>Enterprise Edition</strong> – Includes portfolio management and governance features.</li>
+  <li><strong>Data Center Edition</strong> – High availability and scalability for large teams.</li>
+</ul>
+
+<p>For this guide, we will use the <strong>Community Edition</strong>.</p>
+
+<h3 id="what-is-sonarlint">What is SonarLint?</h3>
+
+<p><a href="https://www.sonarlint.org/">SonarLint</a> is an IDE plugin that provides real-time linting and code analysis. It helps developers catch issues early in the development process, ensuring consistent and high-quality code. It can be confiugured to work alone or with connection to SonarQube profiles, It functions as an extension of SonarQube when connected to the server.</p>
+
+<h4 id="connection-between-sonarlint-and-sonarqube">Connection between SonarLint and SonarQube</h4>
+
+<ul>
+  <li>
+    <p>SonarLint can operate in two modes:</p>
+
+    <ul>
+      <li>Standalone mode: Works independently in the IDE.</li>
+      <li>Connected mode: Synchronizes with a SonarQube server to share rules and configurations.</li>
+    </ul>
+  </li>
+  <li>
+    <p>To connect SonarLint with SonarQube:</p>
+
+    <ul>
+      <li>Ensure that SonarQube is running.</li>
+      <li>Install the SonarLint plugin in your IDE.</li>
+      <li>Add the SonarQube URL in the SonarLint configuration.</li>
+      <li>Authenticate with a SonarQube token.</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="database-support-in-sonarqube">Database Support in SonarQube</h3>
+<h3 id="embedded-database-h2">Embedded Database (H2)</h3>
+<p>By default, SonarQube <strong>Community Edition</strong> comes with an embedded <strong>H2 database</strong>. However, this database is only intended for <strong>evaluation and personal/local usage</strong>, as it is <strong>not recommended for production</strong> due to size &amp; data scalability limitations.</p>
+<h3 id="supported-external-databases">Supported External Databases</h3>
+<p>For a <strong>stable and production-ready</strong> deployment, SonarQube supports the following databases:</p>
+
+<ul>
+  <li><strong>PostgreSQL</strong> (Recommended)</li>
+  <li><strong>Microsoft SQL Server</strong></li>
+  <li><strong>Oracle Database</strong></li>
+</ul>
+
+<h4 id="sonarqube-database-configuration-guides">SonarQube Database Configuration Guides:</h4>
+<ul>
+  <li>https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/
+    <h2 id="installing-sonarqube-locally">Installing SonarQube Locally</h2>
+  </li>
+  <li>
+    <p>Prerequisite:
+Before setting up SonarQube, ensure that Docker &amp; docker-compose is installed on your machine. You can find the complete installation guide on the official Docker website, Docker Installation Guide:  https://docs.docker.com/engine/install/</p>
+  </li>
+  <li>SonarQube Installation</li>
+</ul>
+
+<p>To deploy SonarQube locally, we will use Docker Compose. This approach allows for future integration of additional tools and services within the local development environment. Using Docker Compose simplifies service configuration and management through a docker-compose.yaml file located in the project’s root directory.</p>
+
+<p>Docker significantly simplifies the process of running SonarQube without requiring complex manual configurations.
+For reference, the SonarQube page on Docker Hub (https://hub.docker.com/_/sonarqube)  provides links to repositories with example Dockerfile and docker-compose.yaml configurations, and instructions to install and run SonarQube with simplest command like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+</code></pre></div></div>
+<p>You can then browse to http://localhost:9000 or http://host-ip:9000 in your web browser to access the web interface.</p>
+
+<h3 id="bonus-helm---installation-with-postgresql-included">Bonus: <strong>HELM</strong> - Installation with PostgreSQL Included</h3>
+<p>For Kubernetes users, SonarQube can be installed using Helm with a <strong>PostgreSQL database included</strong>. Check out the official Helm package:  (here you can find different versions at Artifact Hub)
+🔗 <a href="https://artifacthub.io/packages/helm/sonarqube/sonarqube">SonarQube Helm Chart</a></p>
+
+<h3 id="folder-structure">Folder Structure:</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-dev-environment/
+│
+├── sonarqube/                  <span class="c"># SonarQube setup</span>
+│   ├── conf/                   <span class="c"># Configuration files</span>
+│   ├── data/                   <span class="c"># Data storage</span>
+│   ├── logs/                   <span class="c"># Log files</span>
+│   ├── extensions/             <span class="c"># Plugins and extensions</span>
+│
+├── docker-compose.yaml         <span class="c"># Docker Compose for multiple services</span>
+...
+</code></pre></div></div>
+
+<ul>
+  <li>docker-compose.yaml (at project root)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
+  sonarqube:
+    image: sonarqube:community # We are using the latest community version, it could also be the lts-community -(Long Term Support)
+    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
+    depends_on:
+      - sonar_db
+    environment:
+      SONAR_JDBC_URL: jdbc:postgresql://sonar_db:5432/sonar
+      SONAR_JDBC_USERNAME: sonar
+      SONAR_JDBC_PASSWORD: sonar
+    ports:
+      - "9001:9000"
+    volumes:
+      - sonarqube_conf:/opt/sonarqube/conf
+      - sonarqube_data:/opt/sonarqube/data
+      - sonarqube_extensions:/opt/sonarqube/extensions
+      - sonarqube_logs:/opt/sonarqube/logs
+      - sonarqube_temp:/opt/sonarqube/temp
+
+  sonar_db:
+    image: postgres:13
+    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
+    environment:
+      POSTGRES_USER: sonar
+      POSTGRES_PASSWORD: sonar
+      POSTGRES_DB: sonar
+    volumes:
+      - sonar_db:/var/lib/postgresql
+      - sonar_db_data:/var/lib/postgresql/data
+
+volumes:
+  sonarqube_conf:
+  sonarqube_data:
+  sonarqube_extensions:
+  sonarqube_logs:
+  sonarqube_temp:
+  sonar_db:
+  sonar_db_data:
+
+</code></pre></div></div>
+
+<h3 id="automatic-backup-of-the-sonarqube-database-optional">Automatic Backup of the SonarQube Database (Optional)</h3>
+<p>Even though we configured restart: unless-stopped, ensuring that data persists after a reboot, in our local environment, it’s good practice to have a backup strategy. Below is a solution using a backup service.</p>
+
+<h4 id="manual-db-backup">Manual DB Backup</h4>
+<ul>
+  <li>To back up the PostgreSQL database:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -t postgres pg_dumpall -c -U sonar &gt; backup.sql
+</code></pre></div>    </div>
+  </li>
+  <li>To restore:
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -i postgres psql -U sonar -d sonarqube &lt; backup.sql
+</code></pre></div>    </div>
+    <h4 id="adding-a-backup-service">Adding a Backup Service</h4>
+  </li>
+  <li>Add this code to the docker-compose.yaml</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sonar_backup:
+    image: postgres:13
+    depends_on:
+      - sonar_db
+    volumes:
+      - sonarqube_data:/opt/sonarqube/data
+    entrypoint: ["/bin/sh", "-c", "while true; do /opt/sonarqube/data/backup_db.sh; sleep 86400; done"]
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Backup Script</p>
+
+    <p>Create the following script inside sonarqube/data/backup_db.sh:</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+# Configuration
+BACKUP_DIR="/opt/sonarqube/data/backups"
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+BACKUP_FILE="$BACKUP_DIR/sonarqube_db_$TIMESTAMP.sql"
+
+# Create backup directory if it does not exist
+mkdir -p $BACKUP_DIR
+
+# Perform PostgreSQL backup
+PGPASSWORD="sonar" pg_dump -h sonar_db -U sonar -d sonar &gt; $BACKUP_FILE
+
+# Clean up old backups (optional, keep only the last 5 backups)
+ls -tp $BACKUP_DIR | grep -v '/$' | tail -n +6 | xargs -I {} rm -- "$BACKUP_DIR/{}"
+
+echo "Backup completed: $BACKUP_FILE"
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Grant Execution Permission</p>
+
+    <p>Run the following command to make the script executable:</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x sonarqube/data/backup_db.sh
+</code></pre></div></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<ul>
+  <li>
+    <p>SonarQube and PostgreSQL are configured with persistent storage.</p>
+  </li>
+  <li>
+    <p>Containers automatically restart unless manually stopped.</p>
+  </li>
+  <li>
+    <p>A backup service is set up to create database backups automatically.</p>
+  </li>
+</ul>
+
+<p>This setup ensures a robust SonarQube environment for local development. 🚀</p>
+
+<h3 id="running-sonarqube">Running SonarQube</h3>
+<p>Once the files are in place, follow these steps to start SonarQube:</p>
+
+<ul>
+  <li>Build the SonarQube image</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose build
+
+</code></pre></div></div>
+
+<ul>
+  <li>Start the SonarQube container</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up -d
+
+</code></pre></div></div>
+<p><img src="/images/projects/2025-03-20-docker-compose-creation.jpg" alt="compose-creation" /></p>
+
+<ul>
+  <li>
+    <p>Access SonarQube UI</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Open http://localhost:9001 in your browser.
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><img src="/images/projects/2025-03-20-sonar-login.jpg" alt="sonar-login" /></p>
+
+<ul>
+  <li>
+    <p>Login Credentials</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Username: admin
+  Password: admin
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="installing-and-configuring-sonarqube-for-ide-fromerly-sonarlint">Installing and Configuring SonarQube for IDE (fromerly SonarLint)</h2>
+
+<h3 id="installation">Installation</h3>
+
+<h5 id="to-install-sonarlint-in-your-ide">To install SonarLint in your IDE:</h5>
+
+<ul>
+  <li>
+    <p>VS Code: Install the “SonarLint” extension from the Extensions Marketplace.</p>
+  </li>
+  <li>
+    <p>IntelliJ IDEA: Install the “SonarLint” plugin from the Plugins Marketplace.</p>
+  </li>
+  <li>
+    <p>Eclipse: Install the “SonarLint” plugin from the Eclipse Marketplace.</p>
+  </li>
+</ul>
+
+<p>Vs-Code Example:</p>
+
+<p><img src="/images/projects/2025-03-20-sonarlint-install1.jpg" alt="sonar-lint-vscode" /></p>
+
+<h5 id="using-sonarlint-in-standalone-mode">Using SonarLint in Standalone Mode</h5>
+<p>SonarLint can work independently without connecting to a SonarQube server. In this mode, it provides static analysis using its built-in rule set.</p>
+
+<p>For example, after installing SonarLint in VS Code:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Open a project.
+
+	SonarLint will automatically scan the files for issues.
+
+	Hover over a warning to view explanations and possible fixes.
+</code></pre></div></div>
+
+<p>This is useful when you want quick feedback without setting up a full SonarQube instance.</p>
+
+<p><img src="/images/projects/2025-03-20-sonarlint-find.png" alt="sonar-lint-find" /></p>
+
+<h5 id="configuration-in-connected-mode">Configuration in Connected Mode</h5>
+
+<p>To connect SonarLint to SonarQube:</p>
+
+<p>Open the SonarLint settings in your IDE.</p>
+
+<p>Select “Connect to SonarQube or SonarCloud.”</p>
+
+<p><img src="/images/projects/2025-03-20-sonarqube-ide-config1.jpg" alt="sonarqube-config-1" /></p>
+
+<p>Enter the SonarQube server URL (e.g., http://localhost:9000).</p>
+
+<p><img src="/images/projects/2025-03-20-sonarqube-ide-config2.jpg" alt="sonarqube-config2" /></p>
+
+<p>Authenticate using a SonarQube token. (Or allow access from your Sonarqube instance)</p>
+
+<p><img src="/images/projects/2025-03-20-sonarqube-ide-config3.jpg" alt="sonarqube-config3" />
+<strong>__</strong><strong>__</strong><strong>__</strong>_____</p>
+
+<p><img src="/images/projects/2025-03-20-sonarqube-ide-config4.jpg" alt="sonarqube-config4" /></p>
+
+<p>Select the project to synchronize the analysis rules.</p>
+
+<p>Example of SonarLint in Action</p>
+
+<p>Open a code file in your IDE.</p>
+
+<p>If there are issues, SonarLint will highlight them with warnings and suggestions.</p>
+
+<p>Hover over an issue to see details and possible fixes.</p>
+
+<p>If connected to SonarQube, the rules from the server will be applied in real-time.</p>
+
+<h4 id="conclusion-1">Conclusion</h4>
+
+<p>With this setup, you have a functional SonarQube environment with persistence and an external database. Additionally, SonarLint enhances your development experience by providing real-time feedback. Now it’s time to analyze your code!</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-03-20T21:55:15+01:00">March 20, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=SonarQube+%26+SonarLint+for+Code+Analysis%20http%3A%2F%2Flocalhost%3A4000%2Flocal-env-sonarqube%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Flocal-env-sonarqube%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/local-env-sonarqube/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=SonarQube+%26+SonarLint+for+Code+Analysis%20http%3A%2F%2Flocalhost%3A4000%2Flocal-env-sonarqube%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/local-dev-env/" class="pagination--pager" title="Building a Local Development, Testing, and Deployment Environment">Previous</a>
+    
+    
+      <a href="/local-monitoring-env/" class="pagination--pager" title="Local Monitoring Stack for Kubernetes">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/post-init/" rel="permalink">Post Init
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/local-monitoring-env/" rel="permalink">Local Monitoring Stack for Kubernetes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/local-dev-env/" rel="permalink">Building a Local Development, Testing, and Deployment Environment
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Local Development Environment Setup Guide
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/json-fullsearch/" rel="permalink">Python - Tools Library
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">JSon Full Search
+
+Descripción:
+Tal como el nombre lo indica es una función para parsear un archivo json y extraer la clave suministrada, ya sea un valor o un...</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+          <li><a href="mailto:leobip27@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/leoncio-lopez-00527474/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/leobip" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2013 - 2025 <a href="http://localhost:4000">My Personal Page</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

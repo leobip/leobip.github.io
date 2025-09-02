@@ -1,213 +1,349 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
+# This config file is meant for settings that affect your entire site, values
+# which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# `jekyll serve`. If you change this file, please restart the server process.
+
+# Theme Settings
 #
-# If you need help with YAML syntax, here are some quick references for you:
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Review documentation to determine if you should use `theme` or `remote_theme`
+# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-plugins:
-  - jekyll-admin
+# theme                  : "minimal-mistakes-jekyll"
+remote_theme             : "mmistakes/minimal-mistakes@4.27.3"
+minimal_mistakes_skin    : "contrast" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
+title                    : "My Personal Page"
+title_separator          : "-"
+subtitle                 : "Portfolio & Proyects" # optional, remove or leave blank if not needed 
+name                     : "Leoncio López"
+description              : "A digital journey into my professional career & projects"
+url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : leobip/jekyll-test # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser                   : "/assets/images/llp-banner.png"
+logo                     : "/assets/images/alpha-omega-logo.jpg"
+masthead_title           : "Leoncio López" # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs              : # true, false (default)
+words_per_minute         : 200
+enable_copy_code_button  : # true, false (default)
+copyright                : # "copyright" name, defaults to site.title
+copyright_url            : # "copyright" URL, defaults to site.url
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+    issue_term           : # "pathname" (default)
+  giscus:
+    repo_id              : # Shown during giscus setup at https://giscus.app
+    category_name        : # Full text name of the category
+    category_id          : # Shown during giscus setup at https://giscus.app
+    discussion_term      : # "pathname" (default), "url", "title", "og:title"
+    reactions_enabled    : # '1' for enabled (default), '0' for disabled
+    theme                : # "light" (default), "dark", "dark_dimmed", "transparent_dark", "preferred_color_scheme"
+    strict               : # 1 for enabled, 0 for disabled (default)
+    input_position       : # "top", "bottom" # The comment input box will be placed above or below the comments
+    emit_metadata        : # 1 for enabled, 0 for disabled (default) # https://github.com/giscus/giscus/blob/main/ADVANCED-USAGE.md#imetadatamessage
+    lang                 : # "en" (default)
+    lazy                 : # true, false # Loading of the comments will be deferred until the user scrolls near the comments container.
+  staticman:
+    branch               : # "master"
+    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+  hide                   : # true, false (default)
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+lunr:
+  search_within_pages    : # true, false (default)
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+naver_site_verification  :
+yandex_site_verification :
+baidu_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
 
 
-# Información básica del sitio
-title: DevJourneyHub
-subtitle: >
-  "Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live." - Martin Golding
-email: leobip27@gmail.com
-intro_es: |
-  Tu puerta de entrada digital a mi trayectoria personal y profesional en el mundo de la tecnología. 
-  Explora mi portafolio de proyectos de software, descubre publicaciones interesantes sobre tendencias tecnológicas y conoce la historia detrás del código.
-  Este es el lugar donde la pasión se encuentra con el propósito, un proyecto a la vez.
-
-intro_en: |
-  Your digital gateway to my personal and professional career in the world of technology. 
-  Explore my portfolio of software projects, discover interesting posts on technology trends, and learn the history behind the code.
-  This is the place where passion meets purpose, one project at a time.
-baseurl: "" # Subpath del sitio, e.g. /blog
-url: "" # Base URL del sitio, e.g. http://example.com
-twitter_username: jekyllrb
-github_username: leobip27
-
-# Información del autor
+# Site Author
 author:
-  name: "Leoncio López"
-  sub_title: DevOps Automation Engineer
-  description_es: |
-    Ingeniero DevOps con amplia experiencia en automatización, gestión de bases de datos y optimización de procesos. Especializado en programación Python y desarrollo de arquitecturas de software eficientes y escalables. Apasionado por integrar desarrollo y operaciones, utilizando herramientas como Docker, Kubernetes y Jenkins para optimizar flujos de trabajo mediante la automatización.
-  description_en: |
-    DevOps Engineer with extensive experience in automation, database management, and process optimization. Specialized in Python programming and developing efficient, scalable software architectures. Passionate about integrating development and operations, using tools like Docker, Kubernetes, and Jenkins to improve workflows through automation.
-  about_es: |
-    Desde que descubrí mi pasión por la tecnología, he explorado distintas áreas que me han llevado a especializarme en DevOps.
-    Empecé mi carrera en bases de datos y programación en VBA y C#, donde aprendí el poder del análisis de datos y la automatización para optimizar procesos.
-    Hoy, combino esa experiencia con el desarrollo de arquitecturas de software robustas y escalables, asegurando que los sistemas sean fiables y eficientes.
-  about_en: |
-    Since discovering my passion for technology, I've explored various fields that led me to specialize in DevOps. I started with databases and VBA/C# programming, learning the power of data analysis and automation to optimize processes. Today, I combine that experience with developing robust, scalable software architectures, ensuring systems are reliable and efficient.
-  email: "leobip27@gmail.com"
-  linkedin: "https://www.linkedin.com/in/leoncio-lópez-00527474"
-  github: "https://github.com/leobip"
-  twitter: "https://twitter.com/tu-usuario"
-  location: "Madrid, España"
+  name             : "Leoncio López"
+  avatar           : "/assets/images/llp-avatar.jpg"
+  bio              : "Cloud & DevOps Engineer · Kubernetes · Kafka · Golang"
+  location         : "Madrid - Spain"
+  email            : "leobip27@gmail.com"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:leobip27@gmail.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/leoncio-lopez-00527474/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url: "https://twitter.com/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leobip"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/"
 
-# Ajustes de construcción
-theme: minima
-markdown: kramdown
+# Site Footer
+footer:
+  links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      # url:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:leobip27@gmail.com"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/leoncio-lopez-00527474/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/leobip"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      # url:
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
+      # url:
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url:
+  since: "2013"
 
-# Inclusión de carpetas adicionales
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
 
-# Configuración de URLs
-permalink: pretty
-
-# Exclusión de archivos de la compilación
+# Reading Files
+include:
+  - .htaccess
+  - _pages
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules/
+  - "*.sublime-project"
+  - "*.sublime-workspace"
   - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs # ignore Minimal Mistakes /docs
+  - /test # ignore Minimal Mistakes /test
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-# Información personal
-personal_info:
-  name: "Leoncio López"
-  title: "DevOps Automation Engineer"
-  certifications:
-    - title: "Jira Admin. Part 1 & 2"
-      year: 2019
-    - title: "SonarQube, Install & Analysis"
-      year: 2020
-    - title: "Polyspace for C/C++ Code Verification"
-      institution: "MathWorks"
-      year: 2020
-    - title: "Google IT Automation with Python (Specialization)"
-      institution: "Coursera - Google"
-      year: 2021
-    - title: "DevOps Culture and Mindset"
-      institution: "Coursera - Univ. of California"
-      year: 2021
-    - title: "Advanced Docker Principles: Docker for Microservices Strategies"
-      institution: "Skillsoft"
-      Year: 2023
-    - title: "Advanced Docker: Exploring Advanced Docker Principles & Practices"
-      institution: "Skillsoft"
-      Year: 2023
-    - title: "AWS Partner: Accreditation (Technical)"
-      institution: "AWS Training & Certification"
-      Year: 2023
-    - title: "Well-Architected Proficient"
-      institution: "AWS Training & Certification"
-      Year: 2023
-    - title: "PRINCE2® Foundation training + exam (7th Edition)"
-      institution: "Training360 Kft"
-      Year: 2024
-    - title: "Advanced PYTHON with CLOUD Computing"
-      institution: "Training360 Kft"
-      Year: 2024
-  experience:
-    - job_title: "DevOps Automation Engineer"
-      company: "T-Systems Itc Iberia S.A.U."
-      period: "03/2023 – Present"
-      responsibilities:
-        - "Design, develop, and deploy Python scripts and RESTful API functions to automate workflows."
-        - "Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability."
-        - "Create automation scripts for HashiCorp Vault to streamline secrets management."
-        - "Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control."
 
-    - job_title: "IT Delivery & Automation Engineer"
-      company: "HotelBeds Technology, S.L.U."
-      period: "07/2022 – 02/2023"
-      responsibilities:
-        - "Implement GitOps practices and manage deployments with ArgoCD."
-        - "Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery."
-        - "Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services."
-        - "Monitor and optimize performance using Prometheus and Bitbucket."
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
 
-    - job_title: "DevOps Consultant"
-      company: "Vermont Solutions"
-      period: "12/2021 – 06/2022"
-      responsibilities:
-        - "Administer and deploy applications in OpenShift environments."
-        - "Develop and maintain Jenkins/CloudBees pipelines using YAML and Groovy for continuous integration."
-        - "Write automation scripts in Python, Shell, and Bash to enhance operational efficiency."
-        - "Utilize Docker, Ansible, and Kubernetes for container orchestration and deployment."
-        - "Conduct static code analysis using SonarQube to ensure code quality."
 
-    - job_title: "GitLab CI/CD Admin & Developer"
-      company: "Capitole Consulting, S.L."
-      period: "08/2021 – 12/2021"
-      responsibilities:
-        - "Design and implement CI/CD pipelines and GitLab Runners using YAML and Groovy."
-        - "Develop Python and Shell scripts to automate deployment tasks."
-        - "Monitor GitLab statistics and system health using Grafana."
-        - "Manage remote connections and automate tasks with SSH scripts."
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
-    - job_title: "Technologies and Support Engineer"
-      company: "GMV, Innovating Solutions"
-      period: "03/2019 – 07/2021"
-      responsibilities:
-        - "Provide specialized user support and develop applications in Python, Ruby, and VBA."
-        - "Perform static code analysis using tools like SonarQube, MathWorks Polyspace, and Sci-Tools Understand."
-        - "Develop Python scripts to interact with SonarQube's REST API for data extraction and reporting."
-        - "Automate CI/CD processes with Jenkins, Docker, and Git/SVN."
-        - "Develop SQL queries and ETL processes using Talend Open Studio."
-        - "Configure and run code analysis in MathWorks Polyspace for C/C++ projects."
 
-    - job_title: "Systems Manager"
-      company: "Alfa Sistemas, C.A."
-      period: "2003 – 2018"
-      responsibilities:
-        - "Develop and support database applications (Access, VBA, C#) for time management and project control for up to 10,000 users."
-        - "Design, install, and configure computer networks, including CISCO routers and switches."
-        - "Develop custom Python and VBA applications to meet client-specific needs."
-        - "Administer SQL Server databases, including stored procedures, query design, and automation tasks."
-        - "Provide remote network support using tools like TeamViewer, Virtual PC, Hyper-V, and VMware."
-  skills:
-    hard_skills:
-      - name: "Python Programming"
-        level: "90%"
-      - name: "Version Control (Git, SVN, Bitbucket, GitLab)"
-        level: "85%"
-      - name: "Docker & Containerization"
-        level: "90%"
-      - name: "Kubernetes, OpenShift, ArgoCD"
-        level: "85%"
-      - name: "CI/CD Pipelines (Jenkins/CloudBees)"
-        level: "90%"
-      - name: "Cloud Platforms (AWS)"
-        level: "80%"
-      - name: "Automation Tools (Ansible, Terraform)"
-        level: "85%"
-      - name: "Code Quality (SonarQube, Polyspace, Static Analysis, Code Matrics)"
-        level: "90%"
-      - name: "Shell Scripting (Bash, Linux)"
-        level: "85%"
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-    soft_skills:
-      - name: "Effective Communication"
-        level: "90%"
-      - name: "Problem Solving"
-        level: "90%"
-      - name: "Team Collaboration"
-        level: "90%"
-      - name: "Leadership"
-        level: "90%"
-      - name: "Time Management"
-        level: "95%"
-      - name: "Adaptability"
-        level: "100%"
-      - name: "Critical Thinking"
-        level: "85%"
+
+# Outputting
+permalink: /:categories/:title/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Pagination with jekyll-paginate
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+
+# Pagination with jekyll-paginate-v2
+# See https://github.com/sverrirs/jekyll-paginate-v2/blob/master/README-GENERATOR.md#site-configuration
+#   for configuration details
+pagination:
+  # Set enabled to true to use paginate v2
+  # enabled: true
+  debug: false
+  collection: 'posts'
+  per_page: 10
+  permalink: '/page/:num/'
+  title: ':title - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  category: 'posts'
+  tag: ''
+  locale: ''
+  trail:
+    before: 2
+    after: 2
+
+
+# Plugins (previously gems:)
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+# mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path>/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+
+# Defaults
+defaults:
+  # Páginas estáticas
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: home
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
