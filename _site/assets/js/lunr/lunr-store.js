@@ -5,14 +5,20 @@ var store = [{
         "url": "/about/",
         "teaser": "/assets/images/llp-banner.png"
       },{
+        "title": "CHRONOS Workforce App",
+        "excerpt":"Photo from Internet. From Access to Python: 25 Years of Building a Workforce Control System for the Oil Industry 1. Introduction Back in the year 2000, I faced a very practical challenge while working on petroleum projects in Venezuela: keeping track of work hours in a reliable and structured way....","categories": ["Layout","Uncategorized"],
+        "tags": ["edge case","featured image","image","layout"],
+        "url": "/adp-chronos/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
         "title": "Develop. Share. Learn.",
-        "excerpt":"Career Journey Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology. Learn more Responsive layouts Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content. Learn more 100% free Free to use however you want under...","categories": [],
+        "excerpt":"Career Journey Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology. Learn more From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry A journey that started in 2000 as a simple database with SQL queries...","categories": [],
         "tags": [],
         "url": "/",
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Sitemap",
-        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read Develop. Share. Learn. less than 1 minute read Your digital gateway to my personal and professional career in...","categories": [],
+        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 2 minute read Develop. Share. Learn. less than 1 minute read Your digital gateway to...","categories": [],
         "tags": [],
         "url": "/sitemap/",
         "teaser": "/assets/images/llp-banner.png"

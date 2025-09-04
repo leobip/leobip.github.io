@@ -23,13 +23,13 @@ feature_row:
     url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
+  - image_path: /assets/images/chronos-worktable.png
     alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
+    title: "From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry"
+    excerpt: "A journey that started in 2000 as a simple database with SQL queries to track work hours in Venezuela’s oil industry. It grew into a professional application used by 8,000+ workers across 80+ companies, and in 2025, it’s being reborn with modern tools like Python, Flet, and SQLite.."
+    url: "/adp-chronos/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "👉 Read the full story →"
   - image_path: /assets/images/mm-free-feature.png
     alt: "100% free"
     title: "100% free"
