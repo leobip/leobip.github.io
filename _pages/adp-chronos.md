@@ -23,7 +23,7 @@ tags:
   <figcaption>Photo from Internet.</figcaption>
 </figure>
 
-# From Access to Python: 25 Years of Building a Workforce Control System for the Oil Industry  
+## ***From Access to Python: 25 Years of Building a Workforce Control System for the Oil Industry***
 
 ## 1. Introduction  
 
@@ -46,10 +46,46 @@ It started as a **Microsoft Access database**, where I wrote SQL queries to gene
 - Overtime  
 - Totals per project  
 
-The interface was non-existent — everything ran from **command-line queries**.  
+The interface was non-existent — everything ran from **command-line queries**.
+
+{% capture fig_img %}
+![Foo]({{ '/assets/images/adp-orig-structure.png' | relative_url }})
+{% endcapture %}
+
+<figure>
+  {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
+  <figcaption>DB Structure of the first commercial atemp.</figcaption>
+</figure>
+
+With the code in Visual Basic for Applications and the queries in sql all inside MS Access
+adp-orig-code
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-orig-code.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    VBA Code Snippet.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-orig-sql-code.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Sql Code Snippet.
+  </figcaption>
+</figure>
 
 But as reporting needs grew, I began adding **new parameters, conditions, and eventually, forms**.  
-This was my first attempt at creating something resembling an application: an interface on top of the database that allowed me to input data, run queries, and view results without manually typing commands every time.  
+This was my first attempt at creating something resembling an application: an interface on top of the database that allowed me to input data, run queries, and view results without manually typing commands every time.
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-orig-menu.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    DB Application first Menu.
+  </figcaption>
+</figure>
 
 By 2002, the project had matured to a point where it was no longer just for personal use.  
 I saw an opportunity to **turn it into a commercial product**.  
@@ -59,11 +95,132 @@ This was the beginning of its transformation — from a simple database with ad 
 
 ---
 
+## 3. Adoption of the Application in the Venezuelan Oil Industry (2002–2018)
+
+By 2002, the project had grown from a personal database into a **fully functional commercial application**.  
+It quickly gained traction in the Venezuelan oil industry, where accurate workforce management and reporting were critical for day-to-day operations.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-login.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - DB Menus.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-menus.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - DB Application login.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-struct.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - DB Structure.
+  </figcaption>
+</figure>
+
+Of course the code also evolve into more complicated.
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-code-snippet.png' | relative_url }}" 
+       style="max-width:100%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - DB Structure.
+  </figcaption>
+</figure>
+
+Over the years, the system was implemented in more than **80 companies**, supporting over **8,000 workers** across multiple projects and contracts.  
+This wide adoption marked a turning point: the software became a trusted tool in one of the most complex and demanding industries in the country.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-intropers.png' | relative_url }}" 
+       style="max-width:90%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Personnel Form.
+  </figcaption>
+</figure>
+
+---
+
+### 🔑 Key Features and Innovations  
+
+- **Multi-project management**: control several contracts and service orders simultaneously, each with their own flows.  
+- **Flexible scheduling**: adapt to any national or international labor regulations.  
+- **Detailed reports**: attendance, overtime, daily/weekly/monthly summaries, averages, workforce distribution.  
+- **Payroll integration**: export data to Excel or generate PDFs ready for electronic distribution.  
+- **Security**: user roles, password management, encryption of payroll files, and detailed activity logs.  
+- **Device connectivity**: support for RFID, biometric systems, and card readers (magnetic stripe/barcode).  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-reports.png' | relative_url }}" 
+       style="max-width:90%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Weekly Reports Form.
+  </figcaption>
+</figure>
+
+---
+
+### ⚙️ Technical Foundation  
+
+- **Platform**: Microsoft Access (database and forms).  
+- **Programming**: VBA for GUI and automation.  
+- **Queries**: SQL for calculations and reporting.  
+- **Integration scripts**: Bash for device communication.  
+- **Device programming**: C for low-level configuration of attendance equipment.  
+
+This stack provided flexibility, speed of development, and adaptability to client-specific requirements — a key differentiator from generic commercial solutions.  
+
+---
+
+### 📈 Scale and Impact  
+
+- **80+ companies** implemented the system, from local contractors to international service providers.  
+- **8,000+ workers** managed, across multiple locations and projects.  
+- Reports and automation significantly **reduced human error** in timekeeping and payroll preparation.  
+- The system helped companies improve **efficiency, compliance, and resource management**, even during times of economic and political uncertainty.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-daily-hours-report.png' | relative_url }}" 
+       style="max-width:50%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Daily Hours Report.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-daily-hours-report2.png' | relative_url }}" 
+       style="max-width:50%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Daily Hours Report.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-weekly-report.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Weekly Hours Report.
+  </figcaption>
+</figure>
+
+The success of the application proved that a solution originally built for personal use could evolve into a robust, industry-scale product with long-term impact.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-total-hours-report-interval.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Accumulated hours report by Interval.
+  </figcaption>
+</figure>
+
+---
+
 ### 📷 Where to Add Visuals  
-
-- **Screenshot 1:** Original Access database structure (tables, fields, queries).  
-- **Screenshot 2:** Example of a first-generation report (hours by category).  
-- **Screenshot 3:** Early Access form (basic input screen).  
-- **Code Snippet:** A short example of an early SQL query used for calculating regular vs. overtime hours.  
-
-Adding these visuals will not only make the history tangible but also help readers appreciate how far the project has evolved.
+  
+- **Device Integration:** Photo or diagram of RFID/biometric devices connected to the system.  
