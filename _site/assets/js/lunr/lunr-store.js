@@ -18,7 +18,7 @@ var store = [{
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Sitemap",
-        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 3 minute read Develop. Share. Learn. less than 1 minute read Your digital gateway to...","categories": [],
+        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 5 minute read Develop. Share. Learn. less than 1 minute read Your digital gateway to...","categories": [],
         "tags": [],
         "url": "/sitemap/",
         "teaser": "/assets/images/llp-banner.png"

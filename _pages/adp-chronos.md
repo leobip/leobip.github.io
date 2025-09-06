@@ -154,7 +154,19 @@ This wide adoption marked a turning point: the software became a trusted tool in
 - **Detailed reports**: attendance, overtime, daily/weekly/monthly summaries, averages, workforce distribution.  
 - **Payroll integration**: export data to Excel or generate PDFs ready for electronic distribution.  
 - **Security**: user roles, password management, encryption of payroll files, and detailed activity logs.  
-- **Device connectivity**: support for RFID, biometric systems, and card readers (magnetic stripe/barcode).  
+- **Device connectivity**: support for RFID, biometric systems, and card readers (magnetic stripe/barcode).
+- **Device compatibility**: the system could be configured to work with **any time & attendance device** available in the market.  
+  This included biometric scanners, RFID readers, proximity card systems, and magnetic stripe/barcode readers.  
+  I also personally developed the software for portable data collectors, such as the **Unitech HT630**, to capture and transfer attendance data directly into the system.  
+  This capability ensured seamless integration regardless of the client’s existing hardware or field requirements.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-timetools.png' | relative_url }}" 
+       style="max-width:90%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Some of equips.
+  </figcaption>
+</figure>
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="{{ '/assets/images/adp-act-reports.png' | relative_url }}" 
@@ -221,6 +233,41 @@ The success of the application proved that a solution originally built for perso
 
 ---
 
-### 📷 Where to Add Visuals  
-  
-- **Device Integration:** Photo or diagram of RFID/biometric devices connected to the system.  
+## 4. Context and Challenges  
+
+The system was developed and commercialized during one of the most complex and dynamic periods of the Venezuelan oil industry.  
+Between the early 2000s and the mid-2010s, the country experienced both a **significant oil boom** and a sharp **decline in production**, strongly influenced by political and economic instability.  
+
+These external factors created enormous uncertainty for companies and workers alike.  
+Yet, despite the difficulties, the application remained relevant and valuable:
+
+- It provided **consistency and reliability** in workforce management, even when other operational processes were affected.  
+- It gave companies **transparency and compliance tools** to manage complex labor regulations.  
+- It proved that software developed locally could adapt to international standards and client demands.  
+
+This resilience was one of the reasons the application continued to be used across dozens of companies for over a decade and a half.  
+
+---
+
+## 5. Migration and Continuity (2018–2025)  
+
+In 2018–2019, due to family reasons, I made the personal decision to migrate to Spain and begin a new professional chapter.  
+Even with this change, the story of the application did not end.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-act-remote-support.webp' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Remote Support.
+  </figcaption>
+</figure>
+
+From abroad, I continued to provide **remote support** to clients who relied on the system for their daily operations — not only in Venezuela but also internationally.  
+The fact that the application remained in production for more than **two decades** is a testament to its robustness and the trust built with clients over the years.  
+
+This continuity kept the project alive, and in some cases, client requests for updates or adaptations pushed me to revisit its core design.  
+One such request in 2025 would ultimately become the spark to **restart development of a completely new version**, adapted to modern technologies and devices, but still carrying the same principles of flexibility and client-focused design that guided its beginnings.  
+
+---
+
+## ***To Be Continued...***
