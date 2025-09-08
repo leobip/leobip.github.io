@@ -25,7 +25,7 @@ tags:
 
 ## ***From Access to Python: 25 Years of Building a Workforce Control System for the Oil Industry***
 
-## 1. Introduction  
+## 1. Introduction 🌍
 
 Back in the year 2000, I faced a very practical challenge while working on petroleum projects in Venezuela: keeping track of work hours in a reliable and structured way.  
 The oil industry required strict control over **regular hours, overtime, shifts, payroll types, and classifications**, and the tools available at the time were either too generic or inefficient for the complexity of the operations.  
@@ -37,7 +37,7 @@ This article tells the story of how that tool was born, how it scaled to support
 
 ---
 
-## 2. Early Development (2000–2002)  
+## 2. Early Development (2000–2002)  🏗️
 
 The very first version of the system was modest in scope.  
 It started as a **Microsoft Access database**, where I wrote SQL queries to generate simple reports:
@@ -95,7 +95,7 @@ This was the beginning of its transformation — from a simple database with ad 
 
 ---
 
-## 3. Adoption of the Application in the Venezuelan Oil Industry (2002–2018)
+## 3. Adoption of the Application in the Venezuelan Oil Industry (2002–2018) 🏭
 
 By 2002, the project had grown from a personal database into a **fully functional commercial application**.  
 It quickly gained traction in the Venezuelan oil industry, where accurate workforce management and reporting were critical for day-to-day operations.  
@@ -149,13 +149,13 @@ This wide adoption marked a turning point: the software became a trusted tool in
 
 ### 🔑 Key Features and Innovations  
 
-- **Multi-project management**: control several contracts and service orders simultaneously, each with their own flows.  
-- **Flexible scheduling**: adapt to any national or international labor regulations.  
-- **Detailed reports**: attendance, overtime, daily/weekly/monthly summaries, averages, workforce distribution.  
-- **Payroll integration**: export data to Excel or generate PDFs ready for electronic distribution.  
-- **Security**: user roles, password management, encryption of payroll files, and detailed activity logs.  
-- **Device connectivity**: support for RFID, biometric systems, and card readers (magnetic stripe/barcode).
-- **Device compatibility**: the system could be configured to work with **any time & attendance device** available in the market.  
+- 🗂️ **Multi-project management**: control several contracts and service orders simultaneously, each with their own flows.  
+- ⏱️ **Flexible scheduling**: adapt to any national or international labor regulations.  
+- 📊 **Detailed reports**: attendance, overtime, daily/weekly/monthly summaries, averages, workforce distribution.  
+- 📄 **Payroll integration**: export data to Excel or generate PDFs ready for electronic distribution.  
+- 🔐 **Security**: user roles, password management, encryption of payroll files, and detailed activity logs.  
+- 🔌 **Device connectivity**: support for RFID, biometric systems, and card readers (magnetic stripe/barcode).
+- 📱 **Device compatibility**: the system could be configured to work with **any time & attendance device** available in the market.  
   This included biometric scanners, RFID readers, proximity card systems, and magnetic stripe/barcode readers.  
   I also personally developed the software for portable data collectors, such as the **Unitech HT630**, to capture and transfer attendance data directly into the system.  
   This capability ensured seamless integration regardless of the client’s existing hardware or field requirements.  
@@ -168,6 +168,13 @@ This wide adoption marked a turning point: the software became a trusted tool in
   </figcaption>
 </figure>
 
+Over the years, the system evolved to include more than **75 different reports**, each configurable with a wide range of parameters such as shift, date, time interval, payroll type, accumulated hours, area, department, and even union affiliation.  
+In addition, data could be exported so that clients could generate their own analyses or custom reports.  
+
+This constant growth was driven by a simple philosophy: **listen to client needs and adapt the software accordingly**.  
+Rather than forcing a fixed set of outputs, the application was continuously updated to deliver new reports and features based on real-world requirements.  
+This flexibility not only solved immediate problems but also built long-term trust with clients.  
+
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="{{ '/assets/images/adp-act-reports.png' | relative_url }}" 
        style="max-width:90%; height:auto;">
@@ -175,6 +182,8 @@ This wide adoption marked a turning point: the software became a trusted tool in
     Chronos - Weekly Reports Form.
   </figcaption>
 </figure>
+
+***Key Insight:*** The client should never adapt to the software — the software must adapt to the client.  
 
 ---
 
@@ -254,6 +263,8 @@ This resilience was one of the reasons the application continued to be used acro
 In 2018–2019, due to family reasons, I made the personal decision to migrate to Spain and begin a new professional chapter.  
 Even with this change, the story of the application did not end.  
 
+I am deeply grateful to ***Spain***, which has given me the opportunity to keep growing professionally and personally. That growth, however, is another story — one you can explore in more detail in the [About section](/about/).  
+
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="{{ '/assets/images/adp-act-remote-support.webp' | relative_url }}" 
        style="max-width:75%; height:auto;">
@@ -270,4 +281,151 @@ One such request in 2025 would ultimately become the spark to **restart developm
 
 ---
 
-## ***To Be Continued...***
+## 6. Relaunch: A New Version (2025) 🚀
+
+After more than two decades in production, a client request in 2025 sparked the idea of bringing the system back to life in a modern form. The motivation was clear: the software had proven its value and adaptability, and it deserved a new chapter with today’s technologies.
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-home.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Home.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-pers-mng.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Personnel Management.
+  </figcaption>
+</figure>
+
+Technology stack of the new version:
+
+- 🗄️ Database: SQLite (lightweight, reliable, and portable).
+- 🐍 Programming & GUI: Python with Flet, allowing modern, responsive interfaces.
+- 💻 Multi-platform: Fully compatible with Windows, Linux, and macOS.
+- 📡 Device compatibility: Designed to work with a wide range of attendance devices — from Wi-Fi and USB-based readers to laser scanners and Android mobile devices.
+- 📱 Extensible by design: Built to adapt to future needs and integrate new devices or workflows seamlessly.
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-db-struct.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - SQLite DB Structure.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-code-snipped.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Code Snipped.
+  </figcaption>
+</figure>
+
+This new phase is not just a rewrite — it’s a reinvention. The goal is to preserve the robustness and flexibility of the original system, while embracing modern development practices, open-source tools, and cross-platform compatibility.
+
+More importantly, the system is no longer limited to time and attendance tracking. Its architecture now allows extending its scope into broader areas of workforce and operational management, such as:
+
+- Activity-based tracking: Measuring hours dedicated to specific tasks, projects, or activities.
+- Workstation monitoring: Associating labor hours with production lines, equipment, or workstations.
+- Production chain integration: Recording and analyzing time spent across different steps of industrial workflows.
+- Planning and projections: Estimating workload, forecasting resource consumption, and supporting strategic scheduling.
+- Flexible reporting: From traditional attendance logs to predictive dashboards with charts and analytics.
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-variables-creation.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Variables Creation Form.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-shifts&schedulles.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Shifts & Schedulles Form.
+  </figcaption>
+</figure>
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-2025-trans-mng.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos 2025 - Transactions Management Form.
+  </figcaption>
+</figure>
+
+***In short, the 2025 version is designed as a modular and future-ready platform — capable of evolving from a personnel control system into a full workforce and process management solution.***
+
+## 7. Reflections & Lessons Learned  
+
+Looking back at this 25-year journey, the development and evolution of the system taught me valuable lessons that go far beyond technical skills.  
+
+### 🕰️ Software Longevity
+
+One of the most striking aspects of this project is its **long lifespan**.  
+What started as a simple Access database in 2000 continued to run successfully for almost two decades, even after I migrated to another country.  
+This reinforced the idea that software doesn’t always need to be “reinvented” every few years — if it is well designed, stable, and solves real problems, it can remain relevant far longer than expected.  
+
+### 🤝 Adapting to Client Needs
+
+From the very beginning, the philosophy was clear: **the client should not adapt to the software — the software must adapt to the client**.  
+This flexibility, whether in adding new reports, supporting custom workflows, or integrating with different attendance devices, built a strong reputation and loyalty.  
+It also highlighted that the real value of a system is not in imposing “best practices,” but in empowering the client to optimize their own processes.  
+
+### 🛠️ Building in Tough Environments
+
+Developing and maintaining a commercial system in Venezuela between 2002 and 2018 was no easy task.  
+Economic instability, political challenges, and the rise and fall of oil production created a constantly shifting environment.  
+Yet, this forced the project to be **resilient and practical**: lightweight, flexible, and able to deliver results even with limited resources.  
+These conditions became an unexpected training ground for building robust and efficient solutions.  
+
+### 🌍 The Value of Trust
+
+Perhaps the most important lesson is the **long-term trust built with clients**.  
+Even years after migrating to Spain, I continued to provide support to companies still running the system in Venezuela and abroad.  
+The fact that clients relied on the application for critical operations over two decades is a testament to the importance of reliability, communication, and commitment in professional relationships.  
+
+---
+
+***These lessons are not only part of the system’s history, but also part of my personal and professional growth as a developer and engineer.***
+
+## 8. Conclusion  
+
+Looking back, it is remarkable to see how a small tool built in 2000 for my own personal use gradually grew into an **industry-wide solution** adopted by more than 80 companies and used by over 8,000 workers by 2018.  
+What started as a set of SQL queries in Microsoft Access became a robust workforce management system capable of adapting to complex requirements in one of the most demanding industries.  
+
+Looking forward, the story continues.  
+In 2025, I am developing a **new version of the system** built with modern technologies:
+
+- **Database**: SQLite  
+- **Programming & GUI**: Python with Flet  
+- **Platforms**: Windows, macOS, Linux  
+- **Hardware integration**: adaptable to Wi-Fi, USB, mobile, and other attendance devices  
+
+This new chapter reflects not only technological progress, but also the resilience of an idea that has proven its value for more than two decades.  
+
+On a personal note, the system mirrors my own professional journey:  
+from Venezuela, where it was born and reached commercial success in the oil industry, to Spain, where I continue to grow as a developer and engineer.  
+Even today, I still provide support to clients who rely on the original system — a testament to the trust built over the years and to the longevity of software that truly solves real-world problems.  
+
+The project has come full circle: from a personal solution, to a commercial success, and now back to a new version shaped by both **experience and modern tools**.  
+And just like in 2000, the goal remains the same: **to listen, adapt, and deliver solutions that truly meet client needs**.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/adp-timeline.png' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Chronos - Timeline.
+  </figcaption>
+</figure>
+
+It is both a story of **software evolution** and of **personal growth** — from Venezuela’s oil industry, through migration to Spain, and back into active development with today’s tools.  
+
+---
+
+✍️ *Thanks for reading! This is more than a system — it’s the story of how real needs, resilience, and client trust shaped 25 years of development.*  
