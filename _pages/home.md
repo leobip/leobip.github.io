@@ -30,7 +30,7 @@ feature_row:
     url: "/adp-chronos/"
     btn_class: "btn--primary"
     btn_label: "👉 Read the full story →"
-  - image_path: /assets/images/mm-free-feature.png
+  - image_path: /assets/images/watchtower-logos.png
     alt: "GoWatchTower"
     title: "GoWatchtower: Kubernetes-native Observability in Go"
     excerpt: "A lightweight Golang library that turns any Operator into a real-time observability tool. Collects cluster metrics from native /metrics endpoints, streams them via Kafka, and powers full dashboards with Prometheus & Grafana — portable, fast, and designed for modern cloud-native environments."
