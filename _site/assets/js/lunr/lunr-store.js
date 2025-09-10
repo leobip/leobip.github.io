@@ -12,7 +12,7 @@ var store = [{
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "GoWatchTower",
-        "excerpt":"Photo from Internet. 📝 GoWatchtower: Kubernetes-native Observability in Go 1. Introduction 🌍 When you run workloads on Kubernetes, you learn one truth very quickly: things break, and they break fast. Pods crash, nodes get stressed, and operators — those little pieces of code meant to keep order — sometimes behave...","categories": ["Layout","Uncategorized"],
+        "excerpt":"Image generated with AI (custom design) 📝 GoWatchtower: Kubernetes-native Observability in Go 1. Introduction 🌍 When you run workloads on Kubernetes, you learn one truth very quickly: things break, and they break fast. Pods crash, nodes get stressed, and operators — those little pieces of code meant to keep order...","categories": ["Layout","Uncategorized"],
         "tags": ["edge case","featured image","image","layout"],
         "url": "/go-watchtower/",
         "teaser": "/assets/images/llp-banner.png"

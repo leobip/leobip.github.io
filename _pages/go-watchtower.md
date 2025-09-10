@@ -15,12 +15,12 @@ tags:
 
 
 {% capture fig_img %}
-![Foo]({{ '/assets/images/chronos-header.webp' | relative_url }})
+![Foo]({{ '/assets/images/go-watchtower-proj.png' | relative_url }})
 {% endcapture %}
 
 <figure>
   {{ fig_img | markdownify | remove: "<p>" | remove: "</p>" }}
-  <figcaption>Photo from Internet.</figcaption>
+  <figcaption>Image generated with AI (custom design)</figcaption>
 </figure>
 
 ## ***📝 GoWatchtower: Kubernetes-native Observability in Go***
@@ -30,6 +30,14 @@ tags:
 When you run workloads on Kubernetes, you learn one truth very quickly: **things break, and they break fast**. Pods crash, nodes get stressed, and operators — those little pieces of code meant to keep order — sometimes behave like stubborn coworkers who refuse to share updates.  
 
 That’s where **observability** becomes critical. You can’t fix what you can’t see — and in the cloud-native world, visibility often means the difference between smooth sailing and chasing down a ghost bug at 3 AM.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/go-watchtower-proj-troubles.png' | relative_url }}" 
+       style="max-width:60%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Image generated with AI (custom design).
+  </figcaption>
+</figure>
 
 But here’s the pain point:
 
@@ -95,14 +103,6 @@ This stack became the **foundation layer** for everything that followed. Without
 
 With the code in Visual Basic for Applications and the queries in sql all inside MS Access
 adp-orig-code
-
-<figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/adp-orig-code.png' | relative_url }}" 
-       style="max-width:60%; height:auto;">
-  <figcaption style="margin-top: 0.5em; font-style: italic;">
-    VBA Code Snippet.
-  </figcaption>
-</figure>
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="{{ '/assets/images/adp-orig-sql-code.png' | relative_url }}" 
