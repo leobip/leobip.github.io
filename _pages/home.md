@@ -34,7 +34,7 @@ feature_row:
     alt: "GoWatchTower"
     title: "GoWatchtower: Kubernetes-native Observability in Go"
     excerpt: "A lightweight Golang library that turns any Operator into a real-time observability tool. Collects cluster metrics from native /metrics endpoints, streams them via Kafka, and powers full dashboards with Prometheus & Grafana — portable, fast, and designed for modern cloud-native environments."
-    url: "/gowatchtower/"
+    url: "/go-watchtower/"
     btn_class: "btn--primary"
     btn_label: "🚀 Explore the project →"      
 ---

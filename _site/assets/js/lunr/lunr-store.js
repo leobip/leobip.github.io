@@ -11,6 +11,12 @@ var store = [{
         "url": "/adp-chronos/",
         "teaser": "/assets/images/llp-banner.png"
       },{
+        "title": "GoWatchTower",
+        "excerpt":"Photo from Internet. 📝 GoWatchtower: Kubernetes-native Observability in Go 1. Introduction 🌍 When you run workloads on Kubernetes, you learn one truth very quickly: things break, and they break fast. Pods crash, nodes get stressed, and operators — those little pieces of code meant to keep order — sometimes behave...","categories": ["Layout","Uncategorized"],
+        "tags": ["edge case","featured image","image","layout"],
+        "url": "/go-watchtower/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
         "title": "Develop. Share. Learn.",
         "excerpt":"Career Journey Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology. Learn more → From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry A journey that started in 2000 as a simple database with SQL...","categories": [],
         "tags": [],
@@ -18,7 +24,7 @@ var store = [{
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Sitemap",
-        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 11 minute read Develop. Share. Learn. less than 1 minute read Your digital gateway to...","categories": [],
+        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 11 minute read GoWatchTower 3 minute read Develop. Share. Learn. less than 1 minute read...","categories": [],
         "tags": [],
         "url": "/sitemap/",
         "teaser": "/assets/images/llp-banner.png"
