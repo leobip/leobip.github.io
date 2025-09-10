@@ -12,7 +12,7 @@ var store = [{
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Develop. Share. Learn.",
-        "excerpt":"Career Journey Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology. Learn more From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry A journey that started in 2000 as a simple database with SQL queries...","categories": [],
+        "excerpt":"Career Journey Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology. Learn more → From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry A journey that started in 2000 as a simple database with SQL...","categories": [],
         "tags": [],
         "url": "/",
         "teaser": "/assets/images/llp-banner.png"

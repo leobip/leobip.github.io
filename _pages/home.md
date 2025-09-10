@@ -9,9 +9,9 @@ header:
   overlay_filter: 0.3
   height: 300px
   min_height: 300px
-  actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
+  # actions:
+  #   - label: "<i class='fas fa-download'></i> Install now"
+  #     url: "/docs/quick-start-guide/"
 excerpt: >
   Your digital gateway to my personal and professional career in the world of technology.<br />
   <small><a href="https://github.com/leobip">Personal - GitHub</a></small>
@@ -22,7 +22,7 @@ feature_row:
     excerpt: "Learn more about my experience, academic background, certifications, and projects that have shaped my career in technology."
     url: "/about/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
+    btn_label: "Learn more →"
   - image_path: /assets/images/chronos-worktable.png
     alt: "fully responsive"
     title: "From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry"
