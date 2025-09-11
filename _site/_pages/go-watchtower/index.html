@@ -307,7 +307,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          8 minute read
         
       </span>
     
@@ -385,6 +385,13 @@ In Kubernetes, “basics” often means one thing: <strong>metrics</strong>. You
   <li><strong>Kafka</strong> (because sometimes you want metrics to <em>travel places</em>)</li>
 </ul>
 
+<figure>
+  
+<img src="/assets/images/go-watchtower-monitoring.webp" alt="Foo" />
+
+  <figcaption>Moniotring - Image from Internet.</figcaption>
+</figure>
+
 <p>Why this setup?<br />
 Because I needed a <strong>playground</strong> — a reproducible local environment where I could experiment with streaming pipelines, dashboards, and debugging flows without breaking anything in production.</p>
 
@@ -401,22 +408,177 @@ Because I needed a <strong>playground</strong> — a reproducible local environm
 <p>👉 You can find the repo here: <a href="https://github.com/leobip/monitoring">📡 Monitoring</a><br />
 👉 And the detailed post here: <a href="/local-monitoring-env">Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)</a></p>
 
-<figure>
-  
-<img src="/assets/images/adp-orig-structure.png" alt="Foo" />
+<hr />
 
-  <figcaption>DB Structure of the first commercial atemp.</figcaption>
-</figure>
+<h2 id="3-building-a-minimal-operator-️">3. Building a Minimal Operator ⚙️</h2>
 
-<p>With the code in Visual Basic for Applications and the queries in sql all inside MS Access
-adp-orig-code</p>
+<p>Once the monitoring stack was running, I realized I had nothing fun to <em>actually</em> monitor.<br />
+That’s when the idea came: why not build a <strong>simple operator</strong> as a training ground?</p>
+
+<p>The goals were modest (at least at first):</p>
+
+<ul>
+  <li>Learn <strong>Golang</strong> (spoiler: lots of <code class="language-plaintext highlighter-rouge">panic: nil pointer dereference</code> along the way).</li>
+  <li>Learn <strong>Kubebuilder</strong> and the basics of writing controllers/CRDs.</li>
+  <li>Create something that could generate realistic signals to feed into Prometheus and Grafana.</li>
+</ul>
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="/assets/images/adp-orig-sql-code.png" style="max-width:60%; height:auto;" />
+  <img src="/assets/images/go-watchtower-k8operator.webp" style="max-width:100%; height:auto;" />
   <figcaption style="margin-top: 0.5em; font-style: italic;">
-    Sql Code Snippet.
+    Kubernetes Operastor, What is? - Image from Internet.
   </figcaption>
 </figure>
+
+<p>So, the operator came with its own little zoo of test pods:</p>
+
+<ul>
+  <li>🧮 <strong>stress-cpu</strong> → max out cores until the laptop fans sounded like a jet engine.</li>
+  <li>💾 <strong>memory-load</strong> → chew up RAM and watch nodes sweat.</li>
+  <li>🌐 <strong>nginx</strong> → a simple workload to expose network/service metrics.</li>
+</ul>
+
+<p>Beyond just deploying pods, I extended the operator to export <strong>custom metrics</strong>:</p>
+
+<ul>
+  <li>Reconcile duration (how long the operator took to react).</li>
+  <li>Error count (because yes, I made plenty of them).</li>
+  <li>Event tracking (to know when/why something triggered).</li>
+</ul>
+
+<p>This “sandbox operator” was where the lightbulb went on 💡: operators can be way more powerful if they’re observable.<br />
+Instead of being black boxes, they can tell you exactly <em>how</em> they’re behaving.</p>
+
+<p>👉 Repo: <a href="https://github.com/leobip/simple-operator">Simple Operator</a><br />
+👉 Post: <a href="/simple-operator/">Building a Minimal Kubernetes Operator with Custom Metrics Support in Go</a></p>
+
+<hr />
+
+<h2 id="4-the-metrics-library-decoupling-observability-from-business-logic-">4. The Metrics Library: Decoupling Observability from Business Logic 📚</h2>
+
+<p>By this point, the Operator was doing its job, pods were screaming under stress tests, and Prometheus/Grafana had something to chew on.<br />
+But there was still a problem: <strong>all the metrics logic was tangled up inside the operator code</strong>.</p>
+
+<p>That’s fine when you’re tinkering… but what if you want to reuse it in <em>another</em> operator?<br />
+Or keep your operator’s core logic clean, without sprinkling metric counters and histograms all over the place?</p>
+
+<p>👉 The answer: <strong>abstract the observability logic into its own library</strong>.</p>
+
+<h3 id="design-principles">Design principles</h3>
+
+<ul>
+  <li>🔌 <strong>Minimal intrusion</strong>: Drop it in, configure a few lines, done.</li>
+  <li>📈 <strong>Prometheus endpoints</strong>: Make metrics available without extra exporters.</li>
+  <li>📡 <strong>Kafka producer</strong>: Stream metrics outward for advanced use cases (dashboards, alerting, external consumers).</li>
+</ul>
+
+<h3 id="benefits">Benefits</h3>
+
+<ul>
+  <li>♻️ <strong>Reusability</strong>: Any operator can plug it in.</li>
+  <li>🧩 <strong>Separation of concerns</strong>: Business logic does its job, metrics logic does its own.</li>
+  <li>🚀 <strong>Portability</strong>: Works in local dev, staging, or production.</li>
+</ul>
+
+<h3 id="tech-stack">Tech stack</h3>
+
+<ul>
+  <li>🐹 <strong>Golang</strong> (because yes, this was also my way of learning Go properly).</li>
+  <li>📊 <strong>Prometheus client</strong> (battle-tested, widely adopted).</li>
+  <li>⚡ <strong>Kafka producer</strong> (for those times when plain dashboards just aren’t enough).</li>
+</ul>
+
+<p>This was the step where the idea of <em>GoWatchtower</em> really started to look like more than a playground project.<br />
+It became something I could imagine plugging into <strong>any operator</strong> — without rewriting the wheel every time.</p>
+
+<p>👉 Repo: <a href="https://github.com/leobip/metrics-libs">Metrics Libs</a><br />
+👉 Post: <a href="/metrics-libs/">Golang Library for Operator Metrics: Prometheus + Kafka</a></p>
+
+<hr />
+
+<h2 id="5-from-pieces-to-vision-gowatchtower-️">5. From Pieces to Vision: GoWatchtower 🏗️</h2>
+
+<p>At this stage, all the puzzle pieces were on the table:</p>
+
+<ul>
+  <li>📡 <strong>Monitoring Stack</strong> → the infrastructure backbone.</li>
+  <li>⚙️ <strong>Simple Operator</strong> → the sandbox and testbed.</li>
+  <li>📚 <strong>Metrics Library</strong> → the reusable engine.</li>
+</ul>
+
+<p>Put them together, and you start to see the bigger picture:<br />
+👉 <strong>GoWatchtower</strong>.</p>
+
+<p>The concept was simple (at least on paper):</p>
+
+<ul>
+  <li>Hook into any Operator with minimal code intrusion.</li>
+  <li>Collect metrics not just from pods, but across namespaces.</li>
+  <li>Stream them through Kafka for advanced pipelines.</li>
+  <li>Visualize in Grafana, without needing a PhD in dashboards.</li>
+</ul>
+
+<p>And because every side project needs a touch of madness:</p>
+
+<p>💡 <em>What if one day we had an install/config UI, and could push alerts straight to Slack… or WhatsApp?</em><br />
+Yes, imagine your phone buzzing at 3AM to let you know your pod is on fire 🔥. Fun, right?</p>
+
+<p>GoWatchtower isn’t just “yet another monitoring tool.”<br />
+It’s about creating an <strong>observability extension</strong> that respects your Operator’s logic, while giving you the visibility you need.<br />
+Think of it as the friendly observer in the corner of the room, taking notes but not interrupting the meeting.</p>
+
+<hr />
+
+<h2 id="6-roadmap--next-steps-️">6. Roadmap &amp; Next Steps 🛣️</h2>
+
+<p>Where does GoWatchtower go from here?<br />
+Here’s the plan (subject to caffeine levels ☕):</p>
+
+<h3 id="short-term-now--q4-2025">Short-term (Now → Q4 2025)</h3>
+
+<ul>
+  <li>Polish the Metrics Library.</li>
+  <li>Write clear docs for integrating it into <em>any</em> operator.</li>
+  <li>Publish example dashboards (ready to import into Grafana).</li>
+</ul>
+
+<h3 id="mid-term-2026">Mid-term (2026)</h3>
+
+<ul>
+  <li>Build a <strong>GoWatchtower Operator</strong>:
+    <ul>
+      <li>Auto-install Prometheus, Grafana, Kafka.</li>
+      <li>Auto-wire dashboards.</li>
+    </ul>
+  </li>
+  <li>Expand Kafka integrations for external consumers.</li>
+</ul>
+
+<h3 id="long-term-2027">Long-term (2027+)</h3>
+
+<ul>
+  <li>Add a <strong>UI for configuration</strong> (easy setup for devs who don’t want to read YAML at 2AM).</li>
+  <li>Push alerts to external platforms (Slack, Teams… or yes, even WhatsApp).</li>
+  <li>Explore an <strong>SDK for other languages</strong> (because Go shouldn’t have all the fun).</li>
+</ul>
+
+<hr />
+
+<h2 id="7-reflections-">7. Reflections 💭</h2>
+
+<p>Looking back, here are the key lessons:</p>
+
+<ul>
+  <li>🔍 <strong>Observability = Trust</strong>. Metrics are useless unless they’re understandable and reliable.</li>
+  <li>🧩 <strong>Modularity wins</strong>. By splitting infra, operator, and metrics into separate blocks, each piece is useful on its own.</li>
+  <li>🧪 <strong>Iterative development works</strong>. Starting small (infra → operator → lib → vision) meant validating each step before going further.</li>
+  <li>🚀 <strong>GoWatchtower isn’t an end product</strong> — it’s the natural outcome of experiments, feedback, and a bit of stubborn curiosity.</li>
+</ul>
+
+<p>If there’s one takeaway, it’s this:<br />
+<strong>Don’t force people to adapt to your tools. Build tools that adapt to people.</strong></p>
+
+<p>That’s the philosophy behind GoWatchtower — and why I think it could be a small but meaningful contribution to the Kubernetes ecosystem.</p>
 
 <hr />
 
