@@ -24,7 +24,7 @@ var store = [{
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Sitemap",
-        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 11 minute read GoWatchTower 7 minute read Develop. Share. Learn. less than 1 minute read...","categories": [],
+        "excerpt":"A list of all the posts and pages found on the site. For you robots out there is an XML version available for digesting as well. Pages Career Journey 4 minute read CHRONOS Workforce App 11 minute read GoWatchTower 7 minute read Develop. Share. Learn. 1 minute read Your digital...","categories": [],
         "tags": [],
         "url": "/sitemap/",
         "teaser": "/assets/images/llp-banner.png"
@@ -41,16 +41,22 @@ var store = [{
         "url": "/layout/python/help-tools/python-library/",
         "teaser": "/assets/images/llp-banner.png"
       },{
-        "title": "Building a Local Development, Testing, and Deployment Environment",
-        "excerpt":"Local Development Environment Setup Guide Introduction Setting up a well-structured local development environment is crucial for improving code quality, automating testing, and streamlining deployment. In this guide, we will progressively build a local development ecosystem, adding essential tools step by step. Our goal is to create an environment that helps...","categories": [],
-        "tags": [],
-        "url": "/local-dev-env/",
-        "teaser": "/assets/images/llp-banner.png"
-      },{
         "title": "🔍 SonarQube / SonarLint - Install, Config & Analysis",
         "excerpt":"SonarQube &amp; SonarLint Introduction In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness....","categories": ["Sonarqube","static analysis","tools"],
         "tags": ["edge case"],
         "url": "/sonarqube/static%20analysis/tools/local-env-sonarqube/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
+        "title": "⚙️💻 Building a Local Development, Testing & Deployment Environment",
+        "excerpt":"⚙️💻 Local Development Environment Setup Guide 🔎 Introduction A well-structured local development environment is essential for improving code quality, automating testing, and streamlining deployments. In this guide, we will progressively build a local ecosystem for developers, adding essential tools step by step. The final goal is to create an environment...","categories": ["cicd","development","tools","deployment"],
+        "tags": ["edge case"],
+        "url": "/cicd/development/tools/deployment/local-dev-env/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
+        "title": "🌳 Branching Model & 📌 Semantic Versioning in Git Workflows",
+        "excerpt":"🌳 Branching Model &amp; 📌 Semantic Versioning 🔎 Introduction Managing branches and releases efficiently is crucial for maintaining code quality, traceability, and smooth deployments. In this article, we’ll explain how to structure your Git workflow using branches for different purposes and how to apply Semantic Versioning (SemVer) to tag releases....","categories": ["git","cicd","versioning"],
+        "tags": ["branching","git-flow","semantic-versioning"],
+        "url": "/git/cicd/versioning/semantic-versioning/",
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Local Monitoring Stack for Kubernetes",

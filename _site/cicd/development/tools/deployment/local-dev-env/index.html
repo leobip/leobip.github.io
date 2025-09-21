@@ -1,0 +1,900 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>⚙️💻 Building a Local Development, Testing &amp; Deployment Environment - My Personal Page</title>
+<meta name="description" content="⚙️💻 Local Development Environment Setup Guide">
+
+
+  <meta name="author" content="Leoncio López">
+  
+  <meta property="article:author" content="Leoncio López">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My Personal Page">
+<meta property="og:title" content="⚙️💻 Building a Local Development, Testing &amp; Deployment Environment">
+<meta property="og:url" content="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/">
+
+
+  <meta property="og:description" content="⚙️💻 Local Development Environment Setup Guide">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2025-04-20T21:55:15+02:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="My Personal Page Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/alpha-omega-logo.jpg" alt="Leoncio López"></a>
+        
+        <a class="site-title" href="/">
+          Leoncio López
+          <span class="site-subtitle">Portfolio &amp; Proyects</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/year-archive/"
+                
+                
+              >Posts</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/collection-archive/"
+                
+                
+              >Collections</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/sitemap/"
+                
+                
+              >Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/llp-avatar.jpg" alt="Leoncio López" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Leoncio López</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Cloud &amp; DevOps Engineer · Kubernetes · Kafka · Golang</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Madrid - Spain</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:leobip27@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://www.linkedin.com/in/leoncio-lopez-00527474/" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/leobip" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:leobip27@gmail.com" rel="me" class="u-email">
+            <meta itemprop="email" content="leobip27@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="⚙️💻 Building a Local Development, Testing &amp; Deployment Environment">
+    <meta itemprop="description" content="⚙️💻 Local Development Environment Setup Guide">
+    <meta itemprop="datePublished" content="2025-04-20T21:55:15+02:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/" itemprop="url">⚙️💻 Building a Local Development, Testing &amp; Deployment Environment
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="️-local-development-environment-setup-guide">⚙️💻 Local Development Environment Setup Guide</h2>
+
+<h2 id="-introduction">🔎 Introduction</h2>
+
+<p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.</p>
+
+<p>In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
+
+<p>This article serves as the <strong>central hub</strong> of the series — each tool (e.g., SonarQube, ArgoCD, Monitoring) will have its own dedicated post with installation details, while here we’ll explain <strong>how everything integrates together</strong>.</p>
+
+<hr />
+
+<h2 id="-planned-components">🗂 Planned Components</h2>
+
+<ul>
+  <li><strong>🔍 Code Analysis (SonarQube)</strong> – Static code analysis for code quality.</li>
+  <li><strong>📝 Linting (SonarLint for IDEs)</strong> – Consistent coding standards in real-time.</li>
+  <li><strong>🔄 Version Control (GitHub)</strong> – Branches, PRs, tags, semantic versioning (we’ll link a dedicated article).</li>
+  <li><strong>⚡ CI/CD Pipelines (GitHub Actions)</strong> – Automated build &amp; test pipelines.</li>
+  <li><strong>🚀 Deployment (ArgoCD)</strong> – GitOps-based application delivery.</li>
+  <li><strong>📊 Monitoring (Prometheus, Grafana)</strong> – Observability for apps.</li>
+</ul>
+
+<hr />
+
+<h2 id="-project-structure">📂 Project Structure</h2>
+
+<p>Here’s the proposed folder layout for our environment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-dev-environment/
+│
+├── sonarqube/                  <span class="c"># SonarQube setup and configuration</span>
+│   ├── conf/                   <span class="c"># SonarQube config (sonar.properties, etc.)</span>
+│   ├── data/                   <span class="c"># Persistent data storage</span>
+│   ├── logs/                   <span class="c"># Log files</span>
+│   └── extensions/             <span class="c"># Plugins &amp; extensions</span>
+│
+├── code-examples/              <span class="c"># Sample code for analysis &amp; testing</span>
+│   └── python/
+│       └── api-requests.py
+│
+├── tests/                      <span class="c"># Example unit tests</span>
+│   └── test_example.py
+│
+├── .github/
+│   ├── workflows/
+│   │   └── sonarqube-analysis.yml  <span class="c"># Pipeline  </span>
+│   └── actions-runner/             <span class="c"># Self-hosted GitHub Actions Runner</span>
+│       └── run.sh                  <span class="c"># Script to start the runner</span>
+│
+├── docker-compose.yaml         <span class="c"># Compose file for multiple services</span>
+├── README.md                   <span class="c"># Project documentation</span>
+└── requirements.txt            <span class="c"># Dependencies</span>
+...
+... <span class="o">(</span><span class="k">in </span>development<span class="o">)</span>
+
+</code></pre></div></div>
+
+<h3 id="steps">Steps</h3>
+
+<ul>
+  <li>Create the folders and initialize the repository</li>
+  <li>You can initialize the repository by running git init in the root folder of local-dev-environment.</li>
+  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/your-repository-link">Project GitHub Repository</a></li>
+</ul>
+
+<p>This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.</p>
+
+<h2 id="-static-code-analysis-with-sonarqube">🔍 Static Code Analysis with SonarQube</h2>
+
+<p>We start our environment with SonarQube, a powerful static analysis tool that detects bugs, security vulnerabilities, and code smells.</p>
+
+<p>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></p>
+
+<p>Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.</p>
+
+<hr />
+
+<h2 id="-github-actions--sonarqube-analysis-pipeline">⚡ GitHub Actions – SonarQube Analysis Pipeline</h2>
+
+<p>As a first CI/CD integration, let’s configure a GitHub Actions workflow to run SonarQube scans on our code.
+This pipeline runs on the dev branch — a common branching strategy where:</p>
+
+<ul>
+  <li>dev → integration branch for ongoing development</li>
+  <li>main → stable production-ready branch</li>
+  <li>feature/* → temporary branches for new features</li>
+</ul>
+
+<p>👉 We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+
+<hr />
+
+<h3 id="-setting-up-github-actions">🔧 Setting Up GitHub Actions</h3>
+
+<ol>
+  <li>Navigate to your repository on GitHub.</li>
+  <li>Click on the <strong>Actions</strong> tab in the repository menu.</li>
+  <li>If this is your first time, you’ll be prompted to configure a new workflow. Click <strong>“Set up this workflow yourself”</strong>.</li>
+  <li>GitHub will open a YAML editor where you can define your first workflow.</li>
+  <li>
+    <p>Inside your repository, make sure you have the following directory structure:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.github/
+  └── workflows/
+      └── sonarqube-analysis.yml
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>This file will contain the pipeline configuration for SonarQube analysis.</p>
+
+<h3 id="-add-sonarqube-token-to-github-secrets">🔑 Add SonarQube Token to GitHub Secrets</h3>
+
+<p>For the workflow to authenticate with SonarQube, you need a token:</p>
+
+<ul>
+  <li>Generate a token in SonarQube:
+    <ul>
+      <li>Go to My Account → Security → Generate Tokens.</li>
+      <li>Copy the generated token (you will not be able to see it again).</li>
+    </ul>
+  </li>
+  <li>Add it to your GitHub repository secrets:
+    <ul>
+      <li>Open your GitHub repository.</li>
+      <li>Go to Settings → Secrets and variables → Actions.</li>
+      <li>Click New repository secret.</li>
+      <li>Name it SONAR_TOKEN and paste the value from SonarQube.</li>
+    </ul>
+  </li>
+  <li>Workflow File: .github/workflows/sonarqube-analysis.yml</li>
+</ul>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">SonarQube Analysis</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">dev</span>
+  <span class="c1"># Uncomment below if you want to analyze PRs into main</span>
+  <span class="c1"># pull_request:</span>
+  <span class="c1">#   branches:</span>
+  <span class="c1">#     - main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">sonarQube</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">self-hosted</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout code</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v4</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run SonarScanner</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">sonar-scanner \</span>
+            <span class="s">-Dsonar.projectKey=chronos-desktop-app \</span>
+            <span class="s">-Dsonar.sources=. \</span>
+            <span class="s">-Dsonar.host.url=http://localhost:9001 \</span>
+            <span class="s">-Dsonar.login=$</span>
+</code></pre></div></div>
+
+<h2 id="️-setting-up-the-actions-runner">🖥️ Setting Up the Actions Runner</h2>
+
+<p>Since we’re running SonarQube locally, the pipeline needs a self-hosted GitHub Actions runner.</p>
+
+<h3 id="steps-to-add-actions-runner">Steps to Add Actions Runner</h3>
+
+<ul>
+  <li>Create the folder:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> .github/actions-runner
+</code></pre></div></div>
+
+<ul>
+  <li>Inside, add the script run.sh:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> .github/actions-runner
+./run.sh
+
+<span class="c"># Make it executable:</span>
+<span class="nb">chmod</span> +x .github/actions-runner/run.sh
+
+<span class="c"># Start the runner before pushing code:</span>
+./github/actions-runner/run.sh
+</code></pre></div></div>
+
+<h3 id="️-important-notes">⚠️ Important Notes</h3>
+
+<p>✅ SonarQube must be running → Since we deployed it via Docker Compose, containers will auto-restart after a reboot (unless stopped manually in Docker Desktop). You can always check in Docker Desktop or via docker ps.</p>
+
+<p>✅ Start the runner before committing/pushing → If the runner isn’t running, GitHub won’t detect the workflow and the pipeline won’t execute.</p>
+
+<p>✅ Branch strategy → For now, we trigger analysis only on dev. Later, we’ll extend this to main and release workflows.</p>
+
+<h3 id="-key-points">🔑 Key Points</h3>
+
+<ul>
+  <li>runs-on: self-hosted → The job runs on a self-hosted runner (needed since we use local SonarQube).</li>
+  <li>SONAR_TOKEN → Stored in GitHub Secrets, generated from SonarQube.</li>
+  <li>Branching strategy → For now, we run scans on dev. Later, we may extend it to main or PRs.</li>
+</ul>
+
+<p>This ensures every code change on dev is scanned, keeping quality checks aligned with our development workflow.</p>
+
+<h2 id="-next-steps">🚀 Next Steps</h2>
+
+<ul>
+  <li>Expand pipelines to include tests, builds, and deployments.</li>
+  <li>Add ArgoCD to migrate and manage SonarQube in Kubernetes.</li>
+  <li>Extend analysis pipelines for main branch with semantic versioning &amp; release tags.</li>
+  <li>Integrate monitoring to visualize the health of our apps.</li>
+</ul>
+
+<p>This is just the first building block of our developer ecosystem. With each article, we’ll add another piece until the full puzzle comes together. 🧩</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#edge-case" class="page__taxonomy-item p-category" rel="tag">edge case</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#cicd" class="page__taxonomy-item p-category" rel="tag">cicd</a><span class="sep">, </span>
+    
+      <a href="/categories/#deployment" class="page__taxonomy-item p-category" rel="tag">deployment</a><span class="sep">, </span>
+    
+      <a href="/categories/#development" class="page__taxonomy-item p-category" rel="tag">development</a><span class="sep">, </span>
+    
+      <a href="/categories/#tools" class="page__taxonomy-item p-category" rel="tag">tools</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2025-04-20T21:55:15+02:00">April 20, 2025</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  <h4 class="page__share-title">Share on</h4>
+
+  <a href="https://x.com/intent/tweet?text=%E2%9A%99%EF%B8%8F%F0%9F%92%BB+Building+a+Local+Development%2C+Testing+%26+Deployment+Environment%20http%3A%2F%2Flocalhost%3A4000%2Fcicd%2Fdevelopment%2Ftools%2Fdeployment%2Flocal-dev-env%2F" class="btn btn--x" aria-label="Share on X" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on X">
+    <i class="fab fa-fw fa-x-twitter" aria-hidden="true"></i><span> X</span>
+  </a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fcicd%2Fdevelopment%2Ftools%2Fdeployment%2Flocal-dev-env%2F" class="btn btn--facebook" aria-label="Share on Facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook">
+    <i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span>
+  </a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/cicd/development/tools/deployment/local-dev-env/" class="btn btn--linkedin" aria-label="Share on LinkedIn" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+
+  <a href="https://bsky.app/intent/compose?text=%E2%9A%99%EF%B8%8F%F0%9F%92%BB+Building+a+Local+Development%2C+Testing+%26+Deployment+Environment%20http%3A%2F%2Flocalhost%3A4000%2Fcicd%2Fdevelopment%2Ftools%2Fdeployment%2Flocal-dev-env%2F" class="btn btn--bluesky" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Bluesky">
+    <i class="fab fa-fw fa-bluesky" aria-hidden="true"></i><span> Bluesky</span>
+  </a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/" class="pagination--pager" title="🔍 SonarQube / SonarLint - Install, Config &amp; Analysis">Previous</a>
+    
+    
+      <a href="/git/cicd/versioning/semantic-versioning/" class="pagination--pager" title="🌳 Branching Model &amp; 📌 Semantic Versioning in Git Workflows">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    
+<div class="page__related">
+  
+  <h2 class="page__related-title">You May Also Enjoy</h2>
+  <div class="grid__wrapper">
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/post-init/" rel="permalink">Post Init
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/local-monitoring-env/" rel="permalink">Local Monitoring Stack for Kubernetes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          10 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/git/cicd/versioning/semantic-versioning/" rel="permalink">🌳 Branching Model &amp; 📌 Semantic Versioning in Git Workflows
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">🌳 Branching Model &amp; 📌 Semantic Versioning
+
+</p>
+  </article>
+</div>
+
+    
+      
+      
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/llp-banner.png" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="permalink">🔍 SonarQube / SonarLint - Install, Config &amp; Analysis
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          6 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  
+  
+  
+
+
+</p>
+  </article>
+</div>
+
+    
+  </div>
+</div>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+          <li><a href="mailto:leobip27@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://www.linkedin.com/in/leoncio-lopez-00527474/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        
+      
+        
+          <li><a href="https://github.com/leobip" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2013 - 2025 <a href="http://localhost:4000">My Personal Page</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -274,7 +274,7 @@ docker-compose up -d
 
 ### Installation
 
-##### To install SonarLint in your IDE
+#### To install SonarLint in your IDE
 
 - VS Code: Install the "SonarLint" extension from the Extensions Marketplace
 - IntelliJ IDEA: Install the "SonarLint" plugin from the Plugins Marketplace.
@@ -316,7 +316,7 @@ Authenticate using a SonarQube token. (Or allow access from your Sonarqube insta
 
 ![sonarqube-config3](/assets/images/2025-03-20-sonarqube-ide-config3.jpg)
 
-_______________________
+---
 
 ![sonarqube-config4](/assets/images/2025-03-20-sonarqube-ide-config4.jpg)
 

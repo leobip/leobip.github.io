@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-21T15:55:32+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-21T21:46:27+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
 
 <p>Estoy probando cómo se ve el <strong>banner global</strong> y cómo se muestra en los posts.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes]]></summary></entry><entry><title type="html">Local Monitoring Stack for Kubernetes</title><link href="http://localhost:4000/local-monitoring-env/" rel="alternate" type="text/html" title="Local Monitoring Stack for Kubernetes" /><published>2025-07-26T18:32:04+02:00</published><updated>2025-07-26T18:32:04+02:00</updated><id>http://localhost:4000/local-monitoring-env</id><content type="html" xml:base="http://localhost:4000/local-monitoring-env/"><![CDATA[<h1 id="-local-monitoring-stack-for-kubernetes-prometheus--grafana--kafka">📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)</h1>
 
@@ -699,7 +699,326 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
     </ul>
   </li>
   <li><strong>Use minikube ip to get your cluster IP if needed.</strong></li>
-</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis</title><link href="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="alternate" type="text/html" title="🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
+</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows</title><link href="http://localhost:4000/git/cicd/versioning/semantic-versioning/" rel="alternate" type="text/html" title="🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows" /><published>2025-04-25T19:30:00+02:00</published><updated>2025-04-25T19:30:00+02:00</updated><id>http://localhost:4000/git/cicd/versioning/semantic-versioning</id><content type="html" xml:base="http://localhost:4000/git/cicd/versioning/semantic-versioning/"><![CDATA[<h2 id="-branching-model---semantic-versioning">🌳 Branching Model &amp; 📌 Semantic Versioning</h2>
+
+<h2 id="-introduction">🔎 Introduction</h2>
+
+<p>Managing branches and releases efficiently is crucial for maintaining <strong>code quality, traceability, and smooth deployments</strong>. In this article, we’ll explain how to structure your Git workflow using <strong>branches for different purposes</strong> and how to apply <strong>Semantic Versioning (SemVer)</strong> to tag releases.</p>
+
+<hr />
+
+<h2 id="-branching-strategy">🌳 Branching Strategy</h2>
+
+<p>We adopt a simplified <strong>Git Flow–inspired model</strong>:</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">main</code> branch</strong> → Always reflects the latest <strong>stable production-ready code</strong>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">dev</code> branch</strong> → Integration branch for ongoing development.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">feature/*</code> branches</strong> → Temporary branches for new features, merged back into <code class="language-plaintext highlighter-rouge">dev</code>.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">hotfix/*</code> branches</strong> → For urgent fixes, branched directly from <code class="language-plaintext highlighter-rouge">main</code>, then merged back into both <code class="language-plaintext highlighter-rouge">main</code> and <code class="language-plaintext highlighter-rouge">dev</code>.</li>
+</ul>
+
+<h3 id="example-workflow">Example Workflow</h3>
+
+<pre><code class="language-mermaid">gitGraph
+   commit id: "Init"
+   branch dev
+   checkout dev
+   commit id: "Feature A start"
+   branch feature/A
+   commit id: "WIP A1"
+   commit id: "WIP A2"
+   checkout dev
+   merge feature/A id: "Merge A"
+   commit id: "Stabilization"
+   checkout main
+   merge dev id: "Release v1.0.0"
+   branch hotfix/urgent
+   commit id: "Hotfix"
+   checkout main
+   merge hotfix/urgent id: "Release v1.0.1"
+   checkout dev
+   merge hotfix/urgent
+
+## 📌 Semantic Versioning (SemVer)
+
+We use Semantic Versioning 2.0.0 format:
+
+```bash
+MAJOR.MINOR.PATCH
+</code></pre>
+
+<ul>
+  <li>MAJOR → Breaking changes (e.g., API change, backward-incompatible refactor).</li>
+  <li>MINOR → New features, backward-compatible.</li>
+  <li>PATCH → Bug fixes, backward-compatible.</li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+  <li>1.0.0 → Initial stable release.</li>
+  <li>1.1.0 → Adds new features without breaking existing functionality.</li>
+  <li>1.1.1 → Fixes a bug without changing functionality.</li>
+</ul>
+
+<h2 id="-tagging-releases-in-git">🏷 Tagging Releases in Git</h2>
+
+<p>Each release is tagged with its SemVer version:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Tagging a release</span>
+git tag <span class="nt">-a</span> v1.0.0 <span class="nt">-m</span> <span class="s2">"Release v1.0.0 - Initial stable release"</span>
+git push origin v1.0.0
+</code></pre></div></div>
+
+<p>This allows:</p>
+
+<ul>
+  <li>CI/CD pipelines to build artifacts based on tags.</li>
+  <li>Traceability of deployments.</li>
+  <li>Easy rollback to previous versions.</li>
+</ul>
+
+<hr />
+
+<h2 id="-integration-with-cicd">🔗 Integration with CI/CD</h2>
+
+<ul>
+  <li>Development branch (dev) → triggers tests &amp; static analysis (e.g., SonarQube).</li>
+  <li>Main branch (main) → triggers build + deployment pipeline.</li>
+  <li>Tags (vX.Y.Z) → trigger release pipelines (e.g., publishing Docker images, Helm charts).</li>
+</ul>
+
+<hr />
+
+<h3 id="-conclusion">✅ Conclusion</h3>
+
+<p>By combining a clear branching strategy with Semantic Versioning, we ensure:</p>
+
+<ul>
+  <li>Predictable release cycles.</li>
+  <li>Traceability of features and fixes.</li>
+  <li>Alignment between Git workflow and CI/CD pipelines.</li>
+</ul>
+
+<p>This model scales from small projects to enterprise environments and integrates seamlessly with tools like SonarQube, GitHub Actions, and ArgoCD.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="git" /><category term="cicd" /><category term="versioning" /><category term="branching" /><category term="git-flow" /><category term="semantic-versioning" /><summary type="html"><![CDATA[🌳 Branching Model &amp; 📌 Semantic Versioning]]></summary></entry><entry><title type="html">⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment</title><link href="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/" rel="alternate" type="text/html" title="⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment" /><published>2025-04-20T21:55:15+02:00</published><updated>2025-04-20T21:55:15+02:00</updated><id>http://localhost:4000/cicd/development/tools/deployment/local-dev-env</id><content type="html" xml:base="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/"><![CDATA[<h2 id="️-local-development-environment-setup-guide">⚙️💻 Local Development Environment Setup Guide</h2>
+
+<h2 id="-introduction">🔎 Introduction</h2>
+
+<p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.</p>
+
+<p>In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
+
+<p>This article serves as the <strong>central hub</strong> of the series — each tool (e.g., SonarQube, ArgoCD, Monitoring) will have its own dedicated post with installation details, while here we’ll explain <strong>how everything integrates together</strong>.</p>
+
+<hr />
+
+<h2 id="-planned-components">🗂 Planned Components</h2>
+
+<ul>
+  <li><strong>🔍 Code Analysis (SonarQube)</strong> – Static code analysis for code quality.</li>
+  <li><strong>📝 Linting (SonarLint for IDEs)</strong> – Consistent coding standards in real-time.</li>
+  <li><strong>🔄 Version Control (GitHub)</strong> – Branches, PRs, tags, semantic versioning (we’ll link a dedicated article).</li>
+  <li><strong>⚡ CI/CD Pipelines (GitHub Actions)</strong> – Automated build &amp; test pipelines.</li>
+  <li><strong>🚀 Deployment (ArgoCD)</strong> – GitOps-based application delivery.</li>
+  <li><strong>📊 Monitoring (Prometheus, Grafana)</strong> – Observability for apps.</li>
+</ul>
+
+<hr />
+
+<h2 id="-project-structure">📂 Project Structure</h2>
+
+<p>Here’s the proposed folder layout for our environment:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-dev-environment/
+│
+├── sonarqube/                  <span class="c"># SonarQube setup and configuration</span>
+│   ├── conf/                   <span class="c"># SonarQube config (sonar.properties, etc.)</span>
+│   ├── data/                   <span class="c"># Persistent data storage</span>
+│   ├── logs/                   <span class="c"># Log files</span>
+│   └── extensions/             <span class="c"># Plugins &amp; extensions</span>
+│
+├── code-examples/              <span class="c"># Sample code for analysis &amp; testing</span>
+│   └── python/
+│       └── api-requests.py
+│
+├── tests/                      <span class="c"># Example unit tests</span>
+│   └── test_example.py
+│
+├── .github/
+│   ├── workflows/
+│   │   └── sonarqube-analysis.yml  <span class="c"># Pipeline  </span>
+│   └── actions-runner/             <span class="c"># Self-hosted GitHub Actions Runner</span>
+│       └── run.sh                  <span class="c"># Script to start the runner</span>
+│
+├── docker-compose.yaml         <span class="c"># Compose file for multiple services</span>
+├── README.md                   <span class="c"># Project documentation</span>
+└── requirements.txt            <span class="c"># Dependencies</span>
+...
+... <span class="o">(</span><span class="k">in </span>development<span class="o">)</span>
+
+</code></pre></div></div>
+
+<h3 id="steps">Steps</h3>
+
+<ul>
+  <li>Create the folders and initialize the repository</li>
+  <li>You can initialize the repository by running git init in the root folder of local-dev-environment.</li>
+  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/your-repository-link">Project GitHub Repository</a></li>
+</ul>
+
+<p>This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.</p>
+
+<h2 id="-static-code-analysis-with-sonarqube">🔍 Static Code Analysis with SonarQube</h2>
+
+<p>We start our environment with SonarQube, a powerful static analysis tool that detects bugs, security vulnerabilities, and code smells.</p>
+
+<p>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></p>
+
+<p>Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.</p>
+
+<hr />
+
+<h2 id="-github-actions--sonarqube-analysis-pipeline">⚡ GitHub Actions – SonarQube Analysis Pipeline</h2>
+
+<p>As a first CI/CD integration, let’s configure a GitHub Actions workflow to run SonarQube scans on our code.
+This pipeline runs on the dev branch — a common branching strategy where:</p>
+
+<ul>
+  <li>dev → integration branch for ongoing development</li>
+  <li>main → stable production-ready branch</li>
+  <li>feature/* → temporary branches for new features</li>
+</ul>
+
+<p>👉 We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+
+<hr />
+
+<h3 id="-setting-up-github-actions">🔧 Setting Up GitHub Actions</h3>
+
+<ol>
+  <li>Navigate to your repository on GitHub.</li>
+  <li>Click on the <strong>Actions</strong> tab in the repository menu.</li>
+  <li>If this is your first time, you’ll be prompted to configure a new workflow. Click <strong>“Set up this workflow yourself”</strong>.</li>
+  <li>GitHub will open a YAML editor where you can define your first workflow.</li>
+  <li>
+    <p>Inside your repository, make sure you have the following directory structure:</p>
+
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.github/
+  └── workflows/
+      └── sonarqube-analysis.yml
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>This file will contain the pipeline configuration for SonarQube analysis.</p>
+
+<h3 id="-add-sonarqube-token-to-github-secrets">🔑 Add SonarQube Token to GitHub Secrets</h3>
+
+<p>For the workflow to authenticate with SonarQube, you need a token:</p>
+
+<ul>
+  <li>Generate a token in SonarQube:
+    <ul>
+      <li>Go to My Account → Security → Generate Tokens.</li>
+      <li>Copy the generated token (you will not be able to see it again).</li>
+    </ul>
+  </li>
+  <li>Add it to your GitHub repository secrets:
+    <ul>
+      <li>Open your GitHub repository.</li>
+      <li>Go to Settings → Secrets and variables → Actions.</li>
+      <li>Click New repository secret.</li>
+      <li>Name it SONAR_TOKEN and paste the value from SonarQube.</li>
+    </ul>
+  </li>
+  <li>Workflow File: .github/workflows/sonarqube-analysis.yml</li>
+</ul>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">name</span><span class="pi">:</span> <span class="s">SonarQube Analysis</span>
+
+<span class="na">on</span><span class="pi">:</span>
+  <span class="na">push</span><span class="pi">:</span>
+    <span class="na">branches</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">dev</span>
+  <span class="c1"># Uncomment below if you want to analyze PRs into main</span>
+  <span class="c1"># pull_request:</span>
+  <span class="c1">#   branches:</span>
+  <span class="c1">#     - main</span>
+
+<span class="na">jobs</span><span class="pi">:</span>
+  <span class="na">sonarQube</span><span class="pi">:</span>
+    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">self-hosted</span>
+
+    <span class="na">steps</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Checkout code</span>
+        <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v4</span>
+
+      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Run SonarScanner</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">sonar-scanner \</span>
+            <span class="s">-Dsonar.projectKey=chronos-desktop-app \</span>
+            <span class="s">-Dsonar.sources=. \</span>
+            <span class="s">-Dsonar.host.url=http://localhost:9001 \</span>
+            <span class="s">-Dsonar.login=$</span>
+</code></pre></div></div>
+
+<h2 id="️-setting-up-the-actions-runner">🖥️ Setting Up the Actions Runner</h2>
+
+<p>Since we’re running SonarQube locally, the pipeline needs a self-hosted GitHub Actions runner.</p>
+
+<h3 id="steps-to-add-actions-runner">Steps to Add Actions Runner</h3>
+
+<ul>
+  <li>Create the folder:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> .github/actions-runner
+</code></pre></div></div>
+
+<ul>
+  <li>Inside, add the script run.sh:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="nb">cd</span> .github/actions-runner
+./run.sh
+
+<span class="c"># Make it executable:</span>
+<span class="nb">chmod</span> +x .github/actions-runner/run.sh
+
+<span class="c"># Start the runner before pushing code:</span>
+./github/actions-runner/run.sh
+</code></pre></div></div>
+
+<h3 id="️-important-notes">⚠️ Important Notes</h3>
+
+<p>✅ SonarQube must be running → Since we deployed it via Docker Compose, containers will auto-restart after a reboot (unless stopped manually in Docker Desktop). You can always check in Docker Desktop or via docker ps.</p>
+
+<p>✅ Start the runner before committing/pushing → If the runner isn’t running, GitHub won’t detect the workflow and the pipeline won’t execute.</p>
+
+<p>✅ Branch strategy → For now, we trigger analysis only on dev. Later, we’ll extend this to main and release workflows.</p>
+
+<h3 id="-key-points">🔑 Key Points</h3>
+
+<ul>
+  <li>runs-on: self-hosted → The job runs on a self-hosted runner (needed since we use local SonarQube).</li>
+  <li>SONAR_TOKEN → Stored in GitHub Secrets, generated from SonarQube.</li>
+  <li>Branching strategy → For now, we run scans on dev. Later, we may extend it to main or PRs.</li>
+</ul>
+
+<p>This ensures every code change on dev is scanned, keeping quality checks aligned with our development workflow.</p>
+
+<h2 id="-next-steps">🚀 Next Steps</h2>
+
+<ul>
+  <li>Expand pipelines to include tests, builds, and deployments.</li>
+  <li>Add ArgoCD to migrate and manage SonarQube in Kubernetes.</li>
+  <li>Extend analysis pipelines for main branch with semantic versioning &amp; release tags.</li>
+  <li>Integrate monitoring to visualize the health of our apps.</li>
+</ul>
+
+<p>This is just the first building block of our developer ecosystem. With each article, we’ll add another piece until the full puzzle comes together. 🧩</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="cicd" /><category term="development" /><category term="tools" /><category term="deployment" /><category term="edge case" /><summary type="html"><![CDATA[⚙️💻 Local Development Environment Setup Guide]]></summary></entry><entry><title type="html">🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis</title><link href="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="alternate" type="text/html" title="🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="/assets/images/2025-03-20-sonarqube-share.png" style="max-width:100%; height:auto;" />
   <figcaption style="margin-top: 0.5em; font-style: italic;">
   </figcaption>
@@ -996,7 +1315,7 @@ For reference, the SonarQube page on Docker Hub (https://hub.docker.com/_/sonarq
 
 <h3 id="installation">Installation</h3>
 
-<h5 id="to-install-sonarlint-in-your-ide">To install SonarLint in your IDE</h5>
+<h4 id="to-install-sonarlint-in-your-ide">To install SonarLint in your IDE</h4>
 
 <ul>
   <li>VS Code: Install the “SonarLint” extension from the Extensions Marketplace</li>
@@ -1075,60 +1394,7 @@ This is part of a broader series about building a <strong>local development &amp
 <p>In the following articles, we will integrate additional tools such as <strong>GitHub Actions pipelines, ArgoCD, and monitoring solutions</strong>.<br />
 When we introduce <strong>ArgoCD</strong>, we will also show how to migrate SonarQube from Docker Compose to Kubernetes and manage it through GitOps.</p>
 
-<p>Stay tuned — our development environment will keep evolving step by step! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="Sonarqube" /><category term="static analysis" /><category term="tools" /><category term="edge case" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Building a Local Development, Testing, and Deployment Environment</title><link href="http://localhost:4000/local-dev-env/" rel="alternate" type="text/html" title="Building a Local Development, Testing, and Deployment Environment" /><published>2025-03-20T21:43:44+01:00</published><updated>2025-03-20T21:43:44+01:00</updated><id>http://localhost:4000/local-dev-env</id><content type="html" xml:base="http://localhost:4000/local-dev-env/"><![CDATA[<h2 id="local-development-environment-setup-guide">Local Development Environment Setup Guide</h2>
-
-<h3 id="introduction">Introduction</h3>
-
-<p>Setting up a well-structured local development environment is crucial for improving code quality, automating testing, and streamlining deployment. In this guide, we will progressively build a local development ecosystem, adding essential tools step by step. Our goal is to create an environment that helps in writing, analyzing, testing, and deploying code efficiently.</p>
-
-<h3 id="planned-sections-for-start">Planned Sections (For Start)</h3>
-
-<ul>
-  <li><strong>Code Analysis (SonarQube)</strong> – Static code analysis to ensure quality.</li>
-  <li><strong>Version Control (GitHub)</strong> – Managing and tracking code changes.</li>
-  <li><strong>Linting (SonarLint for VS Code)</strong> – Ensuring code consistency in the IDE.</li>
-</ul>
-
-<hr />
-
-<h2 id="creation-of-the-structure">Creation of the Structure</h2>
-
-<p>To begin setting up the local development environment, let’s start by creating the folder structure for the project and defining where each tool and configuration will reside. Here’s a suggested structure:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-dev-environment/
-│
-├── sonarqube/                  <span class="c"># SonarQube setup and configuration</span>
-│   ├── conf/                   <span class="c"># SonarQube configuration files (sonar.properties, etc.)</span>
-│   └── data/                   <span class="c"># Data storage for SonarQube (database, etc.)</span>
-│
-├── tests/                      <span class="c"># Test files for local development</span>
-│   └── test_example.py         <span class="c"># Example unit test</span>
-│
-├── README.md                   <span class="c"># Project documentation</span>
-└── requirements.txt            <span class="c"># Dependencies for environment (if needed)</span>
-...
-... <span class="o">(</span><span class="k">in </span>development<span class="o">)</span>
-
-</code></pre></div></div>
-
-<h4 id="steps">Steps:</h4>
-
-<ul>
-  <li>Create the folders and initialize the repository</li>
-  <li>You can initialize the repository by running git init in the root folder of local-dev-environment.</li>
-  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/your-repository-link">Project GitHub Repository</a></li>
-</ul>
-
-<p>This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.</p>
-
-<h4 id="links-to-tools">Links to Tools:</h4>
-<p>SonarQube - https://www.sonarsource.com/</p>
-
-<p>GitHub - https://github.com/</p>
-
-<p>SonarLint - https://www.sonarsource.com/es/products/sonarlint/</p>
-
-<p>Stay tuned as we continue adding more components to our development environment! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[Local Development Environment Setup Guide]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-03-20-ideas-library.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-03-20-ideas-library.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🐍 PYTHON - Tools Library</title><link href="http://localhost:4000/layout/python/help-tools/python-library/" rel="alternate" type="text/html" title="🐍 PYTHON - Tools Library" /><published>2024-12-10T00:00:00+01:00</published><updated>2024-12-10T00:00:00+01:00</updated><id>http://localhost:4000/layout/python/help-tools/python-library</id><content type="html" xml:base="http://localhost:4000/layout/python/help-tools/python-library/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
+<p>Stay tuned — our development environment will keep evolving step by step! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="Sonarqube" /><category term="static analysis" /><category term="tools" /><category term="edge case" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">🐍 PYTHON - Tools Library</title><link href="http://localhost:4000/layout/python/help-tools/python-library/" rel="alternate" type="text/html" title="🐍 PYTHON - Tools Library" /><published>2024-12-10T00:00:00+01:00</published><updated>2024-12-10T00:00:00+01:00</updated><id>http://localhost:4000/layout/python/help-tools/python-library</id><content type="html" xml:base="http://localhost:4000/layout/python/help-tools/python-library/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="/assets/images/2024-12-10-python-library.png" style="max-width:100%; height:auto;" />
   <figcaption style="margin-top: 0.5em; font-style: italic;">
   </figcaption>
