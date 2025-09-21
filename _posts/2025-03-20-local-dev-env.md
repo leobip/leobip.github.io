@@ -13,7 +13,7 @@ classes: wide
 
 Setting up a well-structured local development environment is crucial for improving code quality, automating testing, and streamlining deployment. In this guide, we will progressively build a local development ecosystem, adding essential tools step by step. Our goal is to create an environment that helps in writing, analyzing, testing, and deploying code efficiently.
 
-### Planned Sections (For Start):
+### Planned Sections (For Start)
 
 - **Code Analysis (SonarQube)** – Static code analysis to ensure quality.
 - **Version Control (GitHub)** – Managing and tracking code changes.

@@ -47,10 +47,10 @@ var store = [{
         "url": "/local-dev-env/",
         "teaser": "/assets/images/llp-banner.png"
       },{
-        "title": "SonarQube & SonarLint for Code Analysis",
-        "excerpt":"SonarQube &amp; SonarLint Introduction In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness....","categories": [],
-        "tags": [],
-        "url": "/local-env-sonarqube/",
+        "title": "🔍 SonarQube / SonarLint - Install, Config & Analysis",
+        "excerpt":"SonarQube &amp; SonarLint Introduction In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness....","categories": ["Sonarqube","static analysis","tools"],
+        "tags": ["edge case"],
+        "url": "/sonarqube/static%20analysis/tools/local-env-sonarqube/",
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Local Monitoring Stack for Kubernetes",

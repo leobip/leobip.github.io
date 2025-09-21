@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-20T14:30:10+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-21T15:55:05+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
 
 <p>Estoy probando cómo se ve el <strong>banner global</strong> y cómo se muestra en los posts.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes]]></summary></entry><entry><title type="html">Local Monitoring Stack for Kubernetes</title><link href="http://localhost:4000/local-monitoring-env/" rel="alternate" type="text/html" title="Local Monitoring Stack for Kubernetes" /><published>2025-07-26T18:32:04+02:00</published><updated>2025-07-26T18:32:04+02:00</updated><id>http://localhost:4000/local-monitoring-env</id><content type="html" xml:base="http://localhost:4000/local-monitoring-env/"><![CDATA[<h1 id="-local-monitoring-stack-for-kubernetes-prometheus--grafana--kafka">📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)</h1>
 
@@ -699,10 +699,36 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
     </ul>
   </li>
   <li><strong>Use minikube ip to get your cluster IP if needed.</strong></li>
-</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">SonarQube &amp;amp; SonarLint for Code Analysis</title><link href="http://localhost:4000/local-env-sonarqube/" rel="alternate" type="text/html" title="SonarQube &amp;amp; SonarLint for Code Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/local-env-sonarqube/"><![CDATA[<h1 id="sonarqube--sonarlint">SonarQube &amp; SonarLint</h1>
+</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis</title><link href="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="alternate" type="text/html" title="🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="/assets/images/2025-03-20-sonarqube-share.png" style="max-width:100%; height:auto;" />
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
+
+<h1 id="-sonarqube--sonarlint"><img src="/assets/images/2025-03-20-sonarqube-intensifies.gif" alt="SonarQube" width="40" style="vertical-align: middle;" /> SonarQube &amp; SonarLint</h1>
 
 <h2 id="introduction">Introduction</h2>
+
 <p>In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.</p>
+
+<h3 id="repository-reference">Repository Reference</h3>
+
+<p>All the configuration files, including the <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code> used in this article, are available in our repository:</p>
+
+<p>👉 <a href="https://github.com/leobip/local-dev-env">local-dev-env Repository</a></p>
+
+<p>This repository is intended to become the central place for our <strong>local development environment setup</strong>, where we will keep adding tools such as:</p>
+
+<ul>
+  <li><strong>SonarQube</strong> – Static code analysis (this article).</li>
+  <li><strong>GitHub Actions Pipelines</strong> – CI/CD workflows.</li>
+  <li><strong>ArgoCD</strong> – GitOps-based application deployment.</li>
+  <li><strong>Monitoring stack</strong> – Observability for apps.</li>
+  <li>And more developer tools…</li>
+</ul>
+
+<p>Each tool will have its <strong>own dedicated article</strong> with installation details, and the <strong>central article</strong> <code class="language-plaintext highlighter-rouge">Local Dev Environment</code> will explain how they all integrate together into a complete workflow.</p>
+
 <h3 id="what-is-sonarqube">What is SonarQube?</h3>
 
 <p><a href="https://www.sonarqube.org/">SonarQube</a> is a powerful static code analysis tool that helps developers identify bugs, security vulnerabilities, and code smells in their projects. It provides detailed insights to improve code quality and maintainability.</p>
@@ -725,17 +751,13 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
 <h4 id="connection-between-sonarlint-and-sonarqube">Connection between SonarLint and SonarQube</h4>
 
 <ul>
-  <li>
-    <p>SonarLint can operate in two modes:</p>
-
+  <li>SonarLint can operate in two modes:
     <ul>
       <li>Standalone mode: Works independently in the IDE.</li>
       <li>Connected mode: Synchronizes with a SonarQube server to share rules and configurations.</li>
     </ul>
   </li>
-  <li>
-    <p>To connect SonarLint with SonarQube:</p>
-
+  <li>To connect SonarLint with SonarQube:
     <ul>
       <li>Ensure that SonarQube is running.</li>
       <li>Install the SonarLint plugin in your IDE.</li>
@@ -748,10 +770,14 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
 <hr />
 
 <h3 id="database-support-in-sonarqube">Database Support in SonarQube</h3>
+
 <h3 id="embedded-database-h2">Embedded Database (H2)</h3>
+
 <p>By default, SonarQube <strong>Community Edition</strong> comes with an embedded <strong>H2 database</strong>. However, this database is only intended for <strong>evaluation and personal/local usage</strong>, as it is <strong>not recommended for production</strong> due to size &amp; data scalability limitations.</p>
+
 <h3 id="supported-external-databases">Supported External Databases</h3>
-<p>For a <strong>stable and production-ready</strong> deployment, SonarQube supports the following databases:</p>
+
+<p>For a <strong>stable and production-ready</strong> deployment, SonarQube supports the following databases</p>
 
 <ul>
   <li><strong>PostgreSQL</strong> (Recommended)</li>
@@ -759,16 +785,22 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
   <li><strong>Oracle Database</strong></li>
 </ul>
 
-<h4 id="sonarqube-database-configuration-guides">SonarQube Database Configuration Guides:</h4>
+<h4 id="sonarqube-database-configuration-guides">SonarQube Database Configuration Guides</h4>
+
 <ul>
-  <li>https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/
-    <h2 id="installing-sonarqube-locally">Installing SonarQube Locally</h2>
-  </li>
+  <li>https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/</li>
+</ul>
+
+<h2 id="installing-sonarqube-locally">Installing SonarQube Locally</h2>
+
+<ul>
   <li>
     <p>Prerequisite:
 Before setting up SonarQube, ensure that Docker &amp; docker-compose is installed on your machine. You can find the complete installation guide on the official Docker website, Docker Installation Guide:  https://docs.docker.com/engine/install/</p>
   </li>
-  <li>SonarQube Installation</li>
+  <li>
+    <p>SonarQube Installation</p>
+  </li>
 </ul>
 
 <p>To deploy SonarQube locally, we will use Docker Compose. This approach allows for future integration of additional tools and services within the local development environment. Using Docker Compose simplifies service configuration and management through a docker-compose.yaml file located in the project’s root directory.</p>
@@ -776,15 +808,17 @@ Before setting up SonarQube, ensure that Docker &amp; docker-compose is installe
 <p>Docker significantly simplifies the process of running SonarQube without requiring complex manual configurations.
 For reference, the SonarQube page on Docker Hub (https://hub.docker.com/_/sonarqube)  provides links to repositories with example Dockerfile and docker-compose.yaml configurations, and instructions to install and run SonarQube with simplest command like:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="s">docker run --name sonarqube-custom -p 9000:9000 sonarqube:community</span>
 </code></pre></div></div>
+
 <p>You can then browse to http://localhost:9000 or http://host-ip:9000 in your web browser to access the web interface.</p>
 
 <h3 id="bonus-helm---installation-with-postgresql-included">Bonus: <strong>HELM</strong> - Installation with PostgreSQL Included</h3>
+
 <p>For Kubernetes users, SonarQube can be installed using Helm with a <strong>PostgreSQL database included</strong>. Check out the official Helm package:  (here you can find different versions at Artifact Hub)
 🔗 <a href="https://artifacthub.io/packages/helm/sonarqube/sonarqube">SonarQube Helm Chart</a></p>
 
-<h3 id="folder-structure">Folder Structure:</h3>
+<h3 id="folder-structure">Folder Structure</h3>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>local-dev-environment/
 │
@@ -802,135 +836,134 @@ For reference, the SonarQube page on Docker Hub (https://hub.docker.com/_/sonarq
   <li>docker-compose.yaml (at project root)</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>services:
-  sonarqube:
-    image: sonarqube:community # We are using the latest community version, it could also be the lts-community -(Long Term Support)
-    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
-    depends_on:
-      - sonar_db
-    environment:
-      SONAR_JDBC_URL: jdbc:postgresql://sonar_db:5432/sonar
-      SONAR_JDBC_USERNAME: sonar
-      SONAR_JDBC_PASSWORD: sonar
-    ports:
-      - "9001:9000"
-    volumes:
-      - sonarqube_conf:/opt/sonarqube/conf
-      - sonarqube_data:/opt/sonarqube/data
-      - sonarqube_extensions:/opt/sonarqube/extensions
-      - sonarqube_logs:/opt/sonarqube/logs
-      - sonarqube_temp:/opt/sonarqube/temp
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">services</span><span class="pi">:</span>
+  <span class="na">sonarqube</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">sonarqube:community</span> <span class="c1"># We are using the latest community version, it could also be the lts-community -(Long Term Support)</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>  <span class="c1"># 🔄 Automatically restarts after a system reboot</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">sonar_db</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="na">SONAR_JDBC_URL</span><span class="pi">:</span> <span class="s">jdbc:postgresql://sonar_db:5432/sonar</span>
+      <span class="na">SONAR_JDBC_USERNAME</span><span class="pi">:</span> <span class="s">sonar</span>
+      <span class="na">SONAR_JDBC_PASSWORD</span><span class="pi">:</span> <span class="s">sonar</span>
+    <span class="na">ports</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s2">"</span><span class="s">9001:9000"</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">sonarqube_conf:/opt/sonarqube/conf</span>
+      <span class="pi">-</span> <span class="s">sonarqube_data:/opt/sonarqube/data</span>
+      <span class="pi">-</span> <span class="s">sonarqube_extensions:/opt/sonarqube/extensions</span>
+      <span class="pi">-</span> <span class="s">sonarqube_logs:/opt/sonarqube/logs</span>
+      <span class="pi">-</span> <span class="s">sonarqube_temp:/opt/sonarqube/temp</span>
 
-  sonar_db:
-    image: postgres:13
-    restart: unless-stopped  # 🔄 Automatically restarts after a system reboot
-    environment:
-      POSTGRES_USER: sonar
-      POSTGRES_PASSWORD: sonar
-      POSTGRES_DB: sonar
-    volumes:
-      - sonar_db:/var/lib/postgresql
-      - sonar_db_data:/var/lib/postgresql/data
+  <span class="na">sonar_db</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:13</span>
+    <span class="na">restart</span><span class="pi">:</span> <span class="s">unless-stopped</span>  <span class="c1"># 🔄 Automatically restarts after a system reboot</span>
+    <span class="na">environment</span><span class="pi">:</span>
+      <span class="na">POSTGRES_USER</span><span class="pi">:</span> <span class="s">sonar</span>
+      <span class="na">POSTGRES_PASSWORD</span><span class="pi">:</span> <span class="s">sonar</span>
+      <span class="na">POSTGRES_DB</span><span class="pi">:</span> <span class="s">sonar</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">sonar_db:/var/lib/postgresql</span>
+      <span class="pi">-</span> <span class="s">sonar_db_data:/var/lib/postgresql/data</span>
 
-volumes:
-  sonarqube_conf:
-  sonarqube_data:
-  sonarqube_extensions:
-  sonarqube_logs:
-  sonarqube_temp:
-  sonar_db:
-  sonar_db_data:
+<span class="na">volumes</span><span class="pi">:</span>
+  <span class="na">sonarqube_conf</span><span class="pi">:</span>
+  <span class="na">sonarqube_data</span><span class="pi">:</span>
+  <span class="na">sonarqube_extensions</span><span class="pi">:</span>
+  <span class="na">sonarqube_logs</span><span class="pi">:</span>
+  <span class="na">sonarqube_temp</span><span class="pi">:</span>
+  <span class="na">sonar_db</span><span class="pi">:</span>
+  <span class="na">sonar_db_data</span><span class="pi">:</span>
 
 </code></pre></div></div>
 
 <h3 id="automatic-backup-of-the-sonarqube-database-optional">Automatic Backup of the SonarQube Database (Optional)</h3>
+
 <p>Even though we configured restart: unless-stopped, ensuring that data persists after a reboot, in our local environment, it’s good practice to have a backup strategy. Below is a solution using a backup service.</p>
 
 <h4 id="manual-db-backup">Manual DB Backup</h4>
+
 <ul>
-  <li>To back up the PostgreSQL database:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -t postgres pg_dumpall -c -U sonar &gt; backup.sql
-</code></pre></div>    </div>
-  </li>
-  <li>To restore:
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -i postgres psql -U sonar -d sonarqube &lt; backup.sql
-</code></pre></div>    </div>
-    <h4 id="adding-a-backup-service">Adding a Backup Service</h4>
-  </li>
+  <li>To back up the PostgreSQL database:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-t</span> postgres pg_dumpall <span class="nt">-c</span> <span class="nt">-U</span> sonar <span class="o">&gt;</span> backup.sql
+</code></pre></div></div>
+
+<ul>
+  <li>To restore:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker <span class="nb">exec</span> <span class="nt">-i</span> postgres psql <span class="nt">-U</span> sonar <span class="nt">-d</span> sonarqube &lt; backup.sql
+</code></pre></div></div>
+
+<h4 id="adding-a-backup-service">Adding a Backup Service</h4>
+
+<ul>
   <li>Add this code to the docker-compose.yaml</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sonar_backup:
-    image: postgres:13
-    depends_on:
-      - sonar_db
-    volumes:
-      - sonarqube_data:/opt/sonarqube/data
-    entrypoint: ["/bin/sh", "-c", "while true; do /opt/sonarqube/data/backup_db.sh; sleep 86400; done"]
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">sonar_backup</span><span class="pi">:</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="s">postgres:13</span>
+    <span class="na">depends_on</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">sonar_db</span>
+    <span class="na">volumes</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">sonarqube_data:/opt/sonarqube/data</span>
+    <span class="na">entrypoint</span><span class="pi">:</span> <span class="pi">[</span><span class="s2">"</span><span class="s">/bin/sh"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">-c"</span><span class="pi">,</span> <span class="s2">"</span><span class="s">while</span><span class="nv"> </span><span class="s">true;</span><span class="nv"> </span><span class="s">do</span><span class="nv"> </span><span class="s">/opt/sonarqube/data/backup_db.sh;</span><span class="nv"> </span><span class="s">sleep</span><span class="nv"> </span><span class="s">86400;</span><span class="nv"> </span><span class="s">done"</span><span class="pi">]</span>
 </code></pre></div></div>
 
 <ul>
-  <li>
-    <p>Backup Script</p>
-
-    <p>Create the following script inside sonarqube/data/backup_db.sh:</p>
-  </li>
+  <li>Backup Script</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+<p>Create the following script inside sonarqube/data/backup_db.sh:</p>
 
-# Configuration
-BACKUP_DIR="/opt/sonarqube/data/backups"
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-BACKUP_FILE="$BACKUP_DIR/sonarqube_db_$TIMESTAMP.sql"
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
 
-# Create backup directory if it does not exist
-mkdir -p $BACKUP_DIR
+<span class="c"># Configuration</span>
+<span class="nv">BACKUP_DIR</span><span class="o">=</span><span class="s2">"/opt/sonarqube/data/backups"</span>
+<span class="nv">TIMESTAMP</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> +<span class="s2">"%Y-%m-%d_%H-%M-%S"</span><span class="si">)</span>
+<span class="nv">BACKUP_FILE</span><span class="o">=</span><span class="s2">"</span><span class="nv">$BACKUP_DIR</span><span class="s2">/sonarqube_db_</span><span class="nv">$TIMESTAMP</span><span class="s2">.sql"</span>
 
-# Perform PostgreSQL backup
-PGPASSWORD="sonar" pg_dump -h sonar_db -U sonar -d sonar &gt; $BACKUP_FILE
+<span class="c"># Create backup directory if it does not exist</span>
+<span class="nb">mkdir</span> <span class="nt">-p</span> <span class="nv">$BACKUP_DIR</span>
 
-# Clean up old backups (optional, keep only the last 5 backups)
-ls -tp $BACKUP_DIR | grep -v '/$' | tail -n +6 | xargs -I {} rm -- "$BACKUP_DIR/{}"
+<span class="c"># Perform PostgreSQL backup</span>
+<span class="nv">PGPASSWORD</span><span class="o">=</span><span class="s2">"sonar"</span> pg_dump <span class="nt">-h</span> sonar_db <span class="nt">-U</span> sonar <span class="nt">-d</span> sonar <span class="o">&gt;</span> <span class="nv">$BACKUP_FILE</span>
 
-echo "Backup completed: $BACKUP_FILE"
+<span class="c"># Clean up old backups (optional, keep only the last 5 backups)</span>
+<span class="nb">ls</span> <span class="nt">-tp</span> <span class="nv">$BACKUP_DIR</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="s1">'/$'</span> | <span class="nb">tail</span> <span class="nt">-n</span> +6 | xargs <span class="nt">-I</span> <span class="o">{}</span> <span class="nb">rm</span> <span class="nt">--</span> <span class="s2">"</span><span class="nv">$BACKUP_DIR</span><span class="s2">/{}"</span>
+
+<span class="nb">echo</span> <span class="s2">"Backup completed: </span><span class="nv">$BACKUP_FILE</span><span class="s2">"</span>
 </code></pre></div></div>
 
 <ul>
-  <li>
-    <p>Grant Execution Permission</p>
-
-    <p>Run the following command to make the script executable:</p>
-  </li>
+  <li>Grant Execution Permission</li>
+  <li>Run the following command to make the script executable:</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>chmod +x sonarqube/data/backup_db.sh
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">chmod</span> +x sonarqube/data/backup_db.sh
 </code></pre></div></div>
 
 <h3 id="conclusion">Conclusion</h3>
 
 <ul>
-  <li>
-    <p>SonarQube and PostgreSQL are configured with persistent storage.</p>
-  </li>
-  <li>
-    <p>Containers automatically restart unless manually stopped.</p>
-  </li>
-  <li>
-    <p>A backup service is set up to create database backups automatically.</p>
-  </li>
+  <li>SonarQube and PostgreSQL are configured with persistent storage.</li>
+  <li>Containers automatically restart unless manually stopped.</li>
+  <li>A backup service is set up to create database backups automatically.</li>
 </ul>
 
 <p>This setup ensures a robust SonarQube environment for local development. 🚀</p>
 
 <h3 id="running-sonarqube">Running SonarQube</h3>
+
 <p>Once the files are in place, follow these steps to start SonarQube:</p>
 
 <ul>
   <li>Build the SonarQube image</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose build
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose build
 
 </code></pre></div></div>
 
@@ -938,29 +971,24 @@ echo "Backup completed: $BACKUP_FILE"
   <li>Start the SonarQube container</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up -d
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up <span class="nt">-d</span>
 
 </code></pre></div></div>
-<p><img src="/images/projects/2025-03-20-docker-compose-creation.jpg" alt="compose-creation" /></p>
+
+<p><img src="/assets/images/2025-03-20-sonarqube-docker-compose-creation.jpg" alt="compose-creation" /></p>
 
 <ul>
-  <li>
-    <p>Access SonarQube UI</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Open http://localhost:9001 in your browser.
-</code></pre></div>    </div>
+  <li>Access SonarQube UI
+    <ul>
+      <li>Open http://localhost:9001 in your browser.</li>
+      <li><img src="/assets/images/2025-03-20-sonar-login.jpg" alt="sonar-login" /></li>
+    </ul>
   </li>
-</ul>
-
-<p><img src="/images/projects/2025-03-20-sonar-login.jpg" alt="sonar-login" /></p>
-
-<ul>
-  <li>
-    <p>Login Credentials</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  Username: admin
-  Password: admin
-</code></pre></div>    </div>
+  <li>Login Credentials
+    <ul>
+      <li>Username: admin</li>
+      <li>Password: admin</li>
+    </ul>
   </li>
 </ul>
 
@@ -968,39 +996,40 @@ echo "Backup completed: $BACKUP_FILE"
 
 <h3 id="installation">Installation</h3>
 
-<h5 id="to-install-sonarlint-in-your-ide">To install SonarLint in your IDE:</h5>
+<h5 id="to-install-sonarlint-in-your-ide">To install SonarLint in your IDE</h5>
 
 <ul>
-  <li>
-    <p>VS Code: Install the “SonarLint” extension from the Extensions Marketplace.</p>
-  </li>
-  <li>
-    <p>IntelliJ IDEA: Install the “SonarLint” plugin from the Plugins Marketplace.</p>
-  </li>
-  <li>
-    <p>Eclipse: Install the “SonarLint” plugin from the Eclipse Marketplace.</p>
-  </li>
+  <li>VS Code: Install the “SonarLint” extension from the Extensions Marketplace</li>
+  <li>IntelliJ IDEA: Install the “SonarLint” plugin from the Plugins Marketplace.</li>
+  <li>Eclipse: Install the “SonarLint” plugin from the Eclipse Marketplace.</li>
 </ul>
 
-<p>Vs-Code Example:</p>
+<p>Vs-Code Example</p>
 
-<p><img src="/images/projects/2025-03-20-sonarlint-install1.jpg" alt="sonar-lint-vscode" /></p>
+<ul>
+  <li><img src="/assets/images/2025-03-20-sonarlint-install1.jpg" alt="sonar-lint-vscode" /></li>
+</ul>
 
 <h5 id="using-sonarlint-in-standalone-mode">Using SonarLint in Standalone Mode</h5>
+
 <p>SonarLint can work independently without connecting to a SonarQube server. In this mode, it provides static analysis using its built-in rule set.</p>
 
 <p>For example, after installing SonarLint in VS Code:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Open a project.
-
-	SonarLint will automatically scan the files for issues.
-
-	Hover over a warning to view explanations and possible fixes.
-</code></pre></div></div>
+<ul>
+  <li>Open a project.
+    <ul>
+      <li>SonarLint will automatically scan the files for issues.</li>
+      <li>Hover over a warning to view explanations and possible fixes.</li>
+    </ul>
+  </li>
+</ul>
 
 <p>This is useful when you want quick feedback without setting up a full SonarQube instance.</p>
 
-<p><img src="/images/projects/2025-03-20-sonarlint-find.png" alt="sonar-lint-find" /></p>
+<ul>
+  <li><img src="/assets/images/2025-03-20-sonarlint-find.png" alt="sonar-lint-find" /></li>
+</ul>
 
 <h5 id="configuration-in-connected-mode">Configuration in Connected Mode</h5>
 
@@ -1010,18 +1039,19 @@ echo "Backup completed: $BACKUP_FILE"
 
 <p>Select “Connect to SonarQube or SonarCloud.”</p>
 
-<p><img src="/images/projects/2025-03-20-sonarqube-ide-config1.jpg" alt="sonarqube-config-1" /></p>
+<p><img src="/assets/images/2025-03-20-sonarqube-ide-config1.jpg" alt="sonarqube-config-1" /></p>
 
 <p>Enter the SonarQube server URL (e.g., http://localhost:9000).</p>
 
-<p><img src="/images/projects/2025-03-20-sonarqube-ide-config2.jpg" alt="sonarqube-config2" /></p>
+<p><img src="/assets/images/2025-03-20-sonarqube-ide-config2.jpg" alt="sonarqube-config2" /></p>
 
 <p>Authenticate using a SonarQube token. (Or allow access from your Sonarqube instance)</p>
 
-<p><img src="/images/projects/2025-03-20-sonarqube-ide-config3.jpg" alt="sonarqube-config3" />
-<strong>__</strong><strong>__</strong><strong>__</strong>_____</p>
+<p><img src="/assets/images/2025-03-20-sonarqube-ide-config3.jpg" alt="sonarqube-config3" /></p>
 
-<p><img src="/images/projects/2025-03-20-sonarqube-ide-config4.jpg" alt="sonarqube-config4" /></p>
+<hr />
+
+<p><img src="/assets/images/2025-03-20-sonarqube-ide-config4.jpg" alt="sonarqube-config4" /></p>
 
 <p>Select the project to synchronize the analysis rules.</p>
 
@@ -1035,9 +1065,17 @@ echo "Backup completed: $BACKUP_FILE"
 
 <p>If connected to SonarQube, the rules from the server will be applied in real-time.</p>
 
-<h4 id="conclusion-1">Conclusion</h4>
+<p><strong><em>With this setup, you have a functional SonarQube environment with persistence and an external database. Additionally, SonarLint enhances your development experience by providing real-time feedback. Now it’s time to analyze your code!</em></strong></p>
 
-<p>With this setup, you have a functional SonarQube environment with persistence and an external database. Additionally, SonarLint enhances your development experience by providing real-time feedback. Now it’s time to analyze your code!</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[SonarQube &amp; SonarLint]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-03-20-sonarqube.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-03-20-sonarqube.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Building a Local Development, Testing, and Deployment Environment</title><link href="http://localhost:4000/local-dev-env/" rel="alternate" type="text/html" title="Building a Local Development, Testing, and Deployment Environment" /><published>2025-03-20T21:43:44+01:00</published><updated>2025-03-20T21:43:44+01:00</updated><id>http://localhost:4000/local-dev-env</id><content type="html" xml:base="http://localhost:4000/local-dev-env/"><![CDATA[<h2 id="local-development-environment-setup-guide">Local Development Environment Setup Guide</h2>
+<h2 id="next-steps">Next Steps</h2>
+
+<p>In this article, we focused on installing and configuring <strong>SonarQube</strong> with Docker Compose.<br />
+This is part of a broader series about building a <strong>local development &amp; testing environment</strong>.</p>
+
+<p>In the following articles, we will integrate additional tools such as <strong>GitHub Actions pipelines, ArgoCD, and monitoring solutions</strong>.<br />
+When we introduce <strong>ArgoCD</strong>, we will also show how to migrate SonarQube from Docker Compose to Kubernetes and manage it through GitOps.</p>
+
+<p>Stay tuned — our development environment will keep evolving step by step! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="Sonarqube" /><category term="static analysis" /><category term="tools" /><category term="edge case" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Building a Local Development, Testing, and Deployment Environment</title><link href="http://localhost:4000/local-dev-env/" rel="alternate" type="text/html" title="Building a Local Development, Testing, and Deployment Environment" /><published>2025-03-20T21:43:44+01:00</published><updated>2025-03-20T21:43:44+01:00</updated><id>http://localhost:4000/local-dev-env</id><content type="html" xml:base="http://localhost:4000/local-dev-env/"><![CDATA[<h2 id="local-development-environment-setup-guide">Local Development Environment Setup Guide</h2>
 
 <h3 id="introduction">Introduction</h3>
 
