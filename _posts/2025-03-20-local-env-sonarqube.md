@@ -11,6 +11,10 @@ tags:
 date: '2025-03-20 21:55:15'
 ---
 
+In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.
+
+---
+
 <figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="{{ '/assets/images/2025-03-20-sonarqube-share.png' | relative_url }}" 
        style="max-width:100%; height:auto;">
@@ -19,10 +23,6 @@ date: '2025-03-20 21:55:15'
 </figure>
 
 # <img src="{{ '/assets/images/2025-03-20-sonarqube-intensifies.gif' | relative_url }}" alt="SonarQube" width="40" style="vertical-align: middle;"/> SonarQube & SonarLint
-
-## Introduction
-
-In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.
 
 ### Repository Reference
 

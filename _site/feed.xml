@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-21T21:46:27+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-21T23:16:44+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">My Personal Page</title><subtitle>A digital journey into my professional career &amp; projects</subtitle><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><entry><title type="html">Post Init</title><link href="http://localhost:4000/post-init/" rel="alternate" type="text/html" title="Post Init" /><published>2025-08-28T00:00:00+02:00</published><updated>2025-08-28T00:00:00+02:00</updated><id>http://localhost:4000/post-init</id><content type="html" xml:base="http://localhost:4000/post-init/"><![CDATA[<h1 id="hola--este-es-mi-primer-post-en-jekyll-con-el-tema-minimal-mistakes">Hola 👋, este es mi <strong>primer post</strong> en Jekyll con el tema <em>Minimal Mistakes</em></h1>
 
 <p>Estoy probando cómo se ve el <strong>banner global</strong> y cómo se muestra en los posts.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes]]></summary></entry><entry><title type="html">Local Monitoring Stack for Kubernetes</title><link href="http://localhost:4000/local-monitoring-env/" rel="alternate" type="text/html" title="Local Monitoring Stack for Kubernetes" /><published>2025-07-26T18:32:04+02:00</published><updated>2025-07-26T18:32:04+02:00</updated><id>http://localhost:4000/local-monitoring-env</id><content type="html" xml:base="http://localhost:4000/local-monitoring-env/"><![CDATA[<h1 id="-local-monitoring-stack-for-kubernetes-prometheus--grafana--kafka">📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)</h1>
 
@@ -699,13 +699,13 @@ prometheus-server                     NodePort    10.104.67.195    &lt;none&gt; 
     </ul>
   </li>
   <li><strong>Use minikube ip to get your cluster IP if needed.</strong></li>
-</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows</title><link href="http://localhost:4000/git/cicd/versioning/semantic-versioning/" rel="alternate" type="text/html" title="🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows" /><published>2025-04-25T19:30:00+02:00</published><updated>2025-04-25T19:30:00+02:00</updated><id>http://localhost:4000/git/cicd/versioning/semantic-versioning</id><content type="html" xml:base="http://localhost:4000/git/cicd/versioning/semantic-versioning/"><![CDATA[<h2 id="-branching-model---semantic-versioning">🌳 Branching Model &amp; 📌 Semantic Versioning</h2>
+</ul>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><summary type="html"><![CDATA[📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)]]></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" /><media:content medium="image" url="http://localhost:4000/images/projects/2025-07-26-monitoring.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows</title><link href="http://localhost:4000/git/cicd/versioning/semantic-versioning/" rel="alternate" type="text/html" title="🌳 Branching Model &amp;amp; 📌 Semantic Versioning in Git Workflows" /><published>2025-04-25T19:30:00+02:00</published><updated>2025-04-25T19:30:00+02:00</updated><id>http://localhost:4000/git/cicd/versioning/semantic-versioning</id><content type="html" xml:base="http://localhost:4000/git/cicd/versioning/semantic-versioning/"><![CDATA[<p>Managing branches and releases efficiently is crucial for maintaining <strong>code quality, traceability, and smooth deployments</strong>. In this article, we’ll explain how to structure your Git workflow using <strong>branches for different purposes</strong> and how to apply <strong>Semantic Versioning (SemVer)</strong> to tag releases.</p>
 
-<h2 id="-introduction">🔎 Introduction</h2>
-
-<p>Managing branches and releases efficiently is crucial for maintaining <strong>code quality, traceability, and smooth deployments</strong>. In this article, we’ll explain how to structure your Git workflow using <strong>branches for different purposes</strong> and how to apply <strong>Semantic Versioning (SemVer)</strong> to tag releases.</p>
-
-<hr />
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="/assets/images/semantic-versioning-banner.jpeg" style="max-width:100%; height:auto;" />
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
 
 <h2 id="-branching-strategy">🌳 Branching Strategy</h2>
 
@@ -801,13 +801,14 @@ git push origin v1.0.0
   <li>Alignment between Git workflow and CI/CD pipelines.</li>
 </ul>
 
-<p>This model scales from small projects to enterprise environments and integrates seamlessly with tools like SonarQube, GitHub Actions, and ArgoCD.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="git" /><category term="cicd" /><category term="versioning" /><category term="branching" /><category term="git-flow" /><category term="semantic-versioning" /><summary type="html"><![CDATA[🌳 Branching Model &amp; 📌 Semantic Versioning]]></summary></entry><entry><title type="html">⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment</title><link href="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/" rel="alternate" type="text/html" title="⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment" /><published>2025-04-20T21:55:15+02:00</published><updated>2025-04-20T21:55:15+02:00</updated><id>http://localhost:4000/cicd/development/tools/deployment/local-dev-env</id><content type="html" xml:base="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/"><![CDATA[<h2 id="️-local-development-environment-setup-guide">⚙️💻 Local Development Environment Setup Guide</h2>
+<p>This model scales from small projects to enterprise environments and integrates seamlessly with tools like SonarQube, GitHub Actions, and ArgoCD.</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="git" /><category term="cicd" /><category term="versioning" /><category term="branching" /><category term="git-flow" /><category term="semantic-versioning" /><summary type="html"><![CDATA[Managing branches and releases efficiently is crucial for maintaining code quality, traceability, and smooth deployments. In this article, we’ll explain how to structure your Git workflow using branches for different purposes and how to apply Semantic Versioning (SemVer) to tag releases.]]></summary></entry><entry><title type="html">⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment</title><link href="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/" rel="alternate" type="text/html" title="⚙️💻 Building a Local Development, Testing &amp;amp; Deployment Environment" /><published>2025-04-20T21:55:15+02:00</published><updated>2025-04-20T21:55:15+02:00</updated><id>http://localhost:4000/cicd/development/tools/deployment/local-dev-env</id><content type="html" xml:base="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/"><![CDATA[<p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.<br />
+In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
 
-<h2 id="-introduction">🔎 Introduction</h2>
-
-<p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.</p>
-
-<p>In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="/assets/images/local-dev-env-banner.webp" style="max-width:75%; height:auto;" />
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
 
 <p>This article serves as the <strong>central hub</strong> of the series — each tool (e.g., SonarQube, ArgoCD, Monitoring) will have its own dedicated post with installation details, while here we’ll explain <strong>how everything integrates together</strong>.</p>
 
@@ -864,7 +865,7 @@ git push origin v1.0.0
 <ul>
   <li>Create the folders and initialize the repository</li>
   <li>You can initialize the repository by running git init in the root folder of local-dev-environment.</li>
-  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/your-repository-link">Project GitHub Repository</a></li>
+  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/leobip/local-dev-env.git">Project GitHub Repository</a></li>
 </ul>
 
 <p>This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.</p>
@@ -873,11 +874,11 @@ git push origin v1.0.0
 
 <p>We start our environment with SonarQube, a powerful static analysis tool that detects bugs, security vulnerabilities, and code smells.</p>
 
-<p>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></p>
-
 <p>Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.</p>
 
-<hr />
+<ul>
+  <li>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></li>
+</ul>
 
 <h2 id="-github-actions--sonarqube-analysis-pipeline">⚡ GitHub Actions – SonarQube Analysis Pipeline</h2>
 
@@ -890,7 +891,11 @@ This pipeline runs on the dev branch — a common branching strategy where:</p>
   <li>feature/* → temporary branches for new features</li>
 </ul>
 
-<p>👉 We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+<p>We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+
+<ul>
+  <li>👉 Detailed installation guide: <a href="/git/cicd/versioning/semantic-versioning/">Branching &amp; Semantic Versioning Article</a></li>
+</ul>
 
 <hr />
 
@@ -1018,17 +1023,17 @@ This pipeline runs on the dev branch — a common branching strategy where:</p>
   <li>Integrate monitoring to visualize the health of our apps.</li>
 </ul>
 
-<p>This is just the first building block of our developer ecosystem. With each article, we’ll add another piece until the full puzzle comes together. 🧩</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="cicd" /><category term="development" /><category term="tools" /><category term="deployment" /><category term="edge case" /><summary type="html"><![CDATA[⚙️💻 Local Development Environment Setup Guide]]></summary></entry><entry><title type="html">🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis</title><link href="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="alternate" type="text/html" title="🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
+<p>This is just the first building block of our developer ecosystem. With each article, we’ll add another piece until the full puzzle comes together. 🧩</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="cicd" /><category term="development" /><category term="tools" /><category term="deployment" /><category term="edge case" /><summary type="html"><![CDATA[A well-structured local development environment is essential for improving code quality, automating testing, and streamlining deployments. In this guide, we will progressively build a local ecosystem for developers, adding essential tools step by step. The final goal is to create an environment that allows you to write, analyze, test, and deploy code efficiently.]]></summary></entry><entry><title type="html">🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis</title><link href="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/" rel="alternate" type="text/html" title="🔍 SonarQube / SonarLint - Install, Config &amp;amp; Analysis" /><published>2025-03-20T21:55:15+01:00</published><updated>2025-03-20T21:55:15+01:00</updated><id>http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube</id><content type="html" xml:base="http://localhost:4000/sonarqube/static%20analysis/tools/local-env-sonarqube/"><![CDATA[<p>In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.</p>
+
+<hr />
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="/assets/images/2025-03-20-sonarqube-share.png" style="max-width:100%; height:auto;" />
   <figcaption style="margin-top: 0.5em; font-style: italic;">
   </figcaption>
 </figure>
 
 <h1 id="-sonarqube--sonarlint"><img src="/assets/images/2025-03-20-sonarqube-intensifies.gif" alt="SonarQube" width="40" style="vertical-align: middle;" /> SonarQube &amp; SonarLint</h1>
-
-<h2 id="introduction">Introduction</h2>
-
-<p>In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.</p>
 
 <h3 id="repository-reference">Repository Reference</h3>
 
@@ -1394,7 +1399,7 @@ This is part of a broader series about building a <strong>local development &amp
 <p>In the following articles, we will integrate additional tools such as <strong>GitHub Actions pipelines, ArgoCD, and monitoring solutions</strong>.<br />
 When we introduce <strong>ArgoCD</strong>, we will also show how to migrate SonarQube from Docker Compose to Kubernetes and manage it through GitOps.</p>
 
-<p>Stay tuned — our development environment will keep evolving step by step! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="Sonarqube" /><category term="static analysis" /><category term="tools" /><category term="edge case" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">🐍 PYTHON - Tools Library</title><link href="http://localhost:4000/layout/python/help-tools/python-library/" rel="alternate" type="text/html" title="🐍 PYTHON - Tools Library" /><published>2024-12-10T00:00:00+01:00</published><updated>2024-12-10T00:00:00+01:00</updated><id>http://localhost:4000/layout/python/help-tools/python-library</id><content type="html" xml:base="http://localhost:4000/layout/python/help-tools/python-library/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
+<p>Stay tuned — our development environment will keep evolving step by step! 🚀</p>]]></content><author><name>Leoncio López</name><email>leobip27@gmail.com</email></author><category term="Sonarqube" /><category term="static analysis" /><category term="tools" /><category term="edge case" /><summary type="html"><![CDATA[In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.]]></summary></entry><entry><title type="html">🐍 PYTHON - Tools Library</title><link href="http://localhost:4000/layout/python/help-tools/python-library/" rel="alternate" type="text/html" title="🐍 PYTHON - Tools Library" /><published>2024-12-10T00:00:00+01:00</published><updated>2024-12-10T00:00:00+01:00</updated><id>http://localhost:4000/layout/python/help-tools/python-library</id><content type="html" xml:base="http://localhost:4000/layout/python/help-tools/python-library/"><![CDATA[<figure style="display: flex; flex-direction: column; align-items: center;">
   <img src="/assets/images/2024-12-10-python-library.png" style="max-width:100%; height:auto;" />
   <figcaption style="margin-top: 0.5em; font-style: italic;">
   </figcaption>

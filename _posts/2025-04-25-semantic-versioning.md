@@ -13,13 +13,14 @@ tags:
 date: '2025-04-25 19:30:00'
 ---
 
-## 🌳 Branching Model & 📌 Semantic Versioning
-
-## 🔎 Introduction
-
 Managing branches and releases efficiently is crucial for maintaining **code quality, traceability, and smooth deployments**. In this article, we’ll explain how to structure your Git workflow using **branches for different purposes** and how to apply **Semantic Versioning (SemVer)** to tag releases.
 
----
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/semantic-versioning-banner.jpeg' | relative_url }}" 
+       style="max-width:100%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
 
 ## 🌳 Branching Strategy
 

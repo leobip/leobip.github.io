@@ -12,13 +12,15 @@ tags:
 date: '2025-04-20 21:55:15'
 ---
 
-## ⚙️💻 Local Development Environment Setup Guide
-
-## 🔎 Introduction
-
 A well-structured **local development environment** is essential for improving code quality, automating testing, and streamlining deployments.  
-
 In this guide, we will progressively build a **local ecosystem** for developers, adding essential tools step by step. The final goal is to create an environment that allows you to **write, analyze, test, and deploy code efficiently**.  
+
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/local-dev-env-banner.webp' | relative_url }}" 
+       style="max-width:75%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
 
 This article serves as the **central hub** of the series — each tool (e.g., SonarQube, ArgoCD, Monitoring) will have its own dedicated post with installation details, while here we’ll explain **how everything integrates together**.
 
@@ -73,7 +75,7 @@ local-dev-environment/
 
 - Create the folders and initialize the repository
 - You can initialize the repository by running git init in the root folder of local-dev-environment.
-- Push the code to your GitHub repository and link it here: [Project GitHub Repository](https://github.com/your-repository-link)
+- Push the code to your GitHub repository and link it here: [Project GitHub Repository](https://github.com/leobip/local-dev-env.git)
 
 This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.
 
@@ -81,11 +83,9 @@ This guide will start with SonarQube, a powerful tool for static code analysis, 
 
 We start our environment with SonarQube, a powerful static analysis tool that detects bugs, security vulnerabilities, and code smells.
 
-👉 Detailed installation guide: [SonarQube Setup Article]({% post_url 2025-03-20-local-env-sonarqube %})
-
 Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.
 
----
+- 👉 Detailed installation guide: [SonarQube Setup Article]({% post_url 2025-03-20-local-env-sonarqube %})
 
 ## ⚡ GitHub Actions – SonarQube Analysis Pipeline
 
@@ -96,7 +96,9 @@ This pipeline runs on the dev branch — a common branching strategy where:
 - main → stable production-ready branch
 - feature/* → temporary branches for new features
 
-👉 We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).
+We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).
+
+- 👉 Detailed installation guide: [Branching & Semantic Versioning Article]({% post_url 2025-04-25-semantic-versioning %})
 
 ---
 

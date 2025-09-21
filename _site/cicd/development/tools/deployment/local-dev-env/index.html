@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>⚙️💻 Building a Local Development, Testing &amp; Deployment Environment - My Personal Page</title>
-<meta name="description" content="⚙️💻 Local Development Environment Setup Guide">
+<meta name="description" content="A well-structured local development environment is essential for improving code quality, automating testing, and streamlining deployments. In this guide, we will progressively build a local ecosystem for developers, adding essential tools step by step. The final goal is to create an environment that allows you to write, analyze, test, and deploy code efficiently.">
 
 
   <meta name="author" content="Leoncio López">
@@ -27,7 +27,7 @@
 <meta property="og:url" content="http://localhost:4000/cicd/development/tools/deployment/local-dev-env/">
 
 
-  <meta property="og:description" content="⚙️💻 Local Development Environment Setup Guide">
+  <meta property="og:description" content="A well-structured local development environment is essential for improving code quality, automating testing, and streamlining deployments. In this guide, we will progressively build a local ecosystem for developers, adding essential tools step by step. The final goal is to create an environment that allows you to write, analyze, test, and deploy code efficiently.">
 
 
 
@@ -286,7 +286,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="⚙️💻 Building a Local Development, Testing &amp; Deployment Environment">
-    <meta itemprop="description" content="⚙️💻 Local Development Environment Setup Guide">
+    <meta itemprop="description" content="A well-structured local development environment is essential for improving code quality, automating testing, and streamlining deployments.In this guide, we will progressively build a local ecosystem for developers, adding essential tools step by step. The final goal is to create an environment that allows you to write, analyze, test, and deploy code efficiently.">
     <meta itemprop="datePublished" content="2025-04-20T21:55:15+02:00">
     
 
@@ -323,13 +323,14 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="️-local-development-environment-setup-guide">⚙️💻 Local Development Environment Setup Guide</h2>
+        <p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.<br />
+In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
 
-<h2 id="-introduction">🔎 Introduction</h2>
-
-<p>A well-structured <strong>local development environment</strong> is essential for improving code quality, automating testing, and streamlining deployments.</p>
-
-<p>In this guide, we will progressively build a <strong>local ecosystem</strong> for developers, adding essential tools step by step. The final goal is to create an environment that allows you to <strong>write, analyze, test, and deploy code efficiently</strong>.</p>
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="/assets/images/local-dev-env-banner.webp" style="max-width:75%; height:auto;" />
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+  </figcaption>
+</figure>
 
 <p>This article serves as the <strong>central hub</strong> of the series — each tool (e.g., SonarQube, ArgoCD, Monitoring) will have its own dedicated post with installation details, while here we’ll explain <strong>how everything integrates together</strong>.</p>
 
@@ -386,7 +387,7 @@
 <ul>
   <li>Create the folders and initialize the repository</li>
   <li>You can initialize the repository by running git init in the root folder of local-dev-environment.</li>
-  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/your-repository-link">Project GitHub Repository</a></li>
+  <li>Push the code to your GitHub repository and link it here: <a href="https://github.com/leobip/local-dev-env.git">Project GitHub Repository</a></li>
 </ul>
 
 <p>This guide will start with SonarQube, a powerful tool for static code analysis, and expand as we integrate more tools.</p>
@@ -395,11 +396,11 @@
 
 <p>We start our environment with SonarQube, a powerful static analysis tool that detects bugs, security vulnerabilities, and code smells.</p>
 
-<p>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></p>
-
 <p>Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.</p>
 
-<hr />
+<ul>
+  <li>👉 Detailed installation guide: <a href="/sonarqube/static%20analysis/tools/local-env-sonarqube/">SonarQube Setup Article</a></li>
+</ul>
 
 <h2 id="-github-actions--sonarqube-analysis-pipeline">⚡ GitHub Actions – SonarQube Analysis Pipeline</h2>
 
@@ -412,7 +413,11 @@ This pipeline runs on the dev branch — a common branching strategy where:</p>
   <li>feature/* → temporary branches for new features</li>
 </ul>
 
-<p>👉 We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+<p>We’ll create a separate article on branching models, semantic versioning, and release workflows (to keep this guide focused).</p>
+
+<ul>
+  <li>👉 Detailed installation guide: <a href="/git/cicd/versioning/semantic-versioning/">Branching &amp; Semantic Versioning Article</a></li>
+</ul>
 
 <hr />
 
@@ -769,9 +774,7 @@ Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">🌳 Branching Model &amp; 📌 Semantic Versioning
-
-</p>
+    <p class="archive__item-excerpt" itemprop="description">Managing branches and releases efficiently is crucial for maintaining code quality, traceability, and smooth deployments. In this article, we’ll explain how ...</p>
   </article>
 </div>
 
@@ -815,13 +818,7 @@ Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
-  
-  
-  
-
-
-</p>
+    <p class="archive__item-excerpt" itemprop="description">In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, ...</p>
   </article>
 </div>
 
