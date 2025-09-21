@@ -35,22 +35,10 @@ var store = [{
         "url": "/year-archive/",
         "teaser": "/assets/images/llp-banner.png"
       },{
-        "title": "Post: Image (Caption)",
-        "excerpt":"         Photo from Unsplash.  ","categories": ["Post Formats"],
-        "tags": ["image","Post Formats"],
-        "url": "/post%20formats/post-image-caption/",
-        "teaser": "/assets/images/llp-banner.png"
-      },{
-        "title": "Layout: Header Image (Horizontal)",
-        "excerpt":"This post should display a header image, if the theme supports it.   Non-square images can provide some unique styling issues.   This post tests a horizontal header image  ","categories": ["Layout","Uncategorized"],
-        "tags": ["edge case","featured image","image","layout"],
-        "url": "/layout/uncategorized/layout-header-image-horizontal/",
-        "teaser": "/assets/images/llp-banner.png"
-      },{
-        "title": "Python - Tools Library",
-        "excerpt":"JSon Full Search Descripción: Tal como el nombre lo indica es una función para parsear un archivo json y extraer la clave suministrada, ya sea un valor o un diccionario en el caso de diccionarios anidados, aqui explicare el modo de uso y las mejoras que le vaya realizando. Es...","categories": [],
-        "tags": [],
-        "url": "/json-fullsearch/",
+        "title": "🐍 PYTHON - Tools Library",
+        "excerpt":"Introduction In this post, Python Tools Library, I’ll be collecting and sharing tools that I’ve developed to make my day-to-day work easier, cover specific needs, or simply explore ideas that might simplify common tasks. The goal is to share knowledge in a practical way. All tools will be stored in...","categories": ["Layout","python","help-tools"],
+        "tags": ["edge case"],
+        "url": "/layout/python/help-tools/python-library/",
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "Building a Local Development, Testing, and Deployment Environment",

@@ -144,6 +144,14 @@ Instead of being black boxes, they can tell you exactly *how* they’re behaving
 
 ## 4. The Metrics Library: Decoupling Observability from Business Logic 📚
 
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/go-watchtower-decoupling.png' | relative_url }}" 
+       style="max-width:100%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Image from Internet.
+  </figcaption>
+</figure>
+
 By this point, the Operator was doing its job, pods were screaming under stress tests, and Prometheus/Grafana had something to chew on.  
 But there was still a problem: **all the metrics logic was tangled up inside the operator code**.  
 
@@ -209,6 +217,14 @@ Think of it as the friendly observer in the corner of the room, taking notes but
 
 ## 6. Roadmap & Next Steps 🛣️
 
+<figure style="display: flex; flex-direction: column; align-items: center;">
+  <img src="{{ '/assets/images/go-watchtower-nextsteps.png' | relative_url }}" 
+       style="max-width:100%; height:auto;">
+  <figcaption style="margin-top: 0.5em; font-style: italic;">
+    Next Steps - Image from Internet.
+  </figcaption>
+</figure>
+
 Where does GoWatchtower go from here?  
 Here’s the plan (subject to caffeine levels ☕):  
 
@@ -249,4 +265,4 @@ That’s the philosophy behind GoWatchtower — and why I think it could be a sm
 
 ---
 
-✍️ *Thanks for reading! This is more than a system — it’s the story of how real needs, resilience, and client trust shaped 25 years of development.*  
+✍️ *Thanks for reading! GoWatchtower is more than just a library — it’s the story of how a simple learning exercise grew into a personal project, shaped by real-world challenges and a few “what if…” moments. It’s been a journey of experimentation and growth, and who knows where it will lead next.*  
