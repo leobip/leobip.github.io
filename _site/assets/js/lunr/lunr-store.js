@@ -35,16 +35,16 @@ var store = [{
         "url": "/year-archive/",
         "teaser": "/assets/images/llp-banner.png"
       },{
-        "title": "🐍 PYTHON - Tools Library",
-        "excerpt":"Introduction In this post, Python Tools Library, I’ll be collecting and sharing tools that I’ve developed to make my day-to-day work easier, cover specific needs, or simply explore ideas that might simplify common tasks. The goal is to share knowledge in a practical way. All tools will be stored in...","categories": ["Layout","python","help-tools"],
-        "tags": ["edge case"],
-        "url": "/layout/python/help-tools/python-library/",
-        "teaser": "/assets/images/llp-banner.png"
-      },{
         "title": "🔍 SonarQube / SonarLint - Install, Config & Analysis",
         "excerpt":"In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness. SonarQube &amp; SonarLint Repository...","categories": ["Sonarqube","static analysis","tools"],
         "tags": ["edge case"],
         "url": "/sonarqube/static%20analysis/tools/local-env-sonarqube/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
+        "title": "🐍 PYTHON - Tools Library",
+        "excerpt":"Introduction In this post, Python Tools Library, I’ll be collecting and sharing tools that I’ve developed to make my day-to-day work easier, cover specific needs, or simply explore ideas that might simplify common tasks. The goal is to share knowledge in a practical way. All tools will be stored in...","categories": ["Layout","python","help-tools"],
+        "tags": ["edge case"],
+        "url": "/layout/python/help-tools/python-library/",
         "teaser": "/assets/images/llp-banner.png"
       },{
         "title": "⚙️💻 Building a Local Development, Testing & Deployment Environment",

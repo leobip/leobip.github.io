@@ -85,7 +85,7 @@ We start our environment with SonarQube, a powerful static analysis tool that de
 
 Once SonarQube is running locally (via docker-compose), we can integrate it into our pipeline so that every push to the repository gets analyzed automatically.
 
-- 👉 Detailed installation guide: [SonarQube Setup Article]({% post_url 2025-03-20-local-env-sonarqube %})
+- 👉 Detailed installation guide: [SonarQube Setup Article]({% post_url 2024-10-20-local-env-sonarqube %})
 
 ## ⚡ GitHub Actions – SonarQube Analysis Pipeline
 
