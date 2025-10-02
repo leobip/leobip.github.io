@@ -35,6 +35,12 @@ var store = [{
         "url": "/year-archive/",
         "teaser": "/assets/images/llp-banner.png"
       },{
+        "title": "Post Init",
+        "excerpt":" Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes   Estoy probando cómo se ve el banner global y cómo se muestra en los posts.  ","categories": [],
+        "tags": [],
+        "url": "/post-init/",
+        "teaser": "/assets/images/llp-banner.png"
+      },{
         "title": "🔍 SonarQube / SonarLint - Install, Config & Analysis",
         "excerpt":"In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness. SonarQube &amp; SonarLint Repository...","categories": ["Sonarqube","static analysis","tools"],
         "tags": ["edge case"],
@@ -63,11 +69,5 @@ var store = [{
         "excerpt":"📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka) https://github.com/leobip/monitoring.git Welcome! 👋 This project sets up a local monitoring stack based on Prometheus, Grafana, and Kafka (with Kafka UI), using Helm charts and persistent volumes for durability. Whether you’re experimenting with Kubernetes, developing custom controllers, or just want...","categories": [],
         "tags": [],
         "url": "/local-monitoring-env/",
-        "teaser": "/assets/images/llp-banner.png"
-      },{
-        "title": "Post Init",
-        "excerpt":" Hola 👋, este es mi primer post en Jekyll con el tema Minimal Mistakes   Estoy probando cómo se ve el banner global y cómo se muestra en los posts.  ","categories": [],
-        "tags": [],
-        "url": "/post-init/",
         "teaser": "/assets/images/llp-banner.png"
       }]

@@ -87,7 +87,7 @@ For a **stable and production-ready** deployment, SonarQube supports the followi
 
 #### SonarQube Database Configuration Guides
 
-- https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/
+- [SonarQube Database Configuration Guide](https://docs.sonarsource.com/sonarqube-server/latest/setup-and-upgrade/install-the-server/installing-the-database/)
 
 ## Installing SonarQube Locally  
 
