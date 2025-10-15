@@ -31,7 +31,7 @@ This page highlights key information about my professional background, similar t
 function downloadCV() {
   const pass = prompt("Enter password to download:");
   if (pass === "ll-cv2025") {
-    window.location.href = "assets/docs/CV-LLP-2025.pdf";
+    window.location.href = "/assets/docs/CV-LLP-2025.pdf";
   } else {
     alert("Incorrect password");
   }
