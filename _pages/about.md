@@ -28,8 +28,8 @@ tags:
 This page highlights key information about my professional background, similar to what you can find on my LinkedIn. If you’re interested in more detailed information, including additional projects, references, and certifications, feel free to download my full CV by clicking the button below. (Password Protected - You can ask for it by email).
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <a href="/assets/cv/leoncio_lopez_cv.pdf" download
-    onclick="return prompt('Enter password')==='1234';"
+  <a href="assets/docs/CV LLP - 2025.pdf" download
+    onclick="return prompt('Enter password')==='ll-cv2025';"
     style="display: inline-block; padding: 0.75rem 2rem; background: indigo; color: #fff; border-radius: 8px; font-size: 1.1rem; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: background 0.2s;">
     📄 Download My CV
   </a>
