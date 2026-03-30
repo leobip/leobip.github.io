@@ -9,7 +9,7 @@ categories:
 tags:
   - git-flow
   - automation
-date: '2026-03-30 22:03:00'
+date: '2026-03-30 08:00:00'
 ---
 
 When Your Pipeline Becomes the Platform
@@ -46,7 +46,7 @@ The primary objective was to enable **secure, scalable, and reusable infrastruct
 The following diagram represents the conceptual architecture and flow of the system:
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/2026-04-30-pipelines.png' | relative_url }}" 
+  <img src="{{ '/assets/images/2026-03-30-pipelines.png' | relative_url }}" 
        style="max-width:100%; height:auto;">
   <figcaption style="margin-top: 0.5em; font-style: italic;">
   </figcaption>
