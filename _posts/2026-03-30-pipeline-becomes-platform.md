@@ -6,15 +6,13 @@ categories:
   - git
   - cicd
   - pipelines
-  - gitlab
 tags:
   - git-flow
   - automation
-date: '2026-04-30 22:03:00'
+date: '2026-03-30 22:03:00'
 ---
 
-
-# When Your Pipeline Becomes the Platform
+When Your Pipeline Becomes the Platform
 
 ## Introduction
 
