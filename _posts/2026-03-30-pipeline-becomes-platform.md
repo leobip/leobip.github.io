@@ -1,3 +1,19 @@
+---
+layout: single
+classes: wide
+title: "When Your Pipeline Becomes the Platform"
+categories:
+  - git
+  - cicd
+  - pipelines
+  - gitlab
+tags:
+  - git-flow
+  - automation
+date: '2026-04-30 22:03:00'
+---
+
+
 # When Your Pipeline Becomes the Platform
 
 ## Introduction
