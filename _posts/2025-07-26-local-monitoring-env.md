@@ -1,10 +1,17 @@
 ---
-title: Local Monitoring Stack for Kubernetes
+title: "📡 Local Monitoring Stack for Kubernetes"
 layout: single
 classes: wide
-image: "/images/projects/2025-07-26-monitoring.png"
-theme: monitoring
 date: '2025-07-26 18:32:04'
+categories:
+  - devops
+  - kubernetes
+tags:
+  - prometheus
+  - grafana
+  - kafka
+  - helm
+  - monitoring
 ---
 
 # 📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)

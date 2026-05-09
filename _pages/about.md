@@ -2,15 +2,6 @@
 layout: single
 classes: wide
 title: "Career Journey"
-categories:
-  - Layout
-  - Uncategorized
-tags:
-  - edge case
-  - featured image
-  - image
-  - layout
-
 ---
 
 
@@ -106,61 +97,6 @@ DevOps Engineer with extensive experience in automation, database management, an
 - Administer SQL Server databases, including stored procedures.  
 
 
-## 📜 Certifications
-
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
-  <div style="flex: 1 1 300px; border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <strong>Jira Admin. Part 1 & 2</strong> – 2019
-  </div>
-  <div style="flex: 1 1 300px; border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <strong>SonarQube, Install & Analysis</strong> – 2020
-  </div>
-  <div style="flex: 1 1 300px; border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <strong>Polyspace for C/C++ Code Verification</strong> – <em>MathWorks</em>, 2020
-  </div>
-  <!-- Añade el resto de certificaciones siguiendo el mismo patrón -->
-</div>
-
----
-
-## 💼 Experience
-
-<div style="display: flex; flex-direction: column; gap: 1.5rem; margin-bottom: 2rem;">
-
-  <div style="border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <h3>💻 <strong>DevOps Automation Engineer</strong> – <em>T-Systems Itc Iberia S.A.U.</em> | 03/2023 – Present</h3>
-    <ul>
-      <li>Design, develop, and deploy Python scripts and RESTful API functions to automate workflows.</li>
-      <li>Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability.</li>
-      <li>Create automation scripts for HashiCorp Vault to streamline secrets management.</li>
-      <li>Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control.</li>
-    </ul>
-  </div>
-
-  <div style="border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <h3>💻 <strong>IT Delivery & Automation Engineer</strong> – <em>HotelBeds Technology, S.L.U.</em> | 07/2022 – 02/2023</h3>
-    <ul>
-      <li>Implement GitOps practices and manage deployments with ArgoCD.</li>
-      <li>Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery.</li>
-      <li>Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services.</li>
-      <li>Monitor and optimize performance using Prometheus and Bitbucket.</li>
-    </ul>
-  </div>
-
-  <div style="border: 1px solid #ddd; border-radius: 10px; padding: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <h3>💻 <strong>DevOps Consultant</strong> – <em>Vermont Solutions</em> | 12/2021 – 06/2022</h3>
-    <ul>
-      <li>Administer and deploy applications in OpenShift environments.</li>
-      <li>Develop and maintain Jenkins/CloudBees pipelines using YAML and Groovy for continuous integration.</li>
-      <li>Write automation scripts in Python, Shell, and Bash to enhance operational efficiency.</li>
-      <li>Utilize Docker, Ansible, and Kubernetes for container orchestration and deployment.</li>
-      <li>Conduct static code analysis using SonarQube to ensure code quality.</li>
-    </ul>
-  </div>
-
-  <!-- Añade los demás trabajos siguiendo el mismo patrón -->
-
-</div>
 
 ## Skills
 
@@ -287,53 +223,25 @@ DevOps Engineer with extensive experience in automation, database management, an
 ### Soft Skills
 
 <div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Adaptability</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>🔄 Adaptability</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Time Management</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>⏱️ Time Management</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Effective Communication</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>💬 Effective Communication</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Leadership</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>🎯 Leadership</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Problem Solver</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>🧩 Problem Solver</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Critical Thinking</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>🧠 Critical Thinking</strong>
   </div>
-
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-    <strong>Team Collaboration</strong>
-    <div style="background: #eee; border-radius: 4px; height: 12px; margin-top: 6px;">
-      <div style="width: 100%; background: #2196f3; height: 100%; border-radius: 4px;"></div>
-    </div>
+  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
+    <strong>🤝 Team Collaboration</strong>
   </div>
-
 </div>

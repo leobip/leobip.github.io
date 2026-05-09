@@ -3,11 +3,13 @@ layout: single
 classes: wide
 title: "🔍 SonarQube / SonarLint - Install, Config & Analysis"
 categories:
-  - Sonarqube
-  - static analysis
   - tools
+  - code-quality
 tags:
-  - edge case
+  - sonarqube
+  - sonarlint
+  - static-analysis
+  - docker
 date: '2024-10-20 21:55:15'
 ---
 

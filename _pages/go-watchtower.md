@@ -15,7 +15,7 @@ tags:
 
 
 {% capture fig_img %}
-![Foo]({{ '/assets/images/go-watchtower-proj.png' | relative_url }})
+![Foo]({{ '/assets/images/go-watchtower-proj.jpg' | relative_url }})
 {% endcapture %}
 
 <figure>
@@ -32,7 +32,7 @@ When you run workloads on Kubernetes, you learn one truth very quickly: **things
 That’s where **observability** becomes critical. You can’t fix what you can’t see — and in the cloud-native world, visibility often means the difference between smooth sailing and chasing down a ghost bug at 3 AM.  
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/go-watchtower-proj-troubles.png' | relative_url }}" 
+  <img src="{{ '/assets/images/go-watchtower-proj-troubles.jpg' | relative_url }}" 
        style="max-width:60%; height:auto;">
   <figcaption style="margin-top: 0.5em; font-style: italic;">
     Image generated with AI (custom design).

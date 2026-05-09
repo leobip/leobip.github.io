@@ -3,11 +3,12 @@ layout: single
 classes: wide
 title: 🐍 PYTHON - Tools Library
 categories:
-  - Layout
   - python
-  - help-tools
+  - tools
 tags:
-  - edge case
+  - python
+  - libraries
+  - reference
 ---
 
 

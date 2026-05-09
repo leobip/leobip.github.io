@@ -138,7 +138,7 @@ Over the years, the system was implemented in more than **80 companies**, suppor
 This wide adoption marked a turning point: the software became a trusted tool in one of the most complex and demanding industries in the country.  
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/adp-act-intropers.png' | relative_url }}" 
+  <img src="{{ '/assets/images/adp-act-intropers.jpg' | relative_url }}" 
        style="max-width:90%; height:auto;">
   <figcaption style="margin-top: 0.5em; font-style: italic;">
     Chronos - Personnel Form.
@@ -161,7 +161,7 @@ This wide adoption marked a turning point: the software became a trusted tool in
   This capability ensured seamless integration regardless of the client’s existing hardware or field requirements.  
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/adp-act-timetools.png' | relative_url }}" 
+  <img src="{{ '/assets/images/adp-act-timetools.jpg' | relative_url }}" 
        style="max-width:90%; height:auto;">
   <figcaption style="margin-top: 0.5em; font-style: italic;">
     Chronos - Some of equips.
@@ -417,7 +417,7 @@ The project has come full circle: from a personal solution, to a commercial succ
 And just like in 2000, the goal remains the same: **to listen, adapt, and deliver solutions that truly meet client needs**.  
 
 <figure style="display: flex; flex-direction: column; align-items: center;">
-  <img src="{{ '/assets/images/adp-timeline.png' | relative_url }}" 
+  <img src="{{ '/assets/images/adp-timeline.jpg' | relative_url }}" 
        style="max-width:75%; height:auto;">
   <figcaption style="margin-top: 0.5em; font-style: italic;">
     Chronos - Timeline.

@@ -3,12 +3,13 @@ layout: single
 classes: wide
 title: "⚙️💻 Building a Local Development, Testing & Deployment Environment"
 categories:
-  - cicd
-  - development
+  - devops
   - tools
-  - deployment
 tags:
-  - edge case
+  - cicd
+  - docker
+  - sonarqube
+  - local-environment
 date: '2025-04-20 21:55:15'
 ---
 
