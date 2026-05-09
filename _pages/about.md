@@ -27,22 +27,10 @@ tags:
 
 This page highlights key information about my professional background, similar to what you can find on my LinkedIn. If you’re interested in more detailed information, including additional projects, references, and certifications, feel free to download my full CV by clicking the button below. (Password Protected - You can ask for it by email).
 
-<script>
-function downloadCV() {
-  const pass = prompt("Enter password to download:");
-  if (pass === "ll-cv2025") {
-    window.location.href = "/assets/docs/CV-LLP-2025.pdf";
-  } else {
-    alert("Incorrect password");
-  }
-  return false;
-}
-</script>
-
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <a href="#" onclick="return downloadCV();"
+  <a href="mailto:leobip27@gmail.com?subject=CV%20Request"
     style="display: inline-block; padding: 0.75rem 2rem; background: indigo; color: #fff; border-radius: 8px; font-size: 1.1rem; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: background 0.2s;">
-    📄 Download My CV
+    📄 Request My CV via Email
   </a>
 </div>
 
