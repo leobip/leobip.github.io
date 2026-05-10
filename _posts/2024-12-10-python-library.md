@@ -9,6 +9,8 @@ tags:
   - python
   - libraries
   - reference
+header:
+  teaser: /assets/images/2024-12-10-python-library-small.webp
 ---
 
 

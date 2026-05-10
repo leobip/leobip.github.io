@@ -11,6 +11,8 @@ tags:
   - sonarqube
   - local-environment
 date: '2025-04-20 21:55:15'
+header:
+  teaser: /assets/images/local-dev-env-banner.webp
 ---
 
 A well-structured **local development environment** is essential for improving code quality, automating testing, and streamlining deployments.  

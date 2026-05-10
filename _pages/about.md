@@ -56,44 +56,108 @@ DevOps Engineer with extensive experience in automation, database management, an
 
 ## 💼 Experience
 
-### **DevOps Automation Engineer** – *T-Systems Itc Iberia S.A.U.* | 03/2023 – Present
-- Design, develop, and deploy Python scripts and RESTful API functions to automate workflows.  
-- Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability.  
-- Create automation scripts for HashiCorp Vault to streamline secrets management.  
-- Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control.  
+<div class="timeline">
 
-### **IT Delivery & Automation Engineer** – *HotelBeds Technology, S.L.U.* | 07/2022 – 02/2023
-- Implement GitOps practices and manage deployments with ArgoCD.  
-- Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery.  
-- Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services.  
-- Monitor and optimize performance using Prometheus and Bitbucket.  
+  <div class="timeline__item">
+    <div class="timeline__date">03/2023 – Present</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">DevOps Automation Engineer</span>
+        <span class="timeline__company">— T-Systems Itc Iberia S.A.U.</span>
+      </div>
+      <ul>
+        <li>Design, develop, and deploy Python scripts and RESTful API functions to automate workflows.</li>
+        <li>Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability.</li>
+        <li>Create automation scripts for HashiCorp Vault to streamline secrets management.</li>
+        <li>Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control.</li>
+      </ul>
+    </div>
+  </div>
 
-### **DevOps Consultant** – *Vermont Solutions* | 12/2021 – 06/2022
-- Administer and deploy applications in OpenShift environments.  
-- Develop and maintain Jenkins/CloudBees pipelines using YAML and Groovy for continuous integration.  
-- Write automation scripts in Python, Shell, and Bash to enhance operational efficiency.  
-- Utilize Docker, Ansible, and Kubernetes for container orchestration and deployment.  
-- Conduct static code analysis using SonarQube to ensure code quality.  
+  <div class="timeline__item">
+    <div class="timeline__date">07/2022 – 02/2023</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">IT Delivery & Automation Engineer</span>
+        <span class="timeline__company">— HotelBeds Technology, S.L.U.</span>
+      </div>
+      <ul>
+        <li>Implement GitOps practices and manage deployments with ArgoCD.</li>
+        <li>Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery.</li>
+        <li>Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services.</li>
+        <li>Monitor and optimize performance using Prometheus and Bitbucket.</li>
+      </ul>
+    </div>
+  </div>
 
-### **GitLab CI/CD Admin & Developer** – *Capitole Consulting, S.L.* | 08/2021 – 12/2021
-- Design and implement CI/CD pipelines and GitLab Runners using YAML and Groovy.  
-- Develop Python and Shell scripts to automate deployment tasks.  
-- Monitor GitLab statistics and system health using Grafana.  
-- Manage remote connections and automate tasks with SSH scripts.  
+  <div class="timeline__item">
+    <div class="timeline__date">12/2021 – 06/2022</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">DevOps Consultant</span>
+        <span class="timeline__company">— Vermont Solutions</span>
+      </div>
+      <ul>
+        <li>Administer and deploy applications in OpenShift environments.</li>
+        <li>Develop and maintain Jenkins/CloudBees pipelines using YAML and Groovy for continuous integration.</li>
+        <li>Write automation scripts in Python, Shell, and Bash to enhance operational efficiency.</li>
+        <li>Utilize Docker, Ansible, and Kubernetes for container orchestration and deployment.</li>
+        <li>Conduct static code analysis using SonarQube to ensure code quality.</li>
+      </ul>
+    </div>
+  </div>
 
-### **Technologies and Support Engineer** – *GMV, Innovating Solutions* | 03/2019 – 07/2021
-- Provide specialized user support and develop applications in Python, Ruby, and VBA.  
-- Perform static code analysis using tools like SonarQube, MathWorks Polyspace, and Sci-Tools Understand.  
-- Develop Python scripts to interact with SonarQube's REST API for data extraction and reporting.  
-- Automate CI/CD processes with Jenkins, Docker, and Git/SVN.  
-- Develop SQL queries and ETL processes using Talend Open Studio.  
-- Configure and run code analysis in MathWorks Polyspace for C/C++ projects.  
+  <div class="timeline__item">
+    <div class="timeline__date">08/2021 – 12/2021</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">GitLab CI/CD Admin & Developer</span>
+        <span class="timeline__company">— Capitole Consulting, S.L.</span>
+      </div>
+      <ul>
+        <li>Design and implement CI/CD pipelines and GitLab Runners using YAML and Groovy.</li>
+        <li>Develop Python and Shell scripts to automate deployment tasks.</li>
+        <li>Monitor GitLab statistics and system health using Grafana.</li>
+        <li>Manage remote connections and automate tasks with SSH scripts.</li>
+      </ul>
+    </div>
+  </div>
 
-### **Systems Manager** – *Alfa Sistemas, C.A.* | 2003 – 2018
-- Develop and support database applications (Access, VBA, C#) for time management and project control for up to 10,000 users.  
-- Design, install, and configure computer networks, including CISCO routers and switches.  
-- Develop custom Python and VBA applications to meet client-specific needs.  
-- Administer SQL Server databases, including stored procedures.  
+  <div class="timeline__item">
+    <div class="timeline__date">03/2019 – 07/2021</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">Technologies and Support Engineer</span>
+        <span class="timeline__company">— GMV, Innovating Solutions</span>
+      </div>
+      <ul>
+        <li>Provide specialized user support and develop applications in Python, Ruby, and VBA.</li>
+        <li>Perform static code analysis using tools like SonarQube, MathWorks Polyspace, and Sci-Tools Understand.</li>
+        <li>Develop Python scripts to interact with SonarQube's REST API for data extraction and reporting.</li>
+        <li>Automate CI/CD processes with Jenkins, Docker, and Git/SVN.</li>
+        <li>Develop SQL queries and ETL processes using Talend Open Studio.</li>
+        <li>Configure and run code analysis in MathWorks Polyspace for C/C++ projects.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline__item">
+    <div class="timeline__date">2003 – 2018</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">Systems Manager</span>
+        <span class="timeline__company">— Alfa Sistemas, C.A.</span>
+      </div>
+      <ul>
+        <li>Develop and support database applications (Access, VBA, C#) for time management and project control for up to 10,000 users.</li>
+        <li>Design, install, and configure computer networks, including CISCO routers and switches.</li>
+        <li>Develop custom Python and VBA applications to meet client-specific needs.</li>
+        <li>Administer SQL Server databases, including stored procedures.</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
 
 
 

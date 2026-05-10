@@ -11,6 +11,8 @@ tags:
   - static-analysis
   - docker
 date: '2024-10-20 21:55:15'
+header:
+  teaser: /assets/images/2025-03-20-sonarqube.png
 ---
 
 In this article, we will explore SonarQube and SonarLint, key tools for improving code quality. SonarQube acts as a central server for static code analysis, while SonarLint provides real-time feedback in the development environment. Additionally, we will see how to integrate them to maximize their effectiveness.

@@ -10,6 +10,8 @@ tags:
   - git-flow
   - automation
 date: '2026-03-30 08:00:00'
+header:
+  teaser: /assets/images/2026-03-30-pipelines.png
 ---
 
 When Your Pipeline Becomes the Platform

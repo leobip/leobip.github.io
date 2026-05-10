@@ -11,6 +11,8 @@ tags:
   - git-flow
   - semantic-versioning
 date: '2025-04-25 19:30:00'
+header:
+  teaser: /assets/images/semantic-versioning-banner.jpeg
 ---
 
 Managing branches and releases efficiently is crucial for maintaining **code quality, traceability, and smooth deployments**. In this article, we’ll explain how to structure your Git workflow using **branches for different purposes** and how to apply **Semantic Versioning (SemVer)** to tag releases.

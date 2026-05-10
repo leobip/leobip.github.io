@@ -12,6 +12,8 @@ tags:
   - kafka
   - helm
   - monitoring
+header:
+  teaser: /assets/images/go-watchtower-monitoring.webp
 ---
 
 # 📡 Local Monitoring Stack for Kubernetes (Prometheus + Grafana + Kafka)
