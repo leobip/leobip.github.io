@@ -2,19 +2,14 @@
 layout: splash
 permalink: /
 hidden: true
-title: Develop. Share. Learn.
+title: "Build · Automate · Deliver"
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#1a1d23"
   overlay_image: /assets/images/llp-banner.png
-  overlay_filter: 0.3
-  height: 300px
-  min_height: 300px
-  # actions:
-  #   - label: "<i class='fas fa-download'></i> Install now"
-  #     url: "/docs/quick-start-guide/"
+  overlay_filter: 0.45
 excerpt: >
-  Your digital gateway to my personal and professional career in the world of technology.<br />
-  <small><a href="https://github.com/leobip">Personal - GitHub</a></small>
+  Designing and automating cloud-native infrastructure — Kubernetes, Golang, Python, and CI/CD pipelines.<br />
+  <small>Cloud & DevOps Engineer · Madrid, Spain</small>
 feature_row:
   - image_path: /assets/images/engineering-career.jpg
     alt: "Career Journey"
@@ -24,37 +19,35 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more →"
   - image_path: /assets/images/chronos-worktable.png
-    alt: "fully responsive"
-    title: "From Access-VBA to Python: 25 Years of Building CHRONOS Workforce Control System for the Oil Industry"
-    excerpt: "A journey that started in 2000 as a simple database with SQL queries to track work hours in Venezuela’s oil industry. It grew into a professional application used by 8,000+ workers across 80+ companies, and in 2025, it’s being reborn with modern tools like Python, Flet, and SQLite.."
+    alt: "Chronos"
+    title: "CHRONOS — 25 Years of Workforce Control"
+    excerpt: "From Access-VBA to Python: a system that started tracking work hours in Venezuela's oil industry, growing to serve 8,000+ workers across 80+ companies."
     url: "/adp-chronos/"
     btn_class: "btn--primary"
-    btn_label: "👉 Read the full story →"
+    btn_label: "Read the full story →"
   - image_path: /assets/images/watchtower-logos.png
     alt: "GoWatchTower"
-    title: "GoWatchtower: Kubernetes-native Observability in Go"
-    excerpt: "A lightweight Golang library that turns any Operator into a real-time observability tool. Collects cluster metrics from native /metrics endpoints, streams them via Kafka, and powers full dashboards with Prometheus & Grafana — portable, fast, and designed for modern cloud-native environments."
+    title: "GoWatchtower — Kubernetes-native Observability"
+    excerpt: "A lightweight Go library that turns any Operator into a real-time observability tool — metrics collection, Kafka streaming, and Prometheus + Grafana dashboards."
     url: "/go-watchtower/"
     btn_class: "btn--primary"
-    btn_label: "🚀 Explore the project →"      
+    btn_label: "Explore the project →"
 ---
 
 {% include feature_row %}
 
-## 🆕 Latest Posts
+## Latest Posts
 
-<ul>
+<div class="latest-posts">
   {% for post in site.posts limit:3 %}
-    <li style="margin-bottom: 1rem;">
-      <span style="color: #666; font-size: 0.9em;">
-        {{ post.date | date: "%b %-d, %Y" }}
-      </span><br>
-      <a href="{{ post.url | relative_url }}" style="font-weight: bold; font-size: 1.1em;">
-        {{ post.title }}
-      </a><br>
-      <span style="color: #444;">
+    <div class="post-card">
+      <div class="post-card__date">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <div class="post-card__title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </div>
+      <div class="post-card__excerpt">
         {{ post.excerpt | strip_html | truncate: 120 }}
-      </span>
-    </li>
+      </div>
+    </div>
   {% endfor %}
-</ul>
+</div>

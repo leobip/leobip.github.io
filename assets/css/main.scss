@@ -1,0 +1,303 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// ==============================================
+// Custom styles — leobip.github.io
+// ==============================================
+
+// Custom variables
+$card-bg: mix(#fff, $background-color, 6%);
+$card-border: $border-color;
+$card-shadow: rgba(0, 0, 0, 0.3);
+$card-shadow-hover: rgba(0, 0, 0, 0.5);
+
+// --- Hero / Splash ---
+.page__hero--overlay {
+  padding: 6em 0 4em;
+
+  .page__title {
+    font-size: 2.5em;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  .page__lead {
+    font-size: 1.15em;
+    max-width: 680px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+// --- Feature Row cards ---
+.feature__item {
+  .archive__item {
+    background: $card-bg;
+    border: 1px solid $card-border;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px $card-shadow;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px $card-shadow-hover;
+    }
+  }
+
+  .archive__item-teaser {
+    border-radius: 12px 12px 0 0;
+  }
+
+  .archive__item-body {
+    padding: 1.5rem;
+  }
+}
+
+// --- Buttons ---
+.btn--primary {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($link-color, 0.4);
+  }
+}
+
+// --- Project Cards ---
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.project-card {
+  flex: 1 1 400px;
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px $card-shadow;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px $card-shadow-hover;
+  }
+
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__body {
+    padding: 1.5rem;
+  }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  &__tech {
+    font-size: 0.9em;
+    color: $muted-text-color;
+  }
+}
+
+// --- Latest Posts cards ---
+.latest-posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.post-card {
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px $card-shadow;
+  border-left: 4px solid $link-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px $card-shadow-hover;
+  }
+
+  &__date {
+    color: $muted-text-color;
+    font-size: 0.85em;
+    margin-bottom: 0.5rem;
+  }
+
+  &__title a {
+    font-weight: 700;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  &__excerpt {
+    color: mix($text-color, $background-color, 75%);
+    font-size: 0.95em;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+}
+
+// --- Skills Table (About page) ---
+.skills-table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  table-layout: fixed;
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid $border-color;
+    vertical-align: middle;
+  }
+
+  th {
+    font-weight: bold;
+  }
+
+  .skill-col {
+    width: 50%;
+  }
+
+  .level-col {
+    width: 50%;
+  }
+}
+
+.progress {
+  background-color: mix(#fff, $background-color, 12%);
+  border-radius: 10px;
+  overflow: hidden;
+  height: 22px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, $primary-color, lighten($primary-color, 12%));
+  border-radius: 10px;
+  text-align: center;
+  line-height: 22px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+// --- Soft Skills cards ---
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.soft-skill-card {
+  flex: 1 1 200px;
+  background: $card-bg;
+  border: 1px solid $card-border;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 8px $card-shadow;
+  text-align: center;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// --- CV Button ---
+.cv-button {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: $primary-color;
+  color: #fff !important;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  text-decoration: none !important;
+  box-shadow: 0 4px 12px $card-shadow;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba($primary-color, 0.4);
+    background: lighten($primary-color, 8%);
+    color: #fff !important;
+  }
+}
+
+// --- Author Sidebar ---
+.sidebar {
+  .h-card,
+  .p-card {
+    background: mix(#fff, $background-color, 25%);
+    border: 1px solid mix(#fff, $background-color, 18%);
+    border-radius: 12px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 4px 15px $card-shadow;
+  }
+
+  .author__avatar img {
+    border: 3px solid $primary-color;
+  }
+
+  .author__name {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .author__bio {
+    color: mix(#fff, $background-color, 70%);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .author__urls {
+    li a {
+      color: mix(#fff, $background-color, 75%);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+      &:hover {
+        color: $link-color;
+      }
+    }
+  }
+
+  .author__content {
+    .author__name,
+    .author__bio,
+    p {
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+  }
+}
+
+// --- Section headers ---
+.page__content h2 {
+  border-bottom: 2px solid $border-color;
+  padding-bottom: 0.5rem;
+}

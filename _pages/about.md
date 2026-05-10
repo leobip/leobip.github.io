@@ -19,8 +19,7 @@ title: "Career Journey"
 This page highlights key information about my professional background, similar to what you can find on my LinkedIn. If you’re interested in more detailed information, including additional projects, references, and certifications, feel free to download my full CV by clicking the button below. (Password Protected - You can ask for it by email).
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <a href="mailto:leobip27@gmail.com?subject=CV%20Request"
-    style="display: inline-block; padding: 0.75rem 2rem; background: indigo; color: #fff; border-radius: 8px; font-size: 1.1rem; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: background 0.2s;">
+  <a href="mailto:leobip27@gmail.com?subject=CV%20Request" class="cv-button">
     📄 Request My CV via Email
   </a>
 </div>
@@ -102,53 +101,6 @@ DevOps Engineer with extensive experience in automation, database management, an
 
 ### Hard Skills
 
-<style>
-.skills-table {
-  width: 100%;
-  max-width: 1000px;
-  border-collapse: collapse;
-  margin: 0 auto;
-  table-layout: fixed; /* fuerza distribución proporcional */
-}
-
-.skills-table th, .skills-table td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  vertical-align: middle;
-}
-
-.skills-table th {
-  font-weight: bold;
-}
-
-.skill-col {
-  width: 50%; /* Skill ocupa más */
-}
-
-.level-col {
-  width: 50%; /* Barra ocupa menos */
-}
-
-.progress {
-  background-color: #e0e0e0;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 20px;
-  width: 100%; /* siempre llena la celda */
-}
-
-.progress-bar {
-  height: 100%;
-  background-color: indigo;
-  text-align: center;
-  line-height: 20px;
-  color: white;
-  font-size: 12px;
-  font-weight: bold;
-}
-</style>
-
 <table class="skills-table">
   <thead>
     <tr>
@@ -222,26 +174,12 @@ DevOps Engineer with extensive experience in automation, database management, an
 
 ### Soft Skills
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem;">
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>🔄 Adaptability</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>⏱️ Time Management</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>💬 Effective Communication</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>🎯 Leadership</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>🧩 Problem Solver</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>🧠 Critical Thinking</strong>
-  </div>
-  <div style="flex: 1 1 200px; border: 1px solid #ddd; border-radius: 8px; padding: 0.75rem 1rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-    <strong>🤝 Team Collaboration</strong>
-  </div>
+<div class="soft-skills">
+  <div class="soft-skill-card"><strong>🔄 Adaptability</strong></div>
+  <div class="soft-skill-card"><strong>⏱️ Time Management</strong></div>
+  <div class="soft-skill-card"><strong>💬 Effective Communication</strong></div>
+  <div class="soft-skill-card"><strong>🎯 Leadership</strong></div>
+  <div class="soft-skill-card"><strong>🧩 Problem Solver</strong></div>
+  <div class="soft-skill-card"><strong>🧠 Critical Thinking</strong></div>
+  <div class="soft-skill-card"><strong>🤝 Team Collaboration</strong></div>
 </div>
