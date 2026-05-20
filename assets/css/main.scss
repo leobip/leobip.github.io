@@ -391,6 +391,11 @@ $card-shadow-hover: rgba(0, 0, 0, 0.5);
   }
 }
 
+// --- Masthead logo size ---
+.site-logo img {
+  max-height: 4rem;
+}
+
 // --- Section headers ---
 .page__content h2 {
   border-bottom: 2px solid $border-color;
