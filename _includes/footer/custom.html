@@ -1,0 +1,49 @@
+<!-- Scroll to top button -->
+<button id="scroll-to-top" aria-label="Scroll to top" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+    <path d="M12 4l-8 8h5v8h6v-8h5z"/>
+  </svg>
+</button>
+
+<script>
+// --- Scroll to top ---
+(function() {
+  var btn = document.getElementById('scroll-to-top');
+  if (!btn) return;
+
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+      btn.classList.add('visible');
+    } else {
+      btn.classList.remove('visible');
+    }
+  });
+
+  btn.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+
+// --- Fade-in on scroll (IntersectionObserver) ---
+(function() {
+  var elements = document.querySelectorAll('.fade-in');
+  if (!elements.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    // Fallback: show all immediately
+    elements.forEach(function(el) { el.classList.add('visible'); });
+    return;
+  }
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+  elements.forEach(function(el) { observer.observe(el); });
+})();
+</script>

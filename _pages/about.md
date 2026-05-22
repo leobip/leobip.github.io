@@ -39,18 +39,104 @@ DevOps Engineer with extensive experience in automation, database management, an
 
 ## 📜 Courses & Certifications
 
-- **AWS Certified Cloud Practitioner** - *AWS*, Aug-2025
-- **Application Security for Developers and DevOps Professionals (Credential ID QUM2JCTLJN1Q)** - *IBM*, Jun-2025
-- **Advanced PYTHON with CLOUD Computing** – *Training360 Kft*, 2024
-- **PRINCE2® 7 Foundation in Project Management (Credential ID GR466035711LL)** – *PeopleCert*, May-2025
-- **Well-Architected Proficient** – *AWS Training & Certification*, 2023
-- **AWS Partner: Accreditation (Technical)** – *AWS Training & Certification*, 2023
-- **Advanced Docker: Exploring Advanced Docker Principles & Practices** – *Skillsoft*, 2023
-- **DevOps Culture and Mindset** – *Coursera - Univ. of California*, 2021
-- **Google IT Automation with Python (Specialization)** – *Coursera - Google*, 2021
-- **Polyspace for C/C++ Code Verification** – *MathWorks*, 2020
-- **SonarQube, Install & Analysis** – 2020
-- **Jira Admin. Part 1 & 2** – 2019
+<div class="cert-grid">
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">☁️</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">AWS Certified Cloud Practitioner</div>
+      <div class="cert-card__issuer">Amazon Web Services</div>
+      <div class="cert-card__date">Aug 2025</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🔒</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Application Security for Developers & DevOps</div>
+      <div class="cert-card__issuer">IBM</div>
+      <div class="cert-card__date">Jun 2025</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">📋</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">PRINCE2® 7 Foundation</div>
+      <div class="cert-card__issuer">PeopleCert</div>
+      <div class="cert-card__date">May 2025</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🐍</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Advanced Python with Cloud Computing</div>
+      <div class="cert-card__issuer">Training360 Kft</div>
+      <div class="cert-card__date">2024</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🏗️</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Well-Architected Proficient</div>
+      <div class="cert-card__issuer">AWS Training & Certification</div>
+      <div class="cert-card__date">2023</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">☁️</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">AWS Partner: Accreditation (Technical)</div>
+      <div class="cert-card__issuer">AWS Training & Certification</div>
+      <div class="cert-card__date">2023</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🐳</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Advanced Docker: Principles & Practices</div>
+      <div class="cert-card__issuer">Skillsoft</div>
+      <div class="cert-card__date">2023</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🔄</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">DevOps Culture and Mindset</div>
+      <div class="cert-card__issuer">Coursera — Univ. of California</div>
+      <div class="cert-card__date">2021</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🐍</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Google IT Automation with Python</div>
+      <div class="cert-card__issuer">Coursera — Google</div>
+      <div class="cert-card__date">2021</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🔬</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Polyspace for C/C++ Code Verification</div>
+      <div class="cert-card__issuer">MathWorks</div>
+      <div class="cert-card__date">2020</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🔍</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">SonarQube, Install & Analysis</div>
+      <div class="cert-card__issuer">Self-directed</div>
+      <div class="cert-card__date">2020</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">📌</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">Jira Administration Part 1 & 2</div>
+      <div class="cert-card__issuer">Atlassian</div>
+      <div class="cert-card__date">2019</div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -58,7 +144,7 @@ DevOps Engineer with extensive experience in automation, database management, an
 
 <div class="timeline">
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">03/2023 – Present</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -74,7 +160,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">07/2022 – 02/2023</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -90,7 +176,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">12/2021 – 06/2022</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -107,7 +193,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">08/2021 – 12/2021</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -123,7 +209,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">03/2019 – 07/2021</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -141,7 +227,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
 
-  <div class="timeline__item">
+  <div class="timeline__item fade-in">
     <div class="timeline__date">2003 – 2018</div>
     <div class="timeline__content">
       <div class="timeline__header">
@@ -239,11 +325,11 @@ DevOps Engineer with extensive experience in automation, database management, an
 ### Soft Skills
 
 <div class="soft-skills">
-  <div class="soft-skill-card"><strong>🔄 Adaptability</strong></div>
-  <div class="soft-skill-card"><strong>⏱️ Time Management</strong></div>
-  <div class="soft-skill-card"><strong>💬 Effective Communication</strong></div>
-  <div class="soft-skill-card"><strong>🎯 Leadership</strong></div>
-  <div class="soft-skill-card"><strong>🧩 Problem Solver</strong></div>
-  <div class="soft-skill-card"><strong>🧠 Critical Thinking</strong></div>
-  <div class="soft-skill-card"><strong>🤝 Team Collaboration</strong></div>
+  <div class="soft-skill-card fade-in"><strong>🔄 Adaptability</strong></div>
+  <div class="soft-skill-card fade-in"><strong>⏱️ Time Management</strong></div>
+  <div class="soft-skill-card fade-in"><strong>💬 Effective Communication</strong></div>
+  <div class="soft-skill-card fade-in"><strong>🎯 Leadership</strong></div>
+  <div class="soft-skill-card fade-in"><strong>🧩 Problem Solver</strong></div>
+  <div class="soft-skill-card fade-in"><strong>🧠 Critical Thinking</strong></div>
+  <div class="soft-skill-card fade-in"><strong>🤝 Team Collaboration</strong></div>
 </div>
