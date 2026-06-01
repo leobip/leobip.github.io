@@ -9,9 +9,9 @@ const https = require("https");
 const fs = require("fs");
 const path = require("path");
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-if (!GEMINI_API_KEY) {
-  console.error("❌ GEMINI_API_KEY is not set");
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
+if (!GROQ_API_KEY) {
+  console.error("❌ GROQ_API_KEY is not set");
   process.exit(1);
 }
 
@@ -80,31 +80,34 @@ Reply ONLY with valid JSON, no markdown:
 }`;
 
   const res = await makeRequest(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
+    "https://api.groq.com/openai/v1/chat/completions",
     {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        Authorization: `Bearer ${GROQ_API_KEY}`,
+        "Content-Type": "application/json",
+      },
     },
     {
-      contents: [
+      model: "llama-3.3-70b-versatile",
+      messages: [
         {
-          parts: [
-            {
-              text: `You are a historian of computing and software. Return concise, accurate tech history facts as valid JSON only — no markdown, no extra text.\n\n${prompt}`,
-            },
-          ],
+          role: "system",
+          content:
+            "You are a historian of computing and software. Return concise, accurate tech history facts as valid JSON only — no markdown, no extra text.",
         },
+        { role: "user", content: prompt },
       ],
-      generationConfig: { maxOutputTokens: 300 },
+      max_tokens: 300,
     },
   );
 
   if (res.status !== 200) {
-    console.error("❌ Gemini error:", res.status, JSON.stringify(res.data));
+    console.error("❌ Groq error:", res.status, JSON.stringify(res.data));
     process.exit(1);
   }
 
-  let content = res.data.candidates[0]?.content?.parts[0]?.text?.trim();
+  let content = res.data.choices[0]?.message?.content?.trim();
   if (!content) {
     console.error("❌ Empty response");
     process.exit(1);
