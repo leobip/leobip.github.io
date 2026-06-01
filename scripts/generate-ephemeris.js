@@ -9,9 +9,9 @@ const https = require("https");
 const fs = require("fs");
 const path = require("path");
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-if (!OPENAI_API_KEY) {
-  console.error("❌ OPENAI_API_KEY is not set");
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
+if (!GEMINI_API_KEY) {
+  console.error("❌ GEMINI_API_KEY is not set");
   process.exit(1);
 }
 
@@ -80,34 +80,31 @@ Reply ONLY with valid JSON, no markdown:
 }`;
 
   const res = await makeRequest(
-    "https://api.openai.com/v1/chat/completions",
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
     {
       method: "POST",
-      headers: {
-        Authorization: `Bearer ${OPENAI_API_KEY}`,
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
     },
     {
-      model: "gpt-4o-mini",
-      messages: [
+      contents: [
         {
-          role: "system",
-          content:
-            "You are a historian of computing and software. You return concise, accurate tech history facts as valid JSON only — no markdown, no extra text.",
+          parts: [
+            {
+              text: `You are a historian of computing and software. Return concise, accurate tech history facts as valid JSON only — no markdown, no extra text.\n\n${prompt}`,
+            },
+          ],
         },
-        { role: "user", content: prompt },
       ],
-      max_tokens: 300,
+      generationConfig: { maxOutputTokens: 300 },
     },
   );
 
   if (res.status !== 200) {
-    console.error("❌ OpenAI error:", res.status, JSON.stringify(res.data));
+    console.error("❌ Gemini error:", res.status, JSON.stringify(res.data));
     process.exit(1);
   }
 
-  let content = res.data.choices[0]?.message?.content?.trim();
+  let content = res.data.candidates[0]?.content?.parts[0]?.text?.trim();
   if (!content) {
     console.error("❌ Empty response");
     process.exit(1);
