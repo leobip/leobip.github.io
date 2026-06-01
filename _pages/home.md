@@ -34,6 +34,8 @@ feature_row:
     btn_label: "Explore the project →"
 ---
 
+{% include ephemeris-card.html %}
+
 {% include feature_row %}
 
 ## Latest Posts

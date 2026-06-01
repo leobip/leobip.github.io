@@ -1,0 +1,30 @@
+<div
+  class="ephemeris-terminal"
+  role="complementary"
+  aria-label="Today in tech history"
+>
+  <div class="ephemeris-terminal__bar">
+    <span class="dot dot--red" aria-hidden="true"></span>
+    <span class="dot dot--yellow" aria-hidden="true"></span>
+    <span class="dot dot--green" aria-hidden="true"></span>
+    <span class="ephemeris-terminal__bar-title">bash — leoncio@devops</span>
+  </div>
+  <div class="ephemeris-terminal__body">
+    <p class="ephemeris-terminal__prompt">
+      <span class="t-user">leoncio@devops</span><span class="t-sep">:</span
+      ><span class="t-path">~</span><span class="t-dollar"> $</span
+      ><span class="t-cmd"> today --tech-history</span>
+    </p>
+    <p class="ephemeris-terminal__label">
+      📅 &nbsp;{{ site.data.ephemeris.display_date }} &nbsp;·&nbsp; Today in
+      software history
+    </p>
+    <p class="ephemeris-terminal__event">
+      ▶ &nbsp;{{ site.data.ephemeris.event }}
+    </p>
+    <p class="ephemeris-terminal__year">
+      ── year: <strong>{{ site.data.ephemeris.historical_year }}</strong
+      ><span class="ephemeris-cursor" aria-hidden="true">█</span>
+    </p>
+  </div>
+</div>
