@@ -1,36 +1,36 @@
 name: Generate Daily Ephemeris
 
 on:
-    schedule:
-    - cron: '0 5 * * *'   # 05:00 UTC every day
-    workflow_dispatch:        # manual trigger from GitHub UI
+  schedule:
+    - cron: "0 5 * * *" # 05:00 UTC every day
+  workflow_dispatch: # manual trigger from GitHub UI
 
 permissions:
-    contents: write           # needed to push _data/ephemeris.json
+  contents: write # needed to push _data/ephemeris.json
 
 jobs:
-    generate:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
-        - name: Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-        - name: Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-            node-version: '20'
+          node-version: "20"
 
-        - name: Generate ephemeris
+      - name: Generate ephemeris
         env:
-            OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: node scripts/generate-ephemeris.js
 
-        - name: Commit and push
+      - name: Commit and push
         run: |
-            git config user.name  "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add _data/ephemeris.json
-            git diff --staged --quiet || \
-            git commit -m "chore: daily ephemeris $(date -u +%Y-%m-%d) [skip ci]"
-            git push
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/ephemeris.json
+          git diff --staged --quiet || \
+          git commit -m "chore: daily ephemeris $(date -u +%Y-%m-%d) [skip ci]"
+          git push
