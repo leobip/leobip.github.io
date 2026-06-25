@@ -1,7 +1,7 @@
 {
-  "event": "The first successful demonstration of the Altair 8800 microcomputer was held on June 24, 1975, at the Digital Equipment Corporation office in New York City",
-  "historical_year": 1975,
+  "event": "The first successful communication over the ARPANET, the precursor to the modern-day internet, took place between two nodes, one at UCLA and one at SRI, on June 25, 1969, when the first message, 'LO', was sent over the network.",
+  "historical_year": 1969,
   "historical_month": 6,
-  "historical_day": 24,
-  "display_date": "2026-06-24"
+  "historical_day": 25,
+  "display_date": "2026-06-25"
 }
