@@ -19,14 +19,14 @@ title: "Career Journey"
 This page highlights key information about my professional background, similar to what you can find on my LinkedIn. If you’re interested in more detailed information, including additional projects, references, and certifications, feel free to download my full CV by clicking the button below. (Password Protected - You can ask for it by email).
 
 <div style="display: flex; justify-content: center; margin: 2rem 0;">
-  <a href="mailto:leobip27@gmail.com?subject=CV%20Request" class="cv-button">
-    📄 Request My CV via Email
+  <a href="/cv/" class="cv-button">
+    📄 View / Download CV
   </a>
 </div>
 
 ## About
 
-DevOps Engineer with extensive experience in automation, database management, and process optimization. Specialized in Python programming and developing efficient, scalable software architectures. Passionate about integrating development and operations, using tools like Docker, Kubernetes, and Jenkins to improve workflows through automation.
+Software Architect, Platform Engineer, and developer with 20+ years of experience building software, automation platforms, and cloud-native solutions. Currently working at the intersection of Platform Engineering and AI Infrastructure — building MLOps environments, Kubernetes Operators in Go, and developer automation platforms using Python, ArgoCD, Kubeflow, and ClearML. Founded and ran a software company for over 15 years, shipping a commercial workforce-management platform still in active use today.
 
 {% capture fig_img %}
 ![Foo]({{ '/assets/images/devops.jpg' | relative_url }})
@@ -40,6 +40,14 @@ DevOps Engineer with extensive experience in automation, database management, an
 ## 📜 Courses & Certifications
 
 <div class="cert-grid">
+  <div class="cert-card fade-in">
+    <div class="cert-card__icon">🛡️</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">SRE Foundation</div>
+      <div class="cert-card__issuer">GSDC</div>
+      <div class="cert-card__date">Oct 2025</div>
+    </div>
+  </div>
   <div class="cert-card fade-in">
     <div class="cert-card__icon">☁️</div>
     <div class="cert-card__info">
@@ -97,6 +105,14 @@ DevOps Engineer with extensive experience in automation, database management, an
     </div>
   </div>
   <div class="cert-card fade-in">
+    <div class="cert-card__icon">🚀</div>
+    <div class="cert-card__info">
+      <div class="cert-card__name">GitOps at Scale — Level II</div>
+      <div class="cert-card__issuer">Codefresh</div>
+      <div class="cert-card__date">Sep 2022</div>
+    </div>
+  </div>
+  <div class="cert-card fade-in">
     <div class="cert-card__icon">🔄</div>
     <div class="cert-card__info">
       <div class="cert-card__name">DevOps Culture and Mindset</div>
@@ -145,17 +161,37 @@ DevOps Engineer with extensive experience in automation, database management, an
 <div class="timeline">
 
   <div class="timeline__item fade-in">
-    <div class="timeline__date">03/2023 – Present</div>
+    <div class="timeline__date">02/2026 – Present</div>
     <div class="timeline__content">
       <div class="timeline__header">
-        <span class="timeline__title">DevOps Automation Engineer</span>
-        <span class="timeline__company">— T-Systems Itc Iberia S.A.U.</span>
+        <span class="timeline__title">Senior Platform Engineer – AI &amp; MLOps Infrastructure</span>
+        <span class="timeline__company">— T-Systems Iberia</span>
       </div>
       <ul>
-        <li>Design, develop, and deploy Python scripts and RESTful API functions to automate workflows.</li>
-        <li>Deploy and manage services using Docker, Kubernetes, and Helm to ensure scalability and reliability.</li>
-        <li>Create automation scripts for HashiCorp Vault to streamline secrets management.</li>
-        <li>Administer Linux systems and manage artifacts with JFrog Artifactory and GitLab version control.</li>
+        <li>Designed and deployed an enterprise-grade MLOps platform based on Kubernetes and GitOps principles.</li>
+        <li>Implemented and maintained Kubeflow for notebook environments, pipelines, and multi-tenant ML workloads.</li>
+        <li>Deployed and integrated ClearML for experiment tracking, orchestration, and model lifecycle management.</li>
+        <li>Implemented KServe for scalable inference workloads and model serving.</li>
+        <li>Configured and validated GPU-enabled workloads and AI inference services on Kubernetes.</li>
+        <li>Deployed and operated Large Language Models for chat and code assistance use cases.</li>
+        <li>Managed platform deployments using ArgoCD and GitOps workflows; contributed to multi-tenant RBAC and platform governance.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline__item fade-in">
+    <div class="timeline__date">03/2023 – 05/2026</div>
+    <div class="timeline__content">
+      <div class="timeline__header">
+        <span class="timeline__title">Software Architect – DevOps/Automation Engineer</span>
+        <span class="timeline__company">— T-Systems Iberia</span>
+      </div>
+      <ul>
+        <li>Designed and implemented Python-based automation tools for synchronizing secrets and values between GitLab, Terraform, and HashiCorp Vault, including REST APIs, cron jobs, and CI/CD integrations.</li>
+        <li>Built Kubernetes Operators in Go (Kubebuilder) for cluster automation, monitoring, and integration with Kafka for metrics and event streaming.</li>
+        <li>Developed deployment automation from GitLab to Artifactory, including artifact analysis with Xray, packaging, and FastAPI-based services.</li>
+        <li>Extended automation pipelines to integrate Google Cloud Secret Manager for multi-environment secret synchronization.</li>
+        <li>Developed and maintained internal Python libraries with comprehensive pytest coverage across release pipelines and service validation workflows.</li>
       </ul>
     </div>
   </div>
@@ -171,7 +207,8 @@ DevOps Engineer with extensive experience in automation, database management, an
         <li>Implement GitOps practices and manage deployments with ArgoCD.</li>
         <li>Develop CI/CD pipelines in Jenkins/CloudBees using YAML and Groovy for automated software delivery.</li>
         <li>Automate infrastructure with Docker, Ansible, Kubernetes, Terraform, and AWS services.</li>
-        <li>Monitor and optimize performance using Prometheus and Bitbucket.</li>
+        <li>Monitor and optimize performance using Prometheus and Grafana.</li>
+        <li>Developed a Slack bot in Python to automate CI/CD communications and simplify deployment interactions for development teams.</li>
       </ul>
     </div>
   </div>
@@ -213,7 +250,7 @@ DevOps Engineer with extensive experience in automation, database management, an
     <div class="timeline__date">03/2019 – 07/2021</div>
     <div class="timeline__content">
       <div class="timeline__header">
-        <span class="timeline__title">Technologies and Support Engineer</span>
+        <span class="timeline__title">Technology &amp; DevOps Solutions Engineer</span>
         <span class="timeline__company">— GMV, Innovating Solutions</span>
       </div>
       <ul>
@@ -228,7 +265,7 @@ DevOps Engineer with extensive experience in automation, database management, an
   </div>
 
   <div class="timeline__item fade-in">
-    <div class="timeline__date">2003 – 2018</div>
+    <div class="timeline__date">2002 – 2018</div>
     <div class="timeline__content">
       <div class="timeline__header">
         <span class="timeline__title">Systems Manager</span>
@@ -287,6 +324,12 @@ DevOps Engineer with extensive experience in automation, database management, an
       <td>Kubernetes, OpenShift, ArgoCD</td>
       <td>
         <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
+      </td>
+    </tr>
+    <tr>
+      <td>MLOps (Kubeflow, ClearML, KServe)</td>
+      <td>
+        <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div>
       </td>
     </tr>
     <tr>

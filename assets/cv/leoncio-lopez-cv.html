@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leoncio Lopez — Senior Platform Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f1117;
+      --ink-mid: #3a3f4b;
+      --ink-light: #6b7280;
+      --rule: #e2e5ea;
+      --accent: #0057ff;
+      --accent-dim: #e8efff;
+      --bg: #ffffff;
+      --sidebar: #f7f8fa;
+      --tag-bg: #eef2ff;
+      --tag-txt: #1d40b0;
+      --green: #059669;
+      --mono: "JetBrains Mono", monospace;
+      --sans: "Inter", sans-serif;
+    }
+
+    html { font-size: 13px; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: #e8eaed;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── PAGE SHELL ── */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(--bg);
+      margin: 24px auto;
+      display: grid;
+      grid-template-columns: 68mm 1fr;
+      grid-template-rows: auto 1fr;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.14);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      grid-column: 1 / -1;
+      background: var(--ink);
+      padding: 28px 32px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    .name {
+      font-family: var(--mono);
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .headline {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--accent);
+      margin-top: 6px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .contact-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4px;
+    }
+    .contact-item {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    .contact-item:hover { color: var(--accent); }
+    .contact-item span { color: rgba(255,255,255,0.35); margin-right: 5px; }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      background: var(--sidebar);
+      padding: 22px 18px 32px;
+      border-right: 1px solid var(--rule);
+    }
+
+    /* ── MAIN ── */
+    .main { padding: 22px 28px 32px; }
+
+    /* ── SECTION ── */
+    .section { margin-bottom: 20px; }
+    .section-label {
+      font-family: var(--mono);
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.8px;
+      color: var(--accent);
+      border-bottom: 1.5px solid var(--accent);
+      padding-bottom: 4px;
+      margin-bottom: 12px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary-text { font-size: 0.8rem; color: var(--ink-mid); line-height: 1.65; }
+
+    /* ── EXPERIENCE (single role) ── */
+    .job {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .job:last-child { border-bottom: none; padding-bottom: 0; }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      margin-bottom: 2px;
+    }
+    .job-company {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 0.82rem;
+      color: var(--ink);
+    }
+    .job-company a { color: inherit; text-decoration: none; }
+    .job-company a:hover { color: var(--accent); }
+    .job-period {
+      font-family: var(--mono);
+      font-size: 0.65rem;
+      color: var(--ink-light);
+      white-space: nowrap;
+      background: var(--accent-dim);
+      padding: 1px 6px;
+      border-radius: 3px;
+    }
+    .job-title {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--ink-mid);
+      margin-bottom: 6px;
+    }
+    .job-location { font-size: 0.68rem; color: var(--ink-light); font-style: italic; }
+    .job-desc ul { padding-left: 14px; margin-top: 5px; }
+    .job-desc li { font-size: 0.75rem; color: var(--ink-mid); margin-bottom: 3px; line-height: 1.5; }
+    .job-desc li strong { color: var(--ink); font-weight: 600; }
+    .job-desc p { font-size: 0.75rem; color: var(--ink-mid); margin-top: 4px; line-height: 1.5; }
+    .tech-line {
+      margin-top: 7px;
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      color: var(--ink-light);
+      background: var(--sidebar);
+      padding: 4px 8px;
+      border-radius: 4px;
+      border-left: 2px solid var(--accent);
+    }
+    .tech-line strong { color: var(--accent); }
+
+    /* ── JOB GROUP (multiple roles, same company) ── */
+    .job-group {
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .job-group-company {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 0.84rem;
+      color: var(--ink);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 1px dashed var(--rule);
+    }
+    .job-group-company a { color: inherit; text-decoration: none; }
+    .job-group-company a:hover { color: var(--accent); }
+    .job-group-span {
+      font-family: var(--mono);
+      font-size: 0.63rem;
+      color: var(--ink-light);
+    }
+    .job-sub {
+      padding-left: 10px;
+      border-left: 2px solid var(--rule);
+      margin-bottom: 12px;
+      padding-top: 4px;
+    }
+    .job-sub:last-child { margin-bottom: 0; }
+    .job-sub.current { border-left-color: var(--green); }
+    .current-badge {
+      display: inline-block;
+      font-family: var(--mono);
+      font-size: 0.58rem;
+      font-weight: 700;
+      color: #fff;
+      background: var(--green);
+      padding: 1px 5px;
+      border-radius: 3px;
+      margin-left: 5px;
+      vertical-align: middle;
+      letter-spacing: 0.3px;
+    }
+    .job-sub .job-header { align-items: flex-start; }
+    .job-sub .job-title { margin-bottom: 4px; }
+
+    /* ── SKILLS SIDEBAR ── */
+    .skill-block { margin-bottom: 14px; }
+    .skill-name {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .skill-dots { display: flex; gap: 3px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--rule); }
+    .dot.filled { background: var(--accent); }
+    .skill-tags { display: flex; flex-wrap: wrap; gap: 3px; }
+    .skill-tag {
+      font-family: var(--mono);
+      font-size: 0.6rem;
+      background: var(--tag-bg);
+      color: var(--tag-txt);
+      padding: 1px 5px;
+      border-radius: 3px;
+    }
+
+    /* ── CERTS ── */
+    .cert-item { margin-bottom: 8px; }
+    .cert-title { font-size: 0.73rem; font-weight: 600; color: var(--ink); line-height: 1.3; }
+    .cert-date { font-family: var(--mono); font-size: 0.63rem; color: var(--green); }
+
+    /* ── LANGS ── */
+    .lang-item { display: flex; justify-content: space-between; align-items: center; font-size: 0.73rem; margin-bottom: 5px; }
+    .lang-name { font-weight: 600; color: var(--ink); }
+    .lang-level { font-family: var(--mono); font-size: 0.62rem; color: var(--ink-light); background: var(--rule); padding: 1px 6px; border-radius: 3px; }
+
+    /* ── PROFILES ── */
+    .profile-item { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; font-size: 0.71rem; }
+    .profile-icon { width: 18px; height: 18px; background: var(--accent); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .profile-icon svg { fill: #fff; }
+    .profile-link { color: var(--ink-mid); text-decoration: none; font-family: var(--mono); font-size: 0.63rem; }
+    .profile-link:hover { color: var(--accent); }
+
+    /* ── PROJECTS ── */
+    .project-item { margin-bottom: 10px; }
+    .project-name { font-family: var(--mono); font-size: 0.73rem; font-weight: 700; color: var(--ink); }
+    .project-name a { color: inherit; text-decoration: none; }
+    .project-name a:hover { color: var(--accent); }
+    .project-period { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); margin-left: 6px; }
+    .project-desc { font-size: 0.72rem; color: var(--ink-mid); margin-top: 2px; }
+
+    /* ── EDUCATION ── */
+    .edu-school { font-weight: 600; font-size: 0.75rem; color: var(--ink); }
+    .edu-degree { font-size: 0.72rem; color: var(--ink-mid); margin-top: 1px; }
+    .edu-period { font-family: var(--mono); font-size: 0.62rem; color: var(--ink-light); }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-left">
+      <div class="name">Leoncio Lopez</div>
+      <div class="headline">
+        Senior Platform Engineer &nbsp;·&nbsp; Kubernetes Operators (Go)
+        &nbsp;·&nbsp; MLOps &nbsp;·&nbsp; GitOps &nbsp;·&nbsp; Cloud Native
+      </div>
+    </div>
+    <div class="contact-bar">
+      <a class="contact-item" href="mailto:leobip27@gmail.com"><span>✉</span>leobip27@gmail.com</a>
+      <a class="contact-item" href="tel:+34634845554"><span>☎</span>+34 634 845 554</a>
+      <span class="contact-item"><span>⌖</span>Madrid, Spain</span>
+      <a class="contact-item" href="https://leobip.github.io/" target="_blank"><span>⬡</span>leobip.github.io</a>
+    </div>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <!-- PROFILES -->
+    <div class="section">
+      <div class="section-label">Profiles</div>
+      <div class="profile-item">
+        <div class="profile-icon">
+          <svg width="11" height="11" viewBox="0 0 24 24"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2zm-7 3a3 3 0 110 6 3 3 0 010-6zm6 13H6v-.5c0-2.5 2.7-4.5 6-4.5s6 2 6 4.5V19z"/></svg>
+        </div>
+        <a class="profile-link" href="https://www.linkedin.com/in/leoncio-l%C3%B3pez-00527474" target="_blank">linkedin/leoncio-lópez</a>
+      </div>
+      <div class="profile-item">
+        <div class="profile-icon">
+          <svg width="11" height="11" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+        </div>
+        <a class="profile-link" href="https://github.com/leobip" target="_blank">github.com/leobip</a>
+      </div>
+      <div class="profile-item">
+        <div class="profile-icon">
+          <svg width="11" height="11" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="2" fill="none"/></svg>
+        </div>
+        <a class="profile-link" href="https://leobip.github.io/" target="_blank">leobip.github.io</a>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="section-label">Skills</div>
+
+      <div class="skill-block">
+        <div class="skill-name">Kubernetes
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">EKS</span><span class="skill-tag">AKS</span><span class="skill-tag">GKE</span><span class="skill-tag">Operators</span><span class="skill-tag">Kubebuilder</span><span class="skill-tag">CRDs</span><span class="skill-tag">Helm</span><span class="skill-tag">Kustomize</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">MLOps
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">Kubeflow</span><span class="skill-tag">ClearML</span><span class="skill-tag">KServe</span><span class="skill-tag">Ray</span><span class="skill-tag">GPU Workloads</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">GitOps
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">ArgoCD</span><span class="skill-tag">ApplicationSets</span><span class="skill-tag">Multi-Cluster</span><span class="skill-tag">Kustomize</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">CI/CD
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">GitLab CI</span><span class="skill-tag">Jenkins</span><span class="skill-tag">CloudBees</span><span class="skill-tag">Release Automation</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Python
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">Automation</span><span class="skill-tag">REST APIs</span><span class="skill-tag">FastAPI</span><span class="skill-tag">pytest</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Go (Golang)
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">Kubebuilder</span><span class="skill-tag">Operators</span><span class="skill-tag">Controllers</span><span class="skill-tag">Kafka</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Vault / Secrets
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">HashiCorp</span><span class="skill-tag">OpenBao</span><span class="skill-tag">GCP Secret Mgr</span><span class="skill-tag">PKI</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Observability
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">Prometheus</span><span class="skill-tag">Grafana</span><span class="skill-tag">Alerting</span><span class="skill-tag">Metrics</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Docker / Linux
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">OCI</span><span class="skill-tag">Registries</span><span class="skill-tag">Debian</span><span class="skill-tag">Ubuntu</span><span class="skill-tag">Alpine</span></div>
+      </div>
+
+      <div class="skill-block">
+        <div class="skill-name">Platform Eng.
+          <div class="skill-dots"><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot filled"></div><div class="dot"></div></div>
+        </div>
+        <div class="skill-tags"><span class="skill-tag">IDP</span><span class="skill-tag">Terraform</span><span class="skill-tag">AWS</span><span class="skill-tag">SonarQube</span></div>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+      <div class="section-label">Languages</div>
+      <div class="lang-item"><span class="lang-name">Spanish</span><span class="lang-level">Native</span></div>
+      <div class="lang-item"><span class="lang-name">English</span><span class="lang-level">Professional</span></div>
+      <div class="lang-item"><span class="lang-name">Italian</span><span class="lang-level">Native (EU citizen)</span></div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div class="section">
+      <div class="section-label">Certifications</div>
+      <div class="cert-item">
+        <div class="cert-title">GSDC — SRE Foundation</div>
+        <div class="cert-date">Oct 2025</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">AWS Certified Cloud Practitioner</div>
+        <div class="cert-date">Aug 2025</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">Application Security for Developers &amp; DevOps</div>
+        <div class="cert-date">Jun 2025</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">PRINCE2® Foundation</div>
+        <div class="cert-date">May 2025</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">AWS Well-Architected Proficient</div>
+        <div class="cert-date">Dec 2023</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">GitOps at Scale — Level II</div>
+        <div class="cert-date">Sep 2022</div>
+      </div>
+      <div class="cert-item" style="margin-top:6px">
+        <div class="cert-title" style="font-size:0.66rem;color:var(--ink-light);font-weight:400;font-style:italic;">
+          Additional certifications &amp; badges verified on
+          <a href="https://www.linkedin.com/in/leoncio-l%C3%B3pez-00527474" target="_blank" style="color:var(--accent)">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <div class="section-label">Education</div>
+      <div class="edu-school">University of Los Andes</div>
+      <div class="edu-degree">Engineering — Advanced studies (8/10 semesters)</div>
+      <div class="edu-period">1989 – 1994 · Venezuela</div>
+    </div>
+
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- PROFILE -->
+    <div class="section">
+      <div class="section-label">Profile</div>
+      <div class="summary-text">
+        Senior Platform Engineer with 20+ years of experience building cloud-native platforms and
+        Kubernetes automation. Currently working at the intersection of
+        <strong>Platform Engineering and AI Infrastructure</strong> — designing and operating
+        enterprise MLOps environments, building custom Kubernetes Operators in Go, and delivering
+        developer automation platforms using Python, ArgoCD, Kubeflow, and ClearML. Track record
+        delivering automation that reduces manual operational effort in enterprise environments
+        across defense, travel and finance sectors. Founded and ran a software company for over
+        15 years, shipping a commercial workforce-management platform still in active use today.
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-label">Experience</div>
+
+      <!-- T-Systems (grouped: 2 roles) -->
+      <div class="job-group">
+        <div class="job-group-company">
+          <a href="https://www.t-systems.com/es/es" target="_blank">T-Systems Iberia</a>
+          <span class="job-group-span">Mar 2023 — Present</span>
+        </div>
+
+        <!-- Current role -->
+        <div class="job-sub current">
+          <div class="job-header">
+            <div class="job-title" style="margin-bottom:0">
+              Senior Platform Engineer – AI &amp; MLOps Infrastructure
+              <span class="current-badge">Now</span>
+              <span class="job-location">· Madrid</span>
+            </div>
+            <div class="job-period">Feb 2026 — Present</div>
+          </div>
+          <div class="job-desc">
+            <ul>
+              <li><strong>Designed and deployed an enterprise-grade MLOps platform</strong> on Kubernetes and GitOps for defense AI workloads.</li>
+              <li>Implemented Kubeflow for notebook environments, pipelines, and multi-tenant ML workloads.</li>
+              <li>Deployed ClearML for experiment tracking, orchestration, and model lifecycle management.</li>
+              <li>Implemented KServe for scalable model serving; configured GPU-enabled AI inference services on Kubernetes.</li>
+              <li>Deployed LLMs for chat and code assistance; managed multi-tenant RBAC and platform governance via ArgoCD.</li>
+            </ul>
+            <div class="tech-line">
+              <strong>Tech:</strong> Kubernetes · Kubeflow · ClearML · KServe · ArgoCD · Python · GitOps · Helm · GPU Workloads · Linux
+            </div>
+          </div>
+        </div>
+
+        <!-- Previous role -->
+        <div class="job-sub">
+          <div class="job-header">
+            <div class="job-title" style="margin-bottom:0">
+              Software Architect – DevOps/Automation Engineer
+              <span class="job-location">· Madrid</span>
+            </div>
+            <div class="job-period">Mar 2023 — May 2026</div>
+          </div>
+          <div class="job-desc">
+            <ul>
+              <li><strong>Built Kubernetes Operators in Go (Kubebuilder)</strong> for cluster automation and Kafka integration for metrics and event streaming.</li>
+              <li><strong>Designed Python automation services reducing manual release effort by ~60%</strong>, cutting cycles from days to hours.</li>
+              <li>Developed secrets synchronization between GitLab, Terraform, HashiCorp Vault, and Google Cloud Secret Manager using REST APIs and FastAPI services.</li>
+              <li>Built internal Python libraries with comprehensive pytest coverage for release pipelines and service validation workflows.</li>
+              <li>Managed Kubernetes workloads with Helm; deployed artifacts to JFrog Artifactory with Xray analysis.</li>
+            </ul>
+            <div class="tech-line">
+              <strong>Tech:</strong> Go · Kubebuilder · Python · Kafka · FastAPI · Vault · GitLab · Kubernetes · Helm · Artifactory · REST APIs
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hotelbeds -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company"><a href="https://discover.hotelbeds.com/" target="_blank">Hotelbeds — HBX Group</a></div>
+          <div class="job-period">Jun 2022 — Feb 2023</div>
+        </div>
+        <div class="job-title">IT Delivery &amp; Automation Engineer <span class="job-location">· Madrid</span></div>
+        <div class="job-desc">
+          <ul>
+            <li>Managed GitOps-based deployments using ArgoCD across Kubernetes microservice environments.</li>
+            <li>Designed and implemented CI/CD pipelines with Jenkins and CloudBees for high-throughput delivery.</li>
+            <li>Developed a Slack bot in Python to automate CI/CD communications for development teams.</li>
+            <li>Supported AWS cloud infrastructure; implemented observability with Prometheus and Grafana.</li>
+          </ul>
+          <div class="tech-line">
+            <strong>Tech:</strong> Kubernetes · ArgoCD · AWS · Docker · Jenkins · CloudBees · Grafana · Prometheus · Python · SonarQube
+          </div>
+        </div>
+      </div>
+
+      <!-- Vermont -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company"><a href="https://vermont-solutions.com/en/home-english/" target="_blank">Vermont Solutions</a></div>
+          <div class="job-period">Dec 2021 — Jun 2022</div>
+        </div>
+        <div class="job-title">DevOps Engineer <span class="job-location">· Madrid</span></div>
+        <div class="job-desc">
+          <ul>
+            <li>Designed and implemented CI/CD processes for enterprise banking environments on OpenShift.</li>
+            <li>Developed deployment automation using Jenkins, Groovy and YAML; built operational Python/Bash tooling.</li>
+            <li>Integrated SonarQube analysis and quality gates for Java applications.</li>
+          </ul>
+          <div class="tech-line">
+            <strong>Tech:</strong> OpenShift · Kubernetes · Jenkins · Groovy · SonarQube · Python · Bash
+          </div>
+        </div>
+      </div>
+
+      <!-- Capitole -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company"><a href="https://www.capitole-consulting.com/es/" target="_blank">Capitole Consulting</a></div>
+          <div class="job-period">Aug 2021 — Dec 2021</div>
+        </div>
+        <div class="job-title">DevOps Engineer <span class="job-location">· Madrid</span></div>
+        <div class="job-desc">
+          <ul>
+            <li>Designed GitLab CI/CD pipelines, managed Runners and build infrastructure; implemented Grafana dashboards.</li>
+          </ul>
+          <div class="tech-line">
+            <strong>Tech:</strong> GitLab CI/CD · Runners · Grafana · Docker · Linux · SSH
+          </div>
+        </div>
+      </div>
+
+      <!-- GMV -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company"><a href="https://www.gmv.com/es" target="_blank">GMV Innovating Solutions</a></div>
+          <div class="job-period">Mar 2019 — Aug 2021</div>
+        </div>
+        <div class="job-title">Technology &amp; DevOps Solutions Engineer <span class="job-location">· Madrid</span></div>
+        <div class="job-desc">
+          <ul>
+            <li>Administered SonarQube enterprise environments; developed custom integrations via Python, Ruby and REST APIs.</li>
+            <li>Built automated reporting, software quality metrics systems, ETL processes and SQL procedures.</li>
+            <li>Designed and implemented Jenkins pipelines integrating Polyspace, SonarQube, Docker, and PC-Lint with custom quality rules.</li>
+          </ul>
+          <div class="tech-line">
+            <strong>Tech:</strong> Python · SonarQube · Polyspace · SQL · ETLs · Linux · REST APIs · Ruby · Jenkins
+          </div>
+        </div>
+      </div>
+
+      <!-- Alfa Sistemas -->
+      <div class="job">
+        <div class="job-header">
+          <div class="job-company">Alfa Sistemas C.A.</div>
+          <div class="job-period">2002 — 2018</div>
+        </div>
+        <div class="job-title">Founder &amp; Systems Manager <span class="job-location">· Venezuela</span></div>
+        <div class="job-desc">
+          <p>
+            Founded and managed a software company for 16 years, designing and commercializing
+            <strong>Chronos ADP</strong> — a workforce and project management platform for the
+            Venezuelan oil sector, with clients still active today. Led the full product lifecycle:
+            architecture, development, sales and support.
+          </p>
+          <ul style="margin-top:5px">
+            <li>Delivered custom enterprise solutions using C#, Python, VBA and SQL Server.</li>
+            <li>Led infrastructure, networking and systems administration for enterprise customers.</li>
+          </ul>
+          <div class="tech-line">
+            <strong>Tech:</strong> C# · Python · VBA · SQL Server · Windows Server · Networking · VMware
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <div class="section-label">Open Source &amp; Projects</div>
+      <div class="project-item">
+        <div class="project-name">
+          <a href="https://github.com/leobip" target="_blank">Kubernetes Operators (Go)</a>
+          <span class="project-period">2025</span>
+        </div>
+        <div class="project-desc">Custom Kubernetes Operators built with Kubebuilder and controller-runtime for cloud-native automation. Published on GitHub.</div>
+      </div>
+      <div class="project-item">
+        <div class="project-name">
+          <a href="https://leobip.github.io/" target="_blank">Technical Portfolio</a>
+          <span class="project-period">Ongoing</span>
+        </div>
+        <div class="project-desc">Platform Engineering, GitOps workflows, DevOps automation and personal software projects — leobip.github.io</div>
+      </div>
+    </div>
+
+  </main>
+</div>
+<script>
+  if (window.location.hash === '#print') {
+    window.addEventListener('load', function() {
+      setTimeout(function() { window.print(); }, 400);
+    });
+  }
+</script>
+</body>
+</html>
