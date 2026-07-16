@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cover Letter — Leoncio Lopez — Bending Spoons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #0f1117;
+      --ink-mid: #3a3f4b;
+      --ink-light: #6b7280;
+      --rule: #e2e5ea;
+      --accent: #0057ff;
+      --accent-dim: #e8efff;
+      --bg: #ffffff;
+      --mono: "JetBrains Mono", monospace;
+      --sans: "Inter", sans-serif;
+    }
+
+    html { font-size: 13px; }
+    body {
+      font-family: var(--sans);
+      color: var(--ink);
+      background: #e8eaed;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(--bg);
+      margin: 24px auto;
+      padding: 0;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.14);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ── HEADER ── */
+    .header {
+      background: var(--ink);
+      padding: 28px 40px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+    }
+    .name {
+      font-family: var(--mono);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -0.5px;
+      line-height: 1.1;
+    }
+    .headline {
+      font-family: var(--mono);
+      font-size: 0.72rem;
+      color: var(--accent);
+      margin-top: 5px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .contact-bar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+    }
+    .contact-item {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+    }
+    .contact-item span { color: rgba(255,255,255,0.3); margin-right: 4px; }
+
+    /* ── BODY ── */
+    .body {
+      padding: 44px 40px 40px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 36px;
+    }
+    .date {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      color: var(--ink-light);
+    }
+    .to-block {
+      text-align: right;
+    }
+    .to-company {
+      font-family: var(--mono);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .to-role {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--accent);
+      margin-top: 2px;
+    }
+
+    .salutation {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .paragraphs {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    p {
+      font-size: 0.88rem;
+      color: var(--ink-mid);
+      line-height: 1.75;
+    }
+
+    p strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .closing {
+      margin-top: 36px;
+    }
+    .closing-line {
+      font-size: 0.85rem;
+      color: var(--ink-mid);
+      margin-bottom: 32px;
+    }
+    .sig-name {
+      font-family: var(--mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+    .sig-title {
+      font-family: var(--mono);
+      font-size: 0.68rem;
+      color: var(--ink-light);
+      margin-top: 3px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent) 0%, #a855f7 50%, #ec4899 100%);
+      margin: 0;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; width: 100%; min-height: 100vh; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <header class="header">
+    <div>
+      <div class="name">Leoncio Lopez</div>
+      <div class="headline">Senior Platform Engineer &nbsp;·&nbsp; Kubernetes (Go) &nbsp;·&nbsp; MLOps &nbsp;·&nbsp; GitOps</div>
+    </div>
+    <div class="contact-bar">
+      <a class="contact-item" href="mailto:leobip27@gmail.com"><span>✉</span>leobip27@gmail.com</a>
+      <a class="contact-item" href="tel:+34634845554"><span>☎</span>+34 634 845 554</a>
+      <span class="contact-item"><span>⌖</span>Madrid, Spain — Open to relocation / remote</span>
+      <a class="contact-item" href="https://leobip.github.io"><span>⬡</span>leobip.github.io</a>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+
+  <div class="body">
+
+    <div class="meta">
+      <div class="date" id="letter-date"></div>
+      <div class="to-block">
+        <div class="to-company">Hiring Team · Bending Spoons</div>
+        <div class="to-role">Re: Software Engineer</div>
+      </div>
+    </div>
+
+    <div class="salutation">Dear Hiring Team,</div>
+
+    <div class="paragraphs">
+
+      <p>
+        I am a <strong>Senior Platform Engineer and Software Architect</strong> with over 20 years of
+        experience building cloud-native platforms, automation systems, and AI infrastructure.
+        Your approach to owning products for the long term — running small, talent-dense teams
+        with startup urgency, and integrating AI deeply into the engineering workflow itself — is
+        exactly the environment where I want to push my abilities to their fullest, while continuing
+        to learn and grow professionally.
+      </p>
+
+      <p>
+        In my current role at <strong>T-Systems Iberia</strong>, I designed and deployed
+        <strong>custom Kubernetes Operators in Go (Kubebuilder)</strong> that eliminated manual
+        lifecycle management across enterprise environments, built Python automation pipelines that
+        <strong>reduced manual release effort by ~60%</strong> — cutting cycles from days to hours —
+        and recently led the design and deployment of an <strong>enterprise-grade MLOps platform</strong>
+        for defense AI workloads, integrating Kubeflow, ClearML, and KServe on Kubernetes for
+        GPU-accelerated inference and LLM deployment. I've worked comfortably across stacks — Go,
+        Python, REST, gRPC integrations, Kubernetes and Docker — choosing tools for the problem
+        rather than the trend, which mirrors how your team approaches its toolkit.
+      </p>
+
+      <p>
+        What I bring beyond the technical stack is a <strong>builder's mindset</strong>. I founded
+        and ran a software company for sixteen years, shipping <em>Chronos ADP</em> — a
+        workforce management platform for the oil sector — from architecture through sales and
+        support, with clients still active today. That experience shaped how I approach
+        engineering: real ownership means simplifying relentlessly and being accountable for
+        outcomes, not just code.
+      </p>
+
+      <p>
+        Bending Spoons' focus on operating at extraordinary effectiveness while holding high
+        ethical standards, and using AI to amplify — not replace — engineering judgment, is exactly
+        the kind of challenge I want to work on next. I'd welcome a conversation about how my
+        background fits what your team is building.
+      </p>
+
+    </div>
+
+    <div class="closing">
+      <div class="closing-line">
+        My CV and technical portfolio are available at
+        <strong>leobip.github.io</strong>. I'm happy to connect at your convenience —
+        by email, LinkedIn, or a quick call.
+      </div>
+      <div class="sig-name">Leoncio Lopez</div>
+      <div class="sig-title">leobip27@gmail.com &nbsp;·&nbsp; linkedin.com/in/leoncio-lópez &nbsp;·&nbsp; leobip.github.io</div>
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+  // Auto-fill today's date
+  var d = new Date();
+  var months = ['January','February','March','April','May','June',
+                'July','August','September','October','November','December'];
+  document.getElementById('letter-date').textContent =
+    months[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+
+  // Auto-print if opened with #print
+  if (window.location.hash === '#print') {
+    window.addEventListener('load', function() {
+      setTimeout(function() { window.print(); }, 400);
+    });
+  }
+</script>
+</body>
+</html>
