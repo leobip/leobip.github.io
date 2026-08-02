@@ -13,6 +13,17 @@ A selection of projects I've built — from enterprise workforce systems to clou
 <div class="project-cards">
 
   <div class="project-card">
+    <img src="{{ '/assets/images/2026-07-18-mldash-teaser.png' | relative_url }}" alt="mldash GPU and MLOps visibility dashboard">
+    <div class="project-card__body">
+      <h3>🎛️ mldash — GPU &amp; MLOps Visibility</h3>
+      <p>A read-only Go observability server for Kubernetes ML platforms. It correlates GPU capacity, Kubeflow Notebooks, non-notebook workloads, and namespace quotas through an in-memory cache, REST API, and web dashboard. Built from a POC into a deployed MVP.</p>
+      <p class="project-card__tech"><strong>Tech:</strong> Go · Kubernetes · client-go · Kubeflow · GitHub Actions · GHCR</p>
+      <a href="{{ '/golang/kubernetes/mlops/building-mldash-part1/' | relative_url }}" class="btn btn--primary">Read the build story →</a>
+      <a href="https://github.com/leobip/mldash" class="btn btn--primary" target="_blank" rel="noopener noreferrer">View source →</a>
+    </div>
+  </div>
+
+  <div class="project-card">
     <img src="{{ '/assets/images/chronos-worktable.png' | relative_url }}" alt="Chronos">
     <div class="project-card__body">
       <h3>🕰️ CHRONOS — Workforce Control System</h3>
