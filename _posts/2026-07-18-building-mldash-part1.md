@@ -33,6 +33,8 @@ That question stuck with me.
 
 ![mldash — The Question and the Idea](/assets/images/2026-07-18-mldash.jpg)
 
+*Illustrative image generated with fictional users, workloads, nodes, and GPU values.*
+
 So I started digging on my own to see if something like this already
 existed. I looked at Kubeflow. I looked at Kubernetes. I looked at
 Prometheus/Grafana. I found scattered pieces, but nothing that tied
@@ -51,6 +53,8 @@ exposes it. It touches nothing. Minimal permissions, deliberately designed
 to be non-invasive in a cluster shared across multiple teams.
 
 ![mldash — how it reads the cluster](/assets/images/2026-07-18-mldash-architecture-eng.png)
+
+*Generic architecture illustration; it does not represent a specific environment.*
 
 ## First design pass
 
@@ -85,7 +89,7 @@ clientset, err := kubernetes.NewForConfig(config)
 list, err := clientset.CoreV1().Nodes().List(ctx, metav1.ListOptions{})
 for _, node := range list.Items {
     gpuQ := node.Status.Allocatable["nvidia.com/gpu"]
-    gpuCount, _ := gpuQ.AsInt64()  // e.g., 8, 4, 2
+    gpuCount, _ := gpuQ.AsInt64()
     // Store in cache...
 }
 ```
@@ -93,6 +97,8 @@ for _, node := range list.Items {
 Nothing fancy — just the same information `kubectl` would show you:
 
 ![kubectl get nodes with GPU](/assets/images/2026-07-18-mldash-kubectl-terminal.png)
+
+*Mock terminal output with fictional node names and GPU values.*
 
 But in Go, structured and cached so the dashboard can use it directly.
 
@@ -107,3 +113,54 @@ decisions, why Go, how it reads the cluster without ever modifying it, and
 the bumps along the way.
 
 **To be continued.**
+
+## Continued — from POC to deployed MVP
+
+> **Update — August 2, 2026:** the paragraph above describes the project at
+> the time of the first draft. Since then, mldash has gained container images,
+> deployment resources and a working deployment in a Kubernetes environment.
+
+![mldash — from POC to deployed MVP](/assets/images/2026-08-02-mldash-poc-to-mvp.png)
+
+*From POC to deployed MVP — containerized, published, and deployed through a
+read-only GitOps workflow. Conceptual illustration; all interfaces, users,
+workloads, nodes, and values are fictional.*
+
+The first step after the POC was making the binary portable. I added a
+multi-stage Dockerfile: Go compiles a static binary in the build stage, and the
+runtime stage contains only that binary in a distroless image running as a
+non-root user. A separate local troubleshooting image keeps tools needed for
+kubeconfig-based testing out of the production image.
+
+The next step was repeatable distribution. GitHub Actions now builds the image
+with Buildx, publishes version and commit tags to GHCR, and targets both
+`linux/amd64` and `linux/arm64`. The cluster can run the amd64 image while the
+same release can be tested on an arm64 development machine.
+
+Deployment stayed deliberately separate from application code. Environment
+variables select the Kubeflow namespace prefix and any extra workload
+namespaces. Deployment manifests choose mldash's own namespace and Kubernetes
+supplies its identity through a ServiceAccount. The RBAC policy remains
+read-only: list nodes and namespaces, watch Kubeflow
+Notebooks, and list only the pod and ResourceQuota data needed by the
+dashboard. Environment-specific DNS, ingress and authentication remain the
+responsibility of the platform deploying it.
+
+The deployment process also exposed several useful failure modes:
+
+- A `ClusterRoleBinding` subject must reference the namespace where the
+  ServiceAccount actually exists. Moving the workload without updating that
+  subject leaves the pod running but unauthorized.
+- A Kubernetes RBAC `apiGroup` contains only the group (`kubeflow.org`), not the
+  API version (`kubeflow.org/v1`). A small-looking mismatch can prevent an
+  informer from listing its initial objects.
+- The HTTP server currently waits for the Notebook informer cache to sync. If
+  RBAC prevents that initial sync, the entire dashboard remains unavailable
+  instead of only losing the Notebook section. That is now a known resilience
+  trade-off to revisit.
+
+After correcting those issues, the original POC became a deployed MVP serving
+live cluster state through the dashboard and REST API. The next development
+step is making the public project safer and more reusable: keeping deployment
+configuration private to each environment, removing environment-specific
+assumptions, and generalizing GPU resource and accelerator-label discovery.
