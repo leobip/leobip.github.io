@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generates a daily tech ephemeris via OpenAI and writes it to _data/ephemeris.json
+ * Generates a daily tech ephemeris via Groq and writes it to _data/ephemeris.json
  * Called by GitHub Actions (.github/workflows/ephemeris-cron.yml)
  */
 
@@ -14,6 +14,8 @@ if (!GROQ_API_KEY) {
   console.error("❌ GROQ_API_KEY is not set");
   process.exit(1);
 }
+
+const MODEL = process.env.GROQ_MODEL || "openai/gpt-oss-120b";
 
 function makeRequest(url, options = {}, data = null) {
   return new Promise((resolve, reject) => {
@@ -65,11 +67,13 @@ async function main() {
   const month = target.getUTCMonth() + 1;
 
   console.log(`🤖 Generating ephemeris for ${MONTHS[month - 1]} ${day}...`);
+  console.log(`🧠 Model: ${MODEL}`);
 
   const prompt = `Generate a tech history ephemeris for ${MONTHS[month - 1]} ${day}.
 
 Find a real historical event related to programming, software, hardware, or technology
 that occurred on ${MONTHS[month - 1]} ${day} of any year.
+If you are not certain the event happened on this exact date, choose a different event.
 
 Reply ONLY with valid JSON, no markdown:
 {
@@ -89,7 +93,7 @@ Reply ONLY with valid JSON, no markdown:
       },
     },
     {
-      model: process.env.GROQ_MODEL || "openai/gpt-oss-120b",
+      model: MODEL,
       messages: [
         {
           role: "system",
@@ -98,7 +102,10 @@ Reply ONLY with valid JSON, no markdown:
         },
         { role: "user", content: prompt },
       ],
-      max_tokens: 300,
+      // gpt-oss is a reasoning model: leave room for reasoning + the JSON answer
+      max_completion_tokens: 2000,
+      reasoning_effort: "low",
+      response_format: { type: "json_object" },
     },
   );
 
@@ -107,9 +114,11 @@ Reply ONLY with valid JSON, no markdown:
     process.exit(1);
   }
 
-  let content = res.data.choices[0]?.message?.content?.trim();
+  const choice = res.data.choices?.[0];
+  let content = choice?.message?.content?.trim();
   if (!content) {
-    console.error("❌ Empty response");
+    console.error("❌ Empty response. finish_reason:", choice?.finish_reason);
+    console.error(JSON.stringify(res.data, null, 2));
     process.exit(1);
   }
 
@@ -119,7 +128,14 @@ Reply ONLY with valid JSON, no markdown:
     .replace(/\n?```$/, "")
     .trim();
 
-  const ephemeris = JSON.parse(content);
+  let ephemeris;
+  try {
+    ephemeris = JSON.parse(content);
+  } catch (e) {
+    console.error("❌ Invalid JSON from model:", content);
+    process.exit(1);
+  }
+
   if (!ephemeris.event || !ephemeris.historical_year) {
     console.error("❌ Incomplete response:", content);
     process.exit(1);
